@@ -1,32 +1,54 @@
-# React + TypeScript + Vite
+# CatCode Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page oficial de [CatCode](https://cat-code-hdz.github.io/catcode/) — servicios de desarrollo web para PyMEs en México.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend:** React 19 + TypeScript
+- **Estilos:** Tailwind CSS 4
+- **Build:** Vite 8
+- **Lint:** OxLint
+- **i18n:** react-i18next (ES / EN)
+- **Deploy:** GitHub Pages via GitHub Actions
 
-## React Compiler
+## Estructura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+src/
+├── components/
+│   ├── layout/       # TopBar, Header, Footer
+│   └── sections/     # Hero, Problem, Solution, HowItWorks, Pricing, FAQ, CTA, etc.
+├── data/             # Datos de pricing y FAQ
+├── hooks/            # usePricingTabs, useFaqAccordion
+├── i18n/             # Traducciones ES/EN
+├── assets/           # Imágenes y SVGs
+├── App.tsx
+├── index.css
+└── main.tsx
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Desarrollo local
+
+```bash
+npm install
+npm run dev
+```
+
+## Scripts
+
+| Comando          | Descripción                     |
+| ---------------- | ------------------------------- |
+| `npm run dev`    | Servidor de desarrollo (Vite)   |
+| `npm run build`  | Build de producción             |
+| `npm run preview` | Preview del build localmente   |
+| `npm run lint`   | Linting con OxLint             |
+
+## Deploy
+
+El deploy a GitHub Pages se ejecuta automáticamente al hacer push al branch `main` vía el workflow `.github/workflows/deploy.yml`.
+
+Para ejecutarlo manualmente, ir a **Actions → Deploy CatCode to GitHub Pages → Run workflow**.
+
+### Configuración de GitHub Pages
+
+En **Settings → Pages → Source**, seleccionar **"GitHub Actions"**.
