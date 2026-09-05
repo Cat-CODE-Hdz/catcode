@@ -1,7 +1,23 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useMetrics } from '../../hooks/useMetrics';
+
+const isDev = import.meta.env.DEV;
 
 export function Hero() {
   const { t } = useTranslation();
+  const { metrics, isLive, isLoading, refetch } = useMetrics();
+
+  useEffect(() => {
+    if (isDev) {
+      const ts = new Date().toLocaleTimeString();
+      console.log(
+        `%c[${ts}] [Hero] Renderizando con métricas:`,
+        'color: #60a5fa; font-weight: bold',
+        { ...metrics, isLive, isLoading }
+      );
+    }
+  });
 
   return (
     <section className="relative w-full bg-surface-container-lowest pt-unit-12 pb-unit-20 md:pt-unit-16 md:pb-unit-28 overflow-hidden noise-bg border-b border-black/[0.06]">
@@ -55,7 +71,25 @@ export function Hero() {
                   <span className="material-symbols-outlined" style={{ fontSize: '13px' }}>lock</span>
                   catcode.studio/live
                 </span>
-                <span className="text-emerald-400 font-bold" style={{ fontSize: '10px' }}>200 OK</span>
+                <div className="flex items-center gap-2">
+                  {isLive && (
+                    <span className="text-emerald-400" style={{ fontSize: '9px' }}>● LIVE</span>
+                  )}
+                  {isLoading && (
+                    <span className="text-yellow-400 animate-pulse" style={{ fontSize: '9px' }}>● FETCHING</span>
+                  )}
+                  {isDev && (
+                    <button
+                      onClick={refetch}
+                      disabled={isLoading}
+                      className="text-neutral-500 hover:text-white transition-colors disabled:opacity-50"
+                      title="Refetch metrics"
+                    >
+                      <span className="material-symbols-outlined" style={{ fontSize: '13px' }}>refresh</span>
+                    </button>
+                  )}
+                  <span className="text-emerald-400 font-bold" style={{ fontSize: '10px' }}>200 OK</span>
+                </div>
               </div>
               <div className="space-y-4">
                 <div className="bg-neutral-900/90 rounded-xl p-4 border border-neutral-800">
@@ -72,15 +106,15 @@ export function Hero() {
                 <div className="grid grid-cols-3 gap-2 font-mono">
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center">
                     <div className="uppercase text-neutral-400 tracking-wider" style={{ fontSize: '10px' }}>{t('hero.terminal.performance')}</div>
-                    <div className="text-lg font-bold text-emerald-400 mt-0.5">99/100</div>
+                    <div className="text-lg font-bold text-emerald-400 mt-0.5">{metrics.performance}/100</div>
                   </div>
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center">
                     <div className="uppercase text-neutral-400 tracking-wider" style={{ fontSize: '10px' }}>{t('hero.terminal.loading')}</div>
-                    <div className="text-lg font-bold text-white mt-0.5">0.8s</div>
+                    <div className="text-lg font-bold text-white mt-0.5">{metrics.fcp}</div>
                   </div>
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center">
                     <div className="uppercase text-neutral-400 tracking-wider" style={{ fontSize: '10px' }}>{t('hero.terminal.indexing')}</div>
-                    <div className="text-lg font-bold text-neutral-200 mt-0.5">SEO 100%</div>
+                    <div className="text-lg font-bold text-neutral-200 mt-0.5">SEO {metrics.seo}%</div>
                   </div>
                 </div>
                 <div className="bg-black/60 rounded-xl p-3.5 border border-neutral-800 font-mono leading-relaxed text-neutral-300" style={{ fontSize: '11px' }}>

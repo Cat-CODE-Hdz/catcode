@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "fetch-metrics": "node scripts/fetch-metrics.mjs",
+    "prebuild": "node scripts/fetch-metrics.mjs"
   },
   "dependencies": {
     "i18next": "^26.4.1",

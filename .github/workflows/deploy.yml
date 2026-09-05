@@ -30,6 +30,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Fetch PageSpeed metrics
+        run: |
+          echo "[debug] SITE_URL=$SITE_URL"
+          echo "[debug] PAGESPEED_API_KEY set: ${{ secrets.PAGESPEED_API_KEY != '' }}"
+          npm run fetch-metrics
+        env:
+          SITE_URL: 'https://cat-code-hdz.github.io/catcode/'
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+
       - name: Build
         run: npm run build
 
