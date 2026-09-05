@@ -1,7 +1,7 @@
 {
   "topbar": {
     "capacity": "Q2 CAPACITY ACTIVE",
-    "version": "CAT CODE STUDIO — VERSION 2026.04",
+    "version": "CAT CODE STUDIO — VERSION {{version}}",
     "standard": "SWISS PREMIUM WEB STANDARD",
     "locations": "MAD · VLC · BIO"
   },

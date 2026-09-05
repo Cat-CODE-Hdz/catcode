@@ -10,6 +10,7 @@ Todas las notables cambios en este proyecto seguirán el formato [Keep a Changel
 
 ### Added
 - Changelog
+- Versión dinámica cargada desde `package.json` en el TopBar
 
 ### Changed
 - README actualizado con documentación real del proyecto

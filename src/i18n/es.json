@@ -1,7 +1,7 @@
 {
   "topbar": {
     "capacity": "CAPACIDAD Q2 ACTIVA",
-    "version": "CAT CODE STUDIO — VERSIÓN 2026.04",
+    "version": "CAT CODE STUDIO — VERSIÓN {{version}}",
     "standard": "ESTÁNDAR WEB PREMIUM SUIZO",
     "locations": "MAD · VLC · BIO"
   },

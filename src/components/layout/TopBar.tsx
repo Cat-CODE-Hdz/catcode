@@ -15,7 +15,7 @@ export function TopBar() {
           <span className="text-neutral-300 uppercase tracking-wider font-mono">{t('topbar.capacity')}</span>
         </span>
         <span className="text-neutral-500 hidden sm:inline">|</span>
-        <span className="text-neutral-400 hidden sm:inline font-mono">{t('topbar.version')}</span>
+        <span className="text-neutral-400 hidden sm:inline font-mono">{t('topbar.version', { version: __APP_VERSION__ })}</span>
       </div>
       <div className="flex items-center gap-4 text-neutral-400 font-mono">
         <span className="hidden md:inline text-neutral-300">{t('topbar.standard')}</span>

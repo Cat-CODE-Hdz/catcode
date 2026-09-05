@@ -31,7 +31,7 @@ export function Header() {
                 className="font-mono uppercase tracking-widest text-neutral-500 bg-neutral-100 border border-neutral-200/80 px-2 py-0.5 rounded-full font-semibold"
                 style={{ fontSize: '10px' }}
               >
-                v1.0
+                v{__APP_VERSION__}
               </span>
             </a>
             <nav className="hidden md:flex items-center gap-unit-6">
