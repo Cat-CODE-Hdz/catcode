@@ -6,16 +6,16 @@ export function HowItWorks() {
   const steps = ['01', '02', '03'];
 
   return (
-    <section className="w-full bg-[#F7F6F4] py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="como-funciona">
+    <section className="w-full bg-[#F7F6F4] py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="como-funciona" aria-labelledby="howtitle-title">
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" />
+            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
             <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
               {t('howItWorks.sectionLabel')}
             </span>
           </div>
-          <h2 className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold">
+            <h2 id="howtitle-title" className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold">
             {t('howItWorks.title')}
           </h2>
         </div>

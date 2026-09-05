@@ -8,16 +8,16 @@ export function WhatIncludes() {
   const columns = [0, 1, 2, 3];
 
   return (
-    <section className="w-full bg-surface-container-lowest py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="que-incluye">
+    <section className="w-full bg-surface-container-lowest py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="que-incluye" aria-labelledby="includes-title">
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" />
+            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
             <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
               {t('whatIncludes.sectionLabel')}
             </span>
           </div>
-          <h2 className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold">
+            <h2 id="includes-title" className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold">
             {t('whatIncludes.title')}
           </h2>
         </div>
@@ -29,7 +29,7 @@ export function WhatIncludes() {
               <div key={colData.title} className="bg-[#FAF9F7] p-unit-8 rounded-2xl border border-neutral-200/90 shadow-sm">
                 <div className="flex items-center justify-between mb-unit-6 pb-4 border-b border-neutral-200/80">
                   <div className="flex items-center gap-unit-2">
-                    <span className="material-symbols-outlined text-primary" style={{ fontSize: '22px' }}>{icons[colIndex]}</span>
+                    <span className="material-symbols-outlined text-primary" style={{ fontSize: '22px' }} aria-hidden="true">{icons[colIndex]}</span>
                     <h3 className="font-headline-sm text-xl font-bold text-primary tracking-tight">{colData.title}</h3>
                   </div>
                   <span className="font-mono uppercase text-neutral-400" style={{ fontSize: '10px' }}>{colData.count}</span>
@@ -37,7 +37,7 @@ export function WhatIncludes() {
                 <ul className="space-y-unit-3 font-body-md text-body-md text-on-surface-variant">
                   {colData.items.map((item: string) => (
                     <li key={item} className="flex items-center gap-unit-3 py-1 border-b border-neutral-100">
-                      <span className="w-1.5 h-1.5 bg-black shrink-0" />
+                      <span className="w-1.5 h-1.5 bg-black shrink-0" aria-hidden="true" />
                       {item}
                     </li>
                   ))}

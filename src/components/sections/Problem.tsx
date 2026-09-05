@@ -12,17 +12,17 @@ export function Problem() {
   ];
 
   return (
-    <section className="w-full bg-[#F4F3F1] py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="problema">
+    <section className="w-full bg-[#F4F3F1] py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="problema" aria-labelledby="problem-title">
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-unit-12 gap-4">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 mb-unit-3">
-              <span className="w-1.5 h-1.5 bg-black" />
+              <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
               <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
                 {t('problem.sectionLabel')}
               </span>
             </div>
-            <h2 className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold">
+            <h2 id="problem-title" className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold">
               {t('problem.title')}
             </h2>
           </div>
@@ -48,7 +48,7 @@ export function Problem() {
                 </div>
                 <div className="pt-unit-8 mt-4 border-t border-neutral-100 flex items-center justify-between text-on-surface-variant font-mono" style={{ fontSize: '11px' }}>
                   <span className="flex items-center gap-1.5 text-neutral-700">
-                    <span className="material-symbols-outlined" style={{ fontSize: '17px' }}>{problem.icon}</span>
+                    <span className="material-symbols-outlined" style={{ fontSize: '17px' }} aria-hidden="true">{problem.icon}</span>
                     {problemData.status}
                   </span>
                   <span className={`${problem.metricColor} font-semibold`}>{problemData.metric}</span>
@@ -60,7 +60,7 @@ export function Problem() {
 
         <div className="mt-unit-10 bg-black text-white p-unit-8 rounded-2xl border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-unit-6 shadow-2xl">
           <div className="flex items-center gap-4">
-            <span className="w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-emerald-400/20 shrink-0" />
+            <span className="w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-emerald-400/20 shrink-0" aria-hidden="true" />
             <p className="font-headline-sm text-[21px] font-medium tracking-tight text-white">
               {t('problem.cta')}
             </p>

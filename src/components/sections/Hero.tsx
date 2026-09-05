@@ -20,7 +20,7 @@ export function Hero() {
   });
 
   return (
-    <section className="relative w-full bg-surface-container-lowest pt-unit-12 pb-unit-20 md:pt-unit-16 md:pb-unit-28 overflow-hidden noise-bg border-b border-black/[0.06]">
+    <section className="relative w-full bg-surface-container-lowest pt-unit-12 pb-unit-20 md:pt-unit-16 md:pb-unit-28 overflow-hidden noise-bg border-b border-black/[0.06]" id="hero" aria-labelledby="hero-title">
       <div className="absolute inset-0 pointer-events-none grid grid-cols-12 max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="border-l border-r border-black/[0.03] col-span-12 h-full" />
       </div>
@@ -28,10 +28,10 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col items-start">
             <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-100 border border-neutral-200/90 text-neutral-800 font-mono font-semibold uppercase tracking-wider mb-unit-6 shadow-sm" style={{ fontSize: '11px' }}>
-              <span className="w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-emerald-500/20" />
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-emerald-500/20" aria-hidden="true" />
               {t('hero.pill')}
             </div>
-            <h1 className="text-display-xl-mobile md:text-display-xl text-black mb-unit-6 font-extrabold leading-[1.04]" style={{ letterSpacing: '-0.04em' }}>
+            <h1 id="hero-title" className="text-display-xl-mobile md:text-display-xl text-black mb-unit-6 font-extrabold leading-[1.04]" style={{ letterSpacing: '-0.04em' }}>
               {t('hero.title')}
             </h1>
             <div className="space-y-unit-3 mb-unit-8 max-w-2xl">
@@ -59,16 +59,16 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 w-full">
-            <div className="relative bg-neutral-950 text-white rounded-2xl p-5 border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.25)] overflow-hidden">
+            <div className="lg:col-span-5 w-full">
+            <div className="relative bg-neutral-950 text-white rounded-2xl p-5 border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.25)] overflow-hidden" role="region" aria-label="Métricas del proyecto">
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-neutral-800/80 font-mono text-neutral-400" style={{ fontSize: '11px' }}>
                 <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/80 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/80 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/80 inline-block" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/80 inline-block" aria-hidden="true" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/80 inline-block" aria-hidden="true" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/80 inline-block" aria-hidden="true" />
                 </div>
                 <span className="text-neutral-400 flex items-center gap-1">
-                  <span className="material-symbols-outlined" style={{ fontSize: '13px' }}>lock</span>
+                  <span className="material-symbols-outlined" style={{ fontSize: '13px' }} aria-hidden="true">lock</span>
                   catcode.studio/live
                 </span>
                 <div className="flex items-center gap-2">
@@ -83,9 +83,9 @@ export function Hero() {
                       onClick={refetch}
                       disabled={isLoading}
                       className="text-neutral-500 hover:text-white transition-colors disabled:opacity-50"
-                      title="Refetch metrics"
+                      aria-label="Refrescar métricas"
                     >
-                      <span className="material-symbols-outlined" style={{ fontSize: '13px' }}>refresh</span>
+                      <span className="material-symbols-outlined" style={{ fontSize: '13px' }} aria-hidden="true">refresh</span>
                     </button>
                   )}
                   <span className="text-emerald-400 font-bold" style={{ fontSize: '10px' }}>200 OK</span>
@@ -95,7 +95,7 @@ export function Hero() {
                 <div className="bg-neutral-900/90 rounded-xl p-4 border border-neutral-800">
                   <div className="flex items-center justify-between text-xs font-mono text-neutral-400 mb-2">
                     <span className="flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true" />
                       {t('hero.terminal.architecture')}
                     </span>
                     <span className="text-neutral-500">{t('hero.terminal.tech')}</span>
@@ -133,8 +133,8 @@ export function Hero() {
             { num: '02', titleKey: 'hero.features.noCommitment.title', descKey: 'hero.features.noCommitment.desc' },
             { num: '03', titleKey: 'hero.features.adapted.title', descKey: 'hero.features.adapted.desc' },
           ].map((item) => (
-            <div key={item.num} className="bg-white/80 p-4 rounded-xl border border-black/[0.08] flex items-center gap-3.5 shadow-sm hover:border-black/20 transition-all">
-              <div className="w-9 h-9 rounded-lg bg-neutral-100 flex items-center justify-center text-black shrink-0 font-mono text-xs font-bold border border-neutral-200">
+              <div key={item.num} className="bg-white/80 p-4 rounded-xl border border-black/[0.08] flex items-center gap-3.5 shadow-sm hover:border-black/20 transition-all">
+              <div className="w-9 h-9 rounded-lg bg-neutral-100 flex items-center justify-center text-black shrink-0 font-mono text-xs font-bold border border-neutral-200" aria-hidden="true">
                 {item.num}
               </div>
               <div>

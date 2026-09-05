@@ -21,16 +21,16 @@ export function Portfolio() {
   const items = [0, 1, 2];
 
   return (
-    <section className="w-full bg-surface-container-lowest py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="portfolio">
+    <section className="w-full bg-surface-container-lowest py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="portfolio" aria-labelledby="portfolio-title">
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" />
+            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
             <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
               {t('portfolio.sectionLabel')}
             </span>
           </div>
-          <h2 className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold mb-unit-2">
+          <h2 id="portfolio-title" className="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary tracking-tight font-bold mb-unit-2">
             {t('portfolio.title')}
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant">{t('portfolio.subtitle')}</p>
@@ -45,9 +45,9 @@ export function Portfolio() {
                 <div>
                   <div className="px-4 py-2.5 bg-neutral-100 border-b border-neutral-200 flex items-center justify-between font-mono text-neutral-500" style={{ fontSize: '10px' }}>
                     <div className="flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-neutral-300" />
-                      <span className="w-2 h-2 rounded-full bg-neutral-300" />
-                      <span className="w-2 h-2 rounded-full bg-neutral-300" />
+                      <span className="w-2 h-2 rounded-full bg-neutral-300" aria-hidden="true" />
+                      <span className="w-2 h-2 rounded-full bg-neutral-300" aria-hidden="true" />
+                      <span className="w-2 h-2 rounded-full bg-neutral-300" aria-hidden="true" />
                     </div>
                     <span>{itemData.domain}</span>
                     <span className="text-neutral-400">{itemData.resolution}</span>
@@ -55,6 +55,9 @@ export function Portfolio() {
                   <div className="w-full h-60 bg-neutral-100 overflow-hidden relative">
                     <img
                       alt={img.imgAlt}
+                      width={640}
+                      height={240}
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       src={img.imgSrc}
                       loading="lazy"
