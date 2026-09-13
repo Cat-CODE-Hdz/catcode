@@ -31,22 +31,17 @@ export function Header() {
         <div className="max-w-[1280px] mx-auto px-4 md:px-gutter-desktop">
           <div className="h-16 px-5 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-between">
             <div className="flex items-center gap-8">
-              <a className="flex items-center gap-2.5 group" href="#" aria-label="CAT CODE - Inicio">
-                <span className="w-2.5 h-2.5 bg-black rounded-none rotate-45 transition-transform duration-300 group-hover:rotate-90" aria-hidden="true" />
+              <a className="flex items-center gap-3 group" href="#" aria-label="CAT CODE - Inicio">
+                <div className="w-8 h-8 rounded-lg p-0.5 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:border-[#FFB800] transition-all duration-300 ease-out">
+                  <img alt="CAT CODE Logo" className="w-full h-full object-contain" src="/catcode/catcode-icon.png" />
+                </div>
                 <span className="font-headline-sm text-[19px] tracking-tight font-bold text-primary">CAT CODE</span>
-                <span
-                  className="font-mono uppercase tracking-widest text-neutral-500 bg-neutral-100 border border-neutral-200/80 px-2 py-0.5 rounded-full font-semibold"
-                  style={{ fontSize: '10px' }}
-                  aria-hidden="true"
-                >
-                  v{__APP_VERSION__}
-                </span>
               </a>
               <nav className="hidden md:flex items-center gap-unit-6" aria-label="Navegación principal">
                 {navLinks.map((link) => (
                   <a
                     key={link.path}
-                    className="font-label-md text-label-md text-on-surface-variant hover:text-black transition-colors duration-150 relative py-1 hover:after:w-full after:w-0 after:h-[1.5px] after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all"
+                    className="font-label-md text-label-md text-on-surface-variant hover:text-black transition-colors duration-150 relative py-1 hover:after:w-full after:w-0 after:h-[1.5px] after:bg-[#FFB800] after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-200"
                     href={link.href}
                   >
                     {link.label}
@@ -57,36 +52,31 @@ export function Header() {
             <div className="flex items-center gap-unit-3">
               <button
                 onClick={toggleLanguage}
-                className="h-9 px-3 rounded-xl bg-neutral-100 border border-neutral-200 font-mono text-xs font-semibold uppercase tracking-wider text-neutral-700 hover:bg-neutral-200 transition-colors"
+                className="h-7 px-2 rounded-lg bg-neutral-100 border border-neutral-200/80 font-mono text-[10px] font-semibold uppercase tracking-wider text-neutral-600 hover:bg-neutral-200 transition-colors active:scale-95"
                 type="button"
                 aria-label={i18n.language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
               >
                 {i18n.language === 'es' ? 'EN' : 'ES'}
               </button>
               <a
-                className="relative group inline-flex items-center justify-center h-10 px-unit-5 rounded-xl bg-black hover:bg-neutral-900 text-white font-label-md text-label-md tracking-normal transition-all duration-150 shadow-[0_2px_8px_rgba(0,0,0,0.12)] active:scale-95"
+                className="relative group inline-flex items-center justify-center h-10 px-unit-5 rounded-xl bg-black hover:bg-neutral-900 text-white font-label-md text-label-md tracking-normal transition-all duration-150 shadow-[0_2px_8px_rgba(0,0,0,0.12)] active:scale-95 btn-amber-glow"
                 href="#contacto"
               >
                 <span className="flex items-center gap-1.5 font-medium">
-                  {t('header.start')} <span className="transition-transform duration-150 group-hover:translate-x-0.5" aria-hidden="true">→</span>
+                  {t('header.start')} <span className="text-[#FFB800] transition-transform duration-150 group-hover:translate-x-0.5" aria-hidden="true">→</span>
                 </span>
               </a>
               <button
-                className="w-9 h-9 rounded-xl bg-neutral-100 border border-neutral-200 flex items-center justify-center shrink-0 text-neutral-800"
-                aria-label={t('header.clientSession')}
-              >
-                <span className="material-symbols-outlined" style={{ fontSize: '19px' }} aria-hidden="true">person</span>
-              </button>
-              <button
-                className="md:hidden w-9 h-9 rounded-xl bg-neutral-100 border border-neutral-200 flex items-center justify-center shrink-0 text-neutral-800"
+                className="w-10 h-10 rounded-xl bg-neutral-100 hover:bg-neutral-200 border border-neutral-200 flex flex-col items-center justify-center gap-1 shrink-0 text-neutral-800 transition-colors active:scale-95 md:hidden"
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label={mobileOpen ? 'Cerrar menú' : 'Abrir menú'}
                 aria-expanded={mobileOpen}
                 aria-controls="mobile-nav"
+                type="button"
               >
-                <span className="material-symbols-outlined" style={{ fontSize: '19px' }} aria-hidden="true">
-                  {mobileOpen ? 'close' : 'menu'}
-                </span>
+                <span className="w-4 h-[1.5px] bg-black rounded-full" />
+                <span className="w-4 h-[1.5px] bg-black rounded-full" />
+                <span className="w-4 h-[1.5px] bg-black rounded-full" />
               </button>
             </div>
           </div>

@@ -10,8 +10,8 @@ export function WhyCatCode() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-            <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
+            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('whyCatCode.sectionLabel')}
             </span>
           </div>
@@ -24,7 +24,7 @@ export function WhyCatCode() {
           {criteria.map((index) => {
             const itemData = t(`whyCatCode.criteria.${index}`, { returnObjects: true }) as any;
             return (
-              <div key={itemData.num} className="bg-white p-unit-8 rounded-2xl border border-neutral-300/70 shadow-sm">
+              <div key={itemData.num} className="bg-white p-unit-8 rounded-2xl border border-neutral-300/70 shadow-sm card-hover-lift">
                 <div className="font-mono text-xs text-neutral-400 font-bold mb-4">CRITERIO {itemData.num}</div>
                 <div className="font-headline-sm text-xl font-bold text-primary mb-unit-3">{itemData.title}</div>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{itemData.description}</p>

@@ -15,8 +15,8 @@ export function Solution() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-            <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
+            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('solution.sectionLabel')}
             </span>
           </div>
@@ -32,19 +32,19 @@ export function Solution() {
             return (
               <div
                 key={sol.num}
-                className={`relative group p-unit-8 rounded-2xl flex flex-col justify-between transition-all duration-200 ${
+                className={`relative group p-unit-8 rounded-2xl flex flex-col justify-between transition-all duration-200 card-hover-lift ${
                   isHighlighted
-                    ? 'bg-black text-white shadow-[0_15px_35px_rgba(0,0,0,0.3)] border border-neutral-700'
-                    : 'bg-white border border-neutral-200/90 shadow-sm hover:border-black/40 hover:shadow-md'
+                    ? 'bg-black text-white shadow-[0_15px_35px_rgba(0,0,0,0.3)] border border-neutral-700 hover:border-[#FFB800]/70'
+                    : 'bg-white border border-neutral-200/90 shadow-sm hover:border-[#FFB800]/60'
                 }`}
               >
                 {solData.badge && (
-                  <div className="absolute -top-3.5 right-6 bg-white text-black font-mono uppercase font-bold px-3 py-1 rounded-full shadow-lg border border-neutral-200 tracking-wider" style={{ fontSize: '10px' }}>
+                  <div className="absolute -top-3.5 right-6 bg-[#FFB800] text-black font-mono text-[10px] uppercase font-bold px-3 py-1 rounded-full shadow-lg tracking-wider">
                     {solData.badge}
                   </div>
                 )}
                 <div className="relative">
-                  <div className={`font-mono uppercase tracking-widest mb-2 font-semibold ${isHighlighted ? 'text-neutral-400' : 'text-neutral-500'}`} style={{ fontSize: '10px' }}>
+                  <div className={`font-mono text-[10px] uppercase tracking-widest mb-2 font-semibold ${isHighlighted ? 'text-neutral-400' : 'text-neutral-500'}`}>
                     {solData.num} / {solData.category}
                   </div>
                   <div className="font-headline-sm text-2xl font-bold mb-1" style={{ color: isHighlighted ? 'white' : undefined }}>
@@ -58,10 +58,10 @@ export function Solution() {
                   </p>
                 </div>
                 <div className={`pt-unit-6 border-t ${isHighlighted ? 'border-neutral-800' : 'border-neutral-100'}`}>
-                  <div className={`font-mono uppercase tracking-wider ${isHighlighted ? 'text-neutral-400' : 'text-neutral-500'}`} style={{ fontSize: '11px' }}>
+                  <div className={`font-mono text-[11px] uppercase tracking-wider ${isHighlighted ? 'text-neutral-400' : 'text-neutral-500'}`}>
                     {t('solution.investment')}
                   </div>
-                  <div className="font-headline-sm text-[21px] font-bold mt-1" style={{ color: isHighlighted ? 'white' : undefined }}>
+                  <div className={`font-headline-sm text-2xl font-extrabold mt-1 ${isHighlighted ? 'text-[#FFB800]' : 'text-primary'}`}>
                     {solData.price}
                     {solData.priceExtra && (
                       <span className="font-body-sm text-body-sm font-normal text-neutral-500 block sm:inline">

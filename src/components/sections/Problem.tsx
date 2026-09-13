@@ -17,8 +17,8 @@ export function Problem() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-unit-12 gap-4">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 mb-unit-3">
-              <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-              <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
+              <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+              <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
                 {t('problem.sectionLabel')}
               </span>
             </div>
@@ -35,7 +35,7 @@ export function Problem() {
           {problems.map((problem, index) => {
             const problemData = t(`problem.problems.${index}`, { returnObjects: true }) as any;
             return (
-              <div key={problem.num} className="bg-white p-unit-8 rounded-2xl border border-neutral-300/80 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col justify-between hover:border-black/30 transition-all">
+              <div key={problem.num} className="bg-white p-unit-8 rounded-2xl border border-neutral-300/80 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col justify-between hover:border-[#FFB800]/60 card-hover-lift">
                 <div>
                   <div className="flex items-center justify-between pb-4 mb-5 border-b border-neutral-200 font-mono text-xs text-neutral-500">
                     <span className="font-semibold text-black">{problem.num} — {problemData.category}</span>
@@ -60,13 +60,13 @@ export function Problem() {
 
         <div className="mt-unit-10 bg-black text-white p-unit-8 rounded-2xl border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-unit-6 shadow-2xl">
           <div className="flex items-center gap-4">
-            <span className="w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-emerald-400/20 shrink-0" aria-hidden="true" />
+            <span className="w-3 h-3 rounded-full bg-[#FFB800] ring-4 ring-[#FFB800]/25 shrink-0 amber-pulse" aria-hidden="true" />
             <p className="font-headline-sm text-[21px] font-medium tracking-tight text-white">
               {t('problem.cta')}
             </p>
           </div>
-          <a className="inline-flex items-center gap-2 text-white font-mono text-xs uppercase tracking-widest px-5 py-3 rounded-xl bg-neutral-900 border border-neutral-700 hover:bg-neutral-800 hover:border-neutral-500 transition-all shrink-0" href="#solucion">
-            {t('problem.ctaButton')}
+          <a className="inline-flex items-center gap-2 text-white font-mono text-xs uppercase tracking-widest px-5 py-3 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-[#FFB800] hover:text-[#FFB800] transition-all shrink-0 active:scale-95" href="#solucion">
+            {t('problem.ctaButton')} ↓
           </a>
         </div>
       </div>

@@ -12,8 +12,8 @@ export function FAQ() {
       <div className="max-w-4xl mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="mb-unit-16 text-left">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-            <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
+            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('faq.sectionLabel')}
             </span>
           </div>
@@ -22,14 +22,14 @@ export function FAQ() {
           </h2>
         </div>
 
-        <div className="space-y-unit-3" role="list">
+        <div className="space-y-unit-3" id="faq-accordion" role="list">
           {items.map((index) => {
             const itemData = t(`faq.items.${index}`, { returnObjects: true }) as any;
             const isOpen = openIndex === index;
             const buttonId = `faq-btn-${index}`;
             const panelId = `faq-panel-${index}`;
             return (
-              <div key={itemData.question} className="bg-[#FAF9F7] rounded-xl p-unit-6 border border-neutral-200/90 hover:border-black/30 transition-all" role="listitem">
+              <div key={itemData.question} className={`faq-item bg-[#FAF9F7] rounded-xl p-unit-6 border border-neutral-200/90 hover:border-[#FFB800]/60 transition-all duration-200 ${isOpen ? 'is-open' : ''}`} role="listitem">
                 <h3>
                   <button
                     id={buttonId}
@@ -41,24 +41,24 @@ export function FAQ() {
                   >
                     <span>{itemData.question}</span>
                     <span
-                      className="material-symbols-outlined transition-transform duration-200 text-neutral-500 shrink-0"
-                      style={{
-                        transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                      }}
+                      className="material-symbols-outlined faq-chevron transition-transform duration-300 text-neutral-500 shrink-0"
                       aria-hidden="true"
                     >
                       expand_more
                     </span>
                   </button>
                 </h3>
-                <div
-                  id={panelId}
-                  role="region"
-                  aria-labelledby={buttonId}
-                  className="mt-unit-4 pt-unit-4 text-on-surface-variant font-body-md text-body-md border-t border-neutral-200/80"
-                  hidden={!isOpen}
-                >
-                  {itemData.answer}
+                <div className="faq-answer-container">
+                  <div className="overflow-hidden">
+                    <div
+                      id={panelId}
+                      role="region"
+                      aria-labelledby={buttonId}
+                      className="mt-unit-4 pt-unit-4 text-on-surface-variant font-body-md text-body-md border-t border-neutral-200/80"
+                    >
+                      {itemData.answer}
+                    </div>
+                  </div>
                 </div>
               </div>
             );

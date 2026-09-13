@@ -21,8 +21,8 @@ export function Pricing() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-10">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-            <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
+            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('pricing.sectionLabel')}
             </span>
           </div>
@@ -77,8 +77,8 @@ export function Pricing() {
             </div>
 
             {cat.id === 'full' ? (
-              <div className="max-w-3xl bg-black text-white p-unit-10 rounded-3xl relative shadow-[0_20px_50px_rgba(0,0,0,0.25)] border border-neutral-700">
-                <span className="absolute -top-3.5 right-8 bg-white text-black font-mono uppercase px-3 py-1 rounded-full font-bold tracking-wider shadow-md" style={{ fontSize: '10px' }} aria-hidden="true">
+              <div className="max-w-3xl bg-black text-white p-unit-10 rounded-3xl relative shadow-[0_20px_50px_rgba(0,0,0,0.25)] border border-neutral-700 card-hover-lift hover:border-[#FFB800]/80">
+                <span className="absolute -top-3.5 right-8 bg-[#FFB800] text-black font-mono text-[10px] uppercase px-3 py-1 rounded-full font-bold tracking-wider shadow-md" aria-hidden="true">
                   {getTabData(cat.id).plans.full.badge}
                 </span>
                 <div>
@@ -92,14 +92,14 @@ export function Pricing() {
                   <div className="space-y-unit-3 pt-unit-6 pb-unit-8 text-neutral-200 font-body-md text-body-md border-t border-neutral-800">
                     {cat.plans[0].features?.map((feature) => (
                       <div key={feature} className="flex items-center gap-unit-3">
-                        <span className="material-symbols-outlined text-emerald-400" style={{ fontSize: '20px' }} aria-hidden="true">check_circle</span>
+                        <span className="material-symbols-outlined text-[#FFB800]" style={{ fontSize: '20px' }} aria-hidden="true">check_circle</span>
                         {feature}
                       </div>
                     ))}
                   </div>
                 </div>
-                <a className="inline-flex items-center justify-center w-full h-[54px] px-unit-6 rounded-xl bg-white hover:bg-neutral-100 text-black font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-md active:scale-[0.99]" href="#contacto">
-                  {getTabData(cat.id).plans.full.cta} →
+                <a className="inline-flex items-center justify-center w-full h-[54px] px-unit-6 rounded-xl bg-white hover:bg-neutral-100 text-black font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-md active:scale-[0.99] btn-amber-glow" href="#contacto">
+                  {getTabData(cat.id).plans.full.cta} <span className="text-[#FFB800] ml-1.5">→</span>
                 </a>
               </div>
             ) : (
@@ -109,14 +109,14 @@ export function Pricing() {
                   return (
                     <div
                       key={plan.name}
-                      className={`bg-white p-unit-8 rounded-2xl flex flex-col justify-between transition-all ${
+                      className={`bg-white p-unit-8 rounded-2xl flex flex-col justify-between transition-all card-hover-lift ${
                         plan.highlighted
                           ? 'border-2 border-black shadow-[0_12px_30px_rgba(0,0,0,0.06)] relative'
-                          : 'border border-neutral-300/80 shadow-sm hover:border-black/30'
+                          : 'border border-neutral-300/80 shadow-sm hover:border-[#FFB800]/60'
                       }`}
                     >
                       {planData.badge && (
-                        <span className="absolute -top-3 right-6 bg-black text-white font-mono uppercase px-3 py-1 rounded-full font-bold tracking-wider" style={{ fontSize: '10px' }} aria-hidden="true">
+                        <span className="absolute -top-3 right-6 bg-black text-[#FFB800] border border-[#FFB800]/40 font-mono text-[10px] uppercase px-3 py-1 rounded-full font-bold tracking-wider shadow-sm" aria-hidden="true">
                           {planData.badge}
                         </span>
                       )}
@@ -125,7 +125,7 @@ export function Pricing() {
                           <span className={`font-semibold uppercase tracking-wider ${plan.highlighted ? 'text-black font-bold' : 'text-black'}`}>
                             {planData.name}
                           </span>
-                          {plan.tier && <span className={plan.highlighted ? 'text-black font-semibold' : ''}>{plan.tier}</span>}
+                          {plan.tier && <span className={plan.highlighted ? 'text-[#FFB800] font-bold' : ''}>{plan.tier}</span>}
                         </div>
                         <div className="font-headline-md text-[34px] font-extrabold text-primary tracking-tight">
                           {plan.setupPrice || plan.monthlyPrice.replace('/mes', '')}
@@ -139,7 +139,7 @@ export function Pricing() {
                         )}
                         {plan.features && (
                           <div className="font-body-md text-body-md text-primary font-semibold mt-2 flex items-center gap-1.5">
-                            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
+                            <span className="w-1.5 h-1.5 bg-[#FFB800]" aria-hidden="true" />
                             {plan.features[0]}
                           </div>
                         )}
@@ -150,12 +150,13 @@ export function Pricing() {
                       <a
                         className={`mt-unit-8 inline-flex items-center justify-center h-12 px-unit-5 rounded-xl font-mono text-xs uppercase tracking-wider font-semibold transition-colors ${
                           plan.highlighted
-                            ? 'bg-black hover:bg-neutral-800 text-white'
-                            : 'bg-neutral-100 hover:bg-neutral-200 text-primary border border-neutral-300/70'
+                            ? 'bg-black hover:bg-neutral-800 text-white btn-amber-glow'
+                            : 'bg-neutral-100 hover:bg-neutral-200 text-primary border border-neutral-300/70 hover:border-[#FFB800]'
                         }`}
                         href="#contacto"
                       >
-                        {planData.cta} →
+                        {planData.cta} {plan.highlighted && <span className="text-[#FFB800] ml-1">→</span>}
+                        {!plan.highlighted && ' →'}
                       </a>
                     </div>
                   );
@@ -165,7 +166,7 @@ export function Pricing() {
 
             {cat.note && (
               <div className="mt-unit-6 p-4 rounded-xl bg-neutral-200/80 border border-neutral-300/70 text-on-surface-variant font-mono text-xs flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-black" style={{ fontSize: '16px' }} aria-hidden="true">info</span>
+                <span className="material-symbols-outlined text-[#FFB800]" style={{ fontSize: '16px' }} aria-hidden="true">info</span>
                 <span>{getTabData(cat.id).note}</span>
               </div>
             )}

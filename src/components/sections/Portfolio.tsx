@@ -25,8 +25,8 @@ export function Portfolio() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-            <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
+            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('portfolio.sectionLabel')}
             </span>
           </div>
@@ -41,7 +41,7 @@ export function Portfolio() {
             const itemData = t(`portfolio.items.${index}`, { returnObjects: true }) as any;
             const img = imgData[index];
             return (
-              <div key={itemData.name} className="bg-white rounded-2xl overflow-hidden border border-neutral-200 shadow-sm flex flex-col justify-between group hover:border-black/40 hover:shadow-xl transition-all duration-300">
+              <div key={itemData.name} className="bg-white rounded-2xl overflow-hidden border border-neutral-200 shadow-sm flex flex-col justify-between group hover:border-[#FFB800] hover:shadow-xl transition-all duration-300 card-hover-lift">
                 <div>
                   <div className="px-4 py-2.5 bg-neutral-100 border-b border-neutral-200 flex items-center justify-between font-mono text-neutral-500" style={{ fontSize: '10px' }}>
                     <div className="flex items-center gap-1.5">
@@ -66,7 +66,7 @@ export function Portfolio() {
                   <div className="p-unit-6">
                     <div className="flex items-center justify-between gap-unit-2 mb-unit-3">
                       <span className="font-mono text-xs uppercase tracking-wider text-neutral-500">{itemData.category}</span>
-                      <span className="font-mono px-2 py-0.5 rounded-full bg-neutral-100 border border-neutral-200 text-black font-semibold" style={{ fontSize: '10px' }}>
+                      <span className="font-mono text-[10px] px-2 py-0.5 rounded-full bg-neutral-100 border border-neutral-200 text-black font-semibold">
                         {itemData.badge}
                       </span>
                     </div>
@@ -75,8 +75,8 @@ export function Portfolio() {
                   </div>
                 </div>
                 <div className="px-unit-6 pb-unit-6 pt-2">
-                  <a className="inline-flex items-center justify-center w-full h-11 rounded-xl bg-neutral-100 group-hover:bg-black group-hover:text-white text-black font-mono text-xs uppercase tracking-wider font-semibold transition-all duration-200 border border-neutral-200 group-hover:border-black" href="#contacto">
-                    {t('portfolio.cta')} {itemData.demoPath} →
+                  <a className="inline-flex items-center justify-center w-full h-11 rounded-xl bg-neutral-100 group-hover:bg-black group-hover:text-white text-black font-mono text-xs uppercase tracking-wider font-semibold transition-all duration-200 border border-neutral-200 group-hover:border-black active:scale-[0.98]" href="#contacto">
+                    {t('portfolio.cta')} {itemData.demoPath} <span className="text-[#FFB800] ml-1">→</span>
                   </a>
                 </div>
               </div>

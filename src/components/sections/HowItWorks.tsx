@@ -10,8 +10,8 @@ export function HowItWorks() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-            <span className="font-mono uppercase tracking-widest text-neutral-500 font-semibold" style={{ fontSize: '11px' }}>
+            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('howItWorks.sectionLabel')}
             </span>
           </div>
@@ -24,9 +24,9 @@ export function HowItWorks() {
           {steps.map((num, index) => {
             const stepData = t(`howItWorks.steps.${index}`, { returnObjects: true }) as any;
             return (
-              <div key={num} className="bg-white p-unit-8 rounded-2xl border border-neutral-300/70 shadow-sm relative group hover:border-black/30 transition-all">
+              <div key={num} className="bg-white p-unit-8 rounded-2xl border border-neutral-300/70 shadow-sm relative group card-hover-lift">
                 <div className="font-mono text-xs font-bold text-neutral-400 mb-6 flex items-center justify-between">
-                  <span className="w-8 h-8 rounded-lg bg-neutral-100 flex items-center justify-center text-black border border-neutral-200">
+                  <span className="w-8 h-8 rounded-lg bg-neutral-100 flex items-center justify-center text-black border border-neutral-200 group-hover:border-[#FFB800] group-hover:text-[#FFB800] transition-colors">
                     {stepData.num}
                   </span>
                   <span>{stepData.phase}</span>
