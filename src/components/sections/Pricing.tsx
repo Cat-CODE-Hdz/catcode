@@ -92,7 +92,7 @@ export function Pricing() {
                   <div className="space-y-unit-3 pt-unit-6 pb-unit-8 text-neutral-200 font-body-md text-body-md border-t border-neutral-800">
                     {cat.plans[0].features?.map((feature) => (
                       <div key={feature} className="flex items-center gap-unit-3">
-                        <span className="material-symbols-outlined text-emerald-400" style={{ fontSize: '20px' }} aria-hidden="true">check_circle</span>
+                        <span className="material-symbols-outlined text-[#FFB800]" style={{ fontSize: '20px' }} aria-hidden="true">check_circle</span>
                         {feature}
                       </div>
                     ))}

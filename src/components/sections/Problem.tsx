@@ -60,7 +60,7 @@ export function Problem() {
 
         <div className="mt-unit-10 bg-black text-white p-unit-8 rounded-2xl border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-unit-6 shadow-2xl">
           <div className="flex items-center gap-4">
-            <span className="w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-emerald-400/20 shrink-0" aria-hidden="true" />
+            <span className="w-3 h-3 rounded-full bg-[#FFB800] ring-4 ring-[#FFB800]/20 shrink-0" aria-hidden="true" />
             <p className="font-headline-sm text-[21px] font-medium tracking-tight text-white">
               {t('problem.cta')}
             </p>

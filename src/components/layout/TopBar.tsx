@@ -11,7 +11,7 @@ export function TopBar() {
     >
       <div className="flex items-center gap-3">
         <span className="inline-flex items-center gap-1.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800] animate-pulse" />
           <span className="text-neutral-300 uppercase tracking-wider font-mono">{t('topbar.capacity')}</span>
         </span>
         <span className="text-neutral-500 hidden sm:inline">|</span>

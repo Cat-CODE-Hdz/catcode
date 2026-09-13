@@ -28,7 +28,7 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col items-start">
             <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-100 border border-neutral-200/90 text-neutral-800 font-mono font-semibold uppercase tracking-wider mb-unit-6 shadow-sm" style={{ fontSize: '11px' }}>
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-emerald-500/20" aria-hidden="true" />
+                  <span className="w-2 h-2 rounded-full bg-[#FFB800] ring-2 ring-[#FFB800]/20" aria-hidden="true" />
               {t('hero.pill')}
             </div>
             <h1 id="hero-title" className="text-display-xl-mobile md:text-display-xl text-black mb-unit-6 font-extrabold leading-[1.04]" style={{ letterSpacing: '-0.04em' }}>
@@ -73,7 +73,7 @@ export function Hero() {
                 </span>
                 <div className="flex items-center gap-2">
                   {isLive && (
-                    <span className="text-emerald-400" style={{ fontSize: '9px' }}>● LIVE</span>
+                    <span className="text-[#FFB800]" style={{ fontSize: '9px' }}>● LIVE</span>
                   )}
                   {isLoading && (
                     <span className="text-yellow-400 animate-pulse" style={{ fontSize: '9px' }}>● FETCHING</span>
@@ -88,14 +88,14 @@ export function Hero() {
                       <span className="material-symbols-outlined" style={{ fontSize: '13px' }} aria-hidden="true">refresh</span>
                     </button>
                   )}
-                  <span className="text-emerald-400 font-bold" style={{ fontSize: '10px' }}>200 OK</span>
+                  <span className="text-[#FFB800] font-bold" style={{ fontSize: '10px' }}>200 OK</span>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="bg-neutral-900/90 rounded-xl p-4 border border-neutral-800">
                   <div className="flex items-center justify-between text-xs font-mono text-neutral-400 mb-2">
                     <span className="flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800]" aria-hidden="true" />
                       {t('hero.terminal.architecture')}
                     </span>
                     <span className="text-neutral-500">{t('hero.terminal.tech')}</span>
@@ -106,7 +106,7 @@ export function Hero() {
                 <div className="grid grid-cols-3 gap-2 font-mono">
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center">
                     <div className="uppercase text-neutral-400 tracking-wider" style={{ fontSize: '10px' }}>{t('hero.terminal.performance')}</div>
-                    <div className="text-lg font-bold text-emerald-400 mt-0.5">{metrics.performance}/100</div>
+                    <div className="text-lg font-bold text-[#FFB800] mt-0.5">{metrics.performance}/100</div>
                   </div>
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center">
                     <div className="uppercase text-neutral-400 tracking-wider" style={{ fontSize: '10px' }}>{t('hero.terminal.loading')}</div>
@@ -119,7 +119,7 @@ export function Hero() {
                 </div>
                 <div className="bg-black/60 rounded-xl p-3.5 border border-neutral-800 font-mono leading-relaxed text-neutral-300" style={{ fontSize: '11px' }}>
                   <div className="text-neutral-500">// {t('hero.terminal.pipeline')}</div>
-                  <div className="text-emerald-300">&gt; catcode.deploy({'{'} landing: true, social: '5_posts/wk' {'}'})</div>
+                  <div className="text-[#FFB800]">&gt; catcode.deploy({'{'} landing: true, social: '5_posts/wk' {'}'})</div>
                   <div className="text-neutral-400 mt-1">{t('hero.terminal.ssl')}</div>
                 </div>
               </div>
