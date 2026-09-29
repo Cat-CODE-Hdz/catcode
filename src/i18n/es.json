@@ -234,7 +234,7 @@
         "badge": "LANDING · BUSINESS",
         "name": "CASA NORA",
         "description": "Una presencia digital elegante y directa para un restaurante que quiere mostrar su propuesta, su carta y facilitar las reservas.",
-        "demoPath": "/casa-nora"
+        "demoUrl": "https://cat-code-hdz.github.io/casa-nora/"
       },
       {
         "domain": "estudiolumen.com",
@@ -243,7 +243,7 @@
         "badge": "LANDING · START",
         "name": "ESTUDIO LUMEN",
         "description": "Una landing limpia y visual para un estudio de belleza que quiere presentar sus servicios y convertir visitas en solicitudes de cita.",
-        "demoPath": "/estudio-lumen"
+        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       },
       {
         "domain": "rutanorte.eus",
@@ -252,7 +252,7 @@
         "badge": "LANDING · PRO",
         "name": "RUTA NORTE",
         "description": "Una presencia digital orientada a servicios y experiencias, diseñada para explicar la oferta rápidamente y generar contactos.",
-        "demoPath": "/ruta-norte"
+        "demoUrl": "https://cat-code-hdz.github.io/ruta-norte/"
       }
     ]
   },

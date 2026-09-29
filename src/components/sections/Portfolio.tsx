@@ -75,8 +75,8 @@ export function Portfolio() {
                   </div>
                 </div>
                 <div className="px-unit-6 pb-unit-6 pt-2">
-                  <a className="inline-flex items-center justify-center w-full h-11 rounded-xl bg-neutral-100 group-hover:bg-black group-hover:text-white text-black font-mono text-xs uppercase tracking-wider font-semibold transition-all duration-200 border border-neutral-200 group-hover:border-black active:scale-[0.98]" href="#contacto">
-                    {t('portfolio.cta')} {itemData.demoPath} <span className="text-[#FFB800] ml-1">→</span>
+                  <a className="inline-flex items-center justify-center w-full h-11 rounded-xl bg-neutral-100 group-hover:bg-black group-hover:text-white text-black font-mono text-xs uppercase tracking-wider font-semibold transition-all duration-200 border border-neutral-200 group-hover:border-black active:scale-[0.98]" href={itemData.demoUrl} target="_blank" rel="noopener noreferrer">
+                    {t('portfolio.cta')} <span className="text-[#FFB800] ml-1">→</span>
                   </a>
                 </div>
               </div>
