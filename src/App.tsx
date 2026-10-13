@@ -10,8 +10,11 @@ const HowItWorks = lazy(() => import('./components/sections/HowItWorks').then(m 
 const WhatIncludes = lazy(() => import('./components/sections/WhatIncludes').then(m => ({ default: m.WhatIncludes })));
 const Pricing = lazy(() => import('./components/sections/Pricing').then(m => ({ default: m.Pricing })));
 const Portfolio = lazy(() => import('./components/sections/Portfolio').then(m => ({ default: m.Portfolio })));
+const SobreNosotros = lazy(() => import('./components/sections/SobreNosotros').then(m => ({ default: m.SobreNosotros })));
 const WhyCatCode = lazy(() => import('./components/sections/WhyCatCode').then(m => ({ default: m.WhyCatCode })));
 const FAQ = lazy(() => import('./components/sections/FAQ').then(m => ({ default: m.FAQ })));
+const Contacto = lazy(() => import('./components/sections/Contacto').then(m => ({ default: m.Contacto })));
+const Legal = lazy(() => import('./components/sections/Legal').then(m => ({ default: m.Legal })));
 const CTA = lazy(() => import('./components/sections/CTA').then(m => ({ default: m.CTA })));
 
 function App() {
@@ -19,7 +22,7 @@ function App() {
     <>
       <TopBar />
       <Header />
-      <main className="w-full pt-28 bg-surface-container-lowest">
+      <main id="main-content" className="w-full pt-28 bg-surface-container-lowest">
         <div className="flex flex-col w-full">
           <Hero />
           <Suspense fallback={null}>
@@ -29,9 +32,12 @@ function App() {
             <WhatIncludes />
             <Pricing />
             <Portfolio />
+            <SobreNosotros />
             <WhyCatCode />
             <FAQ />
+            <Contacto />
             <CTA />
+            <Legal />
           </Suspense>
         </div>
       </main>

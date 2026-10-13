@@ -28,7 +28,7 @@ export function Solution() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit-6">
           {solutions.map((sol, index) => {
             const solData = t(`solution.solutions.${index}`, { returnObjects: true }) as any;
-            const isHighlighted = solData.badge === 'RECOMENDADO';
+            const isHighlighted = solData.name === 'FULL';
             return (
               <div
                 key={sol.num}

@@ -112,6 +112,14 @@
   display: none;
 }
 
+section[id],
+div[id='legal'],
+div[id='privacidad'],
+div[id='cookies'],
+:target {
+  scroll-margin-top: 7rem;
+}
+
 .font-mono-tech {
   font-family: 'Geist Mono', monospace;
 }

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 export function WhyCatCode() {
   const { t } = useTranslation();
 
-  const criteria = [0, 1, 2];
+  const criteria = [0, 1, 2, 3];
 
   return (
     <section className="w-full bg-[#F4F3F1] py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="por-que-catcode" aria-labelledby="why-title">
@@ -20,7 +20,7 @@ export function WhyCatCode() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-unit-8 mb-unit-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit-8 mb-unit-12">
           {criteria.map((index) => {
             const itemData = t(`whyCatCode.criteria.${index}`, { returnObjects: true }) as any;
             return (

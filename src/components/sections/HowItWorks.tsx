@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 export function HowItWorks() {
   const { t } = useTranslation();
 
-  const steps = ['01', '02', '03'];
+  const steps = ['01', '02', '03', '04'];
 
   return (
     <section className="w-full bg-[#F7F6F4] py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="como-funciona" aria-labelledby="howtitle-title">
@@ -20,7 +20,7 @@ export function HowItWorks() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-unit-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit-8 relative">
           {steps.map((num, index) => {
             const stepData = t(`howItWorks.steps.${index}`, { returnObjects: true }) as any;
             return (

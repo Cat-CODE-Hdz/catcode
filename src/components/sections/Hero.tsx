@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { useMetrics } from '../../hooks/useMetrics';
+import { track } from '../../lib/analytics';
 
 export function Hero() {
   const { t } = useTranslation();
-  const { metrics, isLive, isLoading } = useMetrics();
+  const { metrics, isLive } = useMetrics();
 
   return (
     <section className="relative w-full bg-surface-container-lowest pt-unit-12 pb-unit-20 md:pt-unit-16 md:pb-unit-28 overflow-hidden noise-bg border-b border-black/[0.06]" id="hero" aria-labelledby="hero-title">
@@ -32,6 +33,7 @@ export function Hero() {
               <a
                 className="group inline-flex items-center justify-center h-[54px] px-8 rounded-xl bg-black hover:bg-neutral-800 text-white font-label-md text-[15px] font-medium transition-all duration-200 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.25)] hover:shadow-none active:scale-[0.98] btn-amber-glow"
                 href="#precios"
+                onClick={() => track('cta_click', { from: 'hero', target: 'precios' })}
               >
                 {t('hero.ctaPrimary')}
                 <span className="ml-2 text-[#FFB800] transition-transform duration-200 group-hover:translate-x-1">→</span>
@@ -46,7 +48,7 @@ export function Hero() {
           </div>
 
             <div className="lg:col-span-5 w-full">
-            <div className="relative bg-neutral-950 text-white rounded-2xl p-5 border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.25)] overflow-hidden" role="region" aria-label="Métricas del proyecto">
+            <div className="relative bg-neutral-950 text-white rounded-2xl p-5 border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.25)] overflow-hidden" role="region" aria-label={t('hero.terminal.regionLabel')}>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-neutral-800/80 font-mono text-neutral-400" style={{ fontSize: '11px' }}>
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/80 inline-block" aria-hidden="true" />
@@ -55,19 +57,13 @@ export function Hero() {
                 </div>
                 <span className="text-neutral-400 flex items-center gap-1.5">
                   <img alt="CAT CODE" className="w-4 h-4 rounded-full object-contain" src="/catcode/catcode-icon.png" />
-                  catcode.studio/live
+                  github.com/Cat-CODE-Hdz/catcode
                 </span>
                 <div className="flex items-center gap-2">
                   {isLive && (
                     <span className="text-[#FFB800] flex items-center gap-1" style={{ fontSize: '9px' }}>
                       <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800] inline-block amber-pulse" />
                       LIVE
-                    </span>
-                  )}
-                  {isLoading && (
-                    <span className="text-yellow-400 animate-pulse flex items-center gap-1" style={{ fontSize: '9px' }}>
-                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 inline-block" />
-                      FETCHING
                     </span>
                   )}
                   <span className="text-[#FFB800] font-bold flex items-center gap-1" style={{ fontSize: '10px' }}>
@@ -92,7 +88,7 @@ export function Hero() {
                 <div className="grid grid-cols-3 gap-2 font-mono">
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center hover:border-[#FFB800]/50 hover:bg-neutral-900 transition-all cursor-default group">
                     <div className="text-[10px] uppercase text-neutral-400 tracking-wider group-hover:text-neutral-300">{t('hero.terminal.performance')}</div>
-                    <div className="text-lg font-bold text-[#FFB800] mt-0.5 metric-glow group-hover:scale-105 transition-transform">{metrics.performance}/100</div>
+                    <div className="text-lg font-bold text-[#FFB800] mt-0.5 metric-glow group-hover:scale-105 transition-transform">{metrics.performance !== null ? `${metrics.performance}/100` : '—'}</div>
                   </div>
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center hover:border-[#FFB800]/50 hover:bg-neutral-900 transition-all cursor-default group">
                     <div className="text-[10px] uppercase text-neutral-400 tracking-wider group-hover:text-neutral-300">{t('hero.terminal.loading')}</div>
@@ -100,12 +96,17 @@ export function Hero() {
                   </div>
                   <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center hover:border-[#FFB800]/50 hover:bg-neutral-900 transition-all cursor-default group">
                     <div className="text-[10px] uppercase text-neutral-400 tracking-wider group-hover:text-neutral-300">{t('hero.terminal.indexing')}</div>
-                    <div className="text-lg font-bold text-[#FFB800] mt-0.5 metric-glow group-hover:scale-105 transition-transform">SEO {metrics.seo}%</div>
+                    <div className="text-lg font-bold text-[#FFB800] mt-0.5 metric-glow group-hover:scale-105 transition-transform">{metrics.seo !== null ? `SEO ${metrics.seo}%` : '—'}</div>
                   </div>
                 </div>
+                {!isLive && (
+                  <p className="font-mono text-neutral-500 -mt-1" style={{ fontSize: '10px' }}>
+                    {t('hero.terminal.measuredNote')}
+                  </p>
+                )}
                 <div className="bg-black/60 rounded-xl p-3.5 border border-neutral-800 font-mono leading-relaxed text-neutral-300" style={{ fontSize: '11px' }}>
                   <div className="text-neutral-500">// {t('hero.terminal.pipeline')}</div>
-                  <div className="text-[#FFB800]">&gt; catcode.deploy({'{'} landing: true, social: '5_posts/wk' {'}'})<span className="blinking-cursor" /></div>
+                  <div className="text-[#FFB800]">&gt; catcode.deploy({'{'} landing: true, social: '3-7_posts/wk' {'}'})<span className="blinking-cursor" /></div>
                   <div className="text-neutral-400 mt-1 flex items-center gap-1.5"><span className="text-[#FFB800] font-bold">✓</span> {t('hero.terminal.ssl')}</div>
                 </div>
               </div>

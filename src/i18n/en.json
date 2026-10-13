@@ -1,6 +1,6 @@
 {
   "topbar": {
-    "capacity": "Q2 CAPACITY ACTIVE",
+    "capacity": "DIGITAL PRESENCE FOR SMALL BUSINESSES",
     "version": "CAT CODE STUDIO — VERSION {{version}}",
     "standard": "SWISS PREMIUM WEB STANDARD",
     "locations": "MAD · VLC · BIO"
@@ -14,6 +14,8 @@
       "faq": "FAQ"
     },
     "start": "Get started",
+    "skip": "Skip to main content",
+    "home": "CAT CODE - Home",
     "clientSession": "Client session"
   },
   "hero": {
@@ -39,14 +41,16 @@
     },
     "terminal": {
       "architecture": "PRODUCTION ARCHITECTURE",
-      "tech": "NEXT · TAILWIND",
+      "tech": "VITE · REACT",
       "projectName": "Your Business Online",
-      "deploy": "Integral deployment on high-availability global CDN.",
+      "deploy": "Deployed on GitHub Pages with automatic GitHub Actions deploys.",
       "performance": "Performance",
       "loading": "Loading",
       "indexing": "Indexing",
+      "measuredNote": "PageSpeed scores: measured on every build and shown here once the build records them.",
+      "regionLabel": "Project status panel",
       "pipeline": "active presence pipeline",
-      "ssl": "✓ SSL installed · WhatsApp widget linked"
+      "ssl": "✓ HTTPS · automatic deploys"
     }
   },
   "problem": {
@@ -63,7 +67,7 @@
         "title": "You don't have a professional website.",
         "description": "Customers look for you on Google or ask for your website and find a broken link, a neglected template, or nothing. The first impression is lost in 3 seconds.",
         "status": "Lost opportunity",
-        "metric": "-72% conversion"
+        "metric": "No presence"
       },
       {
         "num": "02",
@@ -81,7 +85,7 @@
         "title": "Everything depends on you.",
         "description": "You already handle clients, suppliers, and invoices. Starting to design on Canva or fighting with code shouldn't be on your task list.",
         "status": "Unprofitable time",
-        "metric": "+15h/month lost"
+        "metric": "Lost hours"
       }
     ]
   },
@@ -96,7 +100,7 @@
         "name": "CUSTOM",
         "subtitle": "Your landing.",
         "description": "A professional website for your business to have its own online space.",
-        "price": "From €249",
+        "price": "From €149",
         "priceExtra": "+ €19/mo"
       },
       {
@@ -105,7 +109,7 @@
         "name": "WEEKLY",
         "subtitle": "Your content.",
         "description": "Content prepared so your social media never stops.",
-        "price": "From €79/mo"
+        "price": "From €59/mo"
       },
       {
         "num": "03",
@@ -113,7 +117,7 @@
         "name": "SOCIAL",
         "subtitle": "Your social media.",
         "description": "We handle creating, organizing, and publishing to keep your business active.",
-        "price": "From €99/mo"
+        "price": "From €79/mo"
       },
       {
         "num": "04",
@@ -121,32 +125,38 @@
         "name": "FULL",
         "subtitle": "Everything connected.",
         "description": "Landing, content, and social media managed in one solution.",
-        "price": "€229/mo",
+        "price": "€199/mo",
         "badge": "RECOMMENDED"
       }
     ]
   },
   "howItWorks": {
-    "sectionLabel": "Clear Methodology · 3 Phases",
+    "sectionLabel": "Clear Methodology · 4 Phases",
     "title": "How it works",
     "steps": [
       {
         "num": "01",
         "phase": "ENTRY PHASE",
-        "title": "YOU TELL US",
-        "description": "You tell us what you do, what you sell, and what you need."
+        "title": "TELL US",
+        "description": "You tell us what you do, what you sell, and what you need. We send you a proposal with a fixed price."
       },
       {
         "num": "02",
         "phase": "CONSTRUCTION",
         "title": "WE BUILD IT",
-        "description": "We create your digital presence with the right design and content for your business."
+        "description": "We design your landing and prepare the content and publishing for your plan."
       },
       {
         "num": "03",
-        "phase": "CONTINUOUS DEPLOYMENT",
-        "title": "WE MAINTAIN IT",
-        "description": "Depending on your plan, we update, create content, and keep your presence active."
+        "phase": "REVIEW",
+        "title": "YOU REVIEW",
+        "description": "You approve before we publish: 48–72 h on Basic, 5–7 days on Pro, and 7–10 days on Premium."
+      },
+      {
+        "num": "04",
+        "phase": "PUBLISHING",
+        "title": "WE PUBLISH",
+        "description": "We publish and, depending on your plan, keep creating content and maintaining your presence active."
       }
     ]
   },
@@ -157,22 +167,22 @@
       {
         "title": "WEB",
         "count": "8 ITEMS",
-        "items": ["Landing page", "Responsive design", "WhatsApp", "Forms", "Basic SEO", "Analytics", "Hosting", "SSL"]
+        "items": ["Custom landing", "Responsive design", "WhatsApp button", "Basic SEO", "Analytics", "Hosting", "SSL", "Blog and legal notice (Premium)"]
       },
       {
         "title": "CONTENT",
         "count": "6 ITEMS",
-        "items": ["5 posts/week", "Copywriting", "CTA", "Design", "FB/IG adaptation", "Calendar"]
+        "items": ["3, 5, or 7 pieces/week", "Anti-generic copy", "Base design", "Stories and promotional pieces", "FB/IG adaptation", "Calendar"]
       },
       {
         "title": "SOCIAL MEDIA",
         "count": "6 ITEMS",
-        "items": ["Facebook", "Instagram", "Scheduling", "Publishing", "Stories per plan", "Organization"]
+        "items": ["Facebook", "Instagram", "Scheduling", "Publishing", "Stories per plan", "Monthly Reel (Premium)"]
       },
       {
         "title": "MAINTENANCE",
         "count": "4 ITEMS",
-        "items": ["Changes per plan", "Updates", "Basic support", "Maintenance"]
+        "items": ["Changes per plan", "Updates", "Support", "No lock-in"]
       }
     ]
   },
@@ -180,80 +190,178 @@
     "sectionLabel": "Commercial Structure · No Surprises",
     "title": "Transparent plans and pricing",
     "setup": "SETUP + MONTHLY",
+    "setupSuffix": " setup",
+    "monthSuffix": "/mo",
     "categories": {
       "custom": {
         "label": "CUSTOM (Landing)",
         "title": "CUSTOM — Your landing",
-        "subtitle": "A professional digital presence with dedicated infrastructure and continuous maintenance.",
-        "note": "Note: Domain is not included. It is contracted and renewed under the client's name.",
+        "subtitle": "A professional digital presence with hosting, responsive design, and basic SEO.",
+        "note": "Note: the domain is not included. It is contracted and renewed under the client's name.",
         "plans": {
-          "start": { "name": "PLAN START", "tier": "TIER 01", "cta": "Choose START" },
-          "business": { "name": "PLAN BUSINESS", "tier": "TIER 02", "cta": "Choose BUSINESS", "badge": "MOST CHOSEN" },
-          "pro": { "name": "PLAN PRO", "tier": "TIER 03", "cta": "Choose PRO" }
+          "basic": {
+            "name": "CUSTOM BASIC",
+            "tier": "TIER 01",
+            "cta": "Choose Basic",
+            "description": "For local businesses that need to be online fast and with guarantees.",
+            "features": ["5 sections", "Hero with WhatsApp CTA, about us, services, trust, and location", "Hosting, responsive design, and basic SEO", "1 round of changes · delivered in 48–72 h"]
+          },
+          "pro": {
+            "name": "CUSTOM PRO",
+            "tier": "TIER 02",
+            "cta": "Choose Pro",
+            "badge": "MOST CHOSEN",
+            "description": "The complete landing to showcase your work and build trust.",
+            "features": ["8 sections", "Everything in Basic + gallery, testimonials, and FAQ", "Expanded benefits section", "2 rounds of changes · priority support · delivered in 5–7 days"]
+          },
+          "premium": {
+            "name": "CUSTOM PREMIUM",
+            "tier": "TIER 03",
+            "cta": "Choose Premium",
+            "description": "Maximum reach: blog, case studies, and carefully written SEO copy.",
+            "features": ["11 sections", "Everything in Pro + blog (3 posts), case studies, and legal notice", "3 rounds of changes · professionally written SEO copy", "Delivered in 7–10 days"]
+          }
         }
       },
       "weekly": {
         "label": "WEEKLY (Content)",
         "title": "WEEKLY — Content production",
-        "subtitle": "Periodic editorial and graphic material generation for your channels. (Production, does not include publishing).",
+        "subtitle": "Editorial and graphic material for your channels. Production only: publishing is not included.",
         "plans": {
-          "basic": { "name": "BASIC", "cta": "Choose BASIC" },
-          "pro": { "name": "PRO", "cta": "Choose PRO", "badge": "MOST CHOSEN" },
-          "premium": { "name": "PREMIUM", "cta": "Choose PREMIUM" }
+          "basic": {
+            "name": "WEEKLY BASIC",
+            "cta": "Choose Basic",
+            "description": "Content ready so you can publish at your own pace.",
+            "features": ["3 pieces per week", "Copy + base design", "Weekly content calendar"]
+          },
+          "pro": {
+            "name": "WEEKLY PRO",
+            "cta": "Choose Pro",
+            "badge": "MOST CHOSEN",
+            "description": "A steady rhythm, with more pieces and more variety.",
+            "features": ["5 pieces per week", "2 derived stories + 2 promotional pieces", "Anti-generic copy"]
+          },
+          "premium": {
+            "name": "WEEKLY PREMIUM",
+            "cta": "Choose Premium",
+            "description": "Maximum weekly coverage with production priority.",
+            "features": ["7 pieces per week", "Everything in Pro + 4 stories and 4 promotional pieces", "Production priority"]
+          }
         }
       },
       "social": {
         "label": "SOCIAL (Management)",
         "title": "SOCIAL — Complete social media management",
-        "subtitle": "Independent service where we handle the entire workflow: copywriting, design, scheduling, and continuous publishing.",
+        "subtitle": "We handle the whole workflow: copy, design, scheduling, and continuous publishing on Facebook and Instagram.",
+        "note": "Not included: advertising campaigns (Ads), private messages, comment replies, professional photography, or community management.",
         "plans": {
-          "basic": { "name": "BASIC", "cta": "Choose BASIC" },
-          "pro": { "name": "PRO", "cta": "Choose PRO", "badge": "MOST CHOSEN" }
+          "basic": {
+            "name": "SOCIAL BASIC",
+            "cta": "Choose Basic",
+            "description": "Your business stays active on social media without you having to post.",
+            "features": ["3 posts per week", "Publishing on Facebook + Instagram", "Calendar management"]
+          },
+          "pro": {
+            "name": "SOCIAL PRO",
+            "cta": "Choose Pro",
+            "badge": "MOST CHOSEN",
+            "description": "A constant presence with stories and a monthly report.",
+            "features": ["5 posts per week", "Publishing + stories", "Monthly activity report"]
+          },
+          "premium": {
+            "name": "SOCIAL PREMIUM",
+            "cta": "Choose Premium",
+            "description": "Maximum coverage, with a monthly video piece.",
+            "features": ["7 posts per week", "Everything in Pro + 1 simple Reel/month (15 s)", "Production priority"]
+          }
         }
       },
       "full": {
         "label": "FULL (All-in-one)",
-        "title": "FULL — Integrated all-in-one solution",
-        "subtitle": "Positioned as a unified and connected solution, not a simple mathematical sum of separate services.",
+        "title": "FULL — Everything connected",
+        "subtitle": "Landing, content, and social media handled by one team: a unified solution, not the sum of separate services.",
+        "note": "€199/mo vs €257/mo separately: 22.6% savings. No lock-in. Switch or cancel whenever you want.",
         "plans": {
-          "full": { "name": "PLAN FULL INTEGRAL", "cta": "Hire FULL", "badge": "RECOMMENDED" }
+          "full": {
+            "name": "FULL",
+            "cta": "Hire FULL",
+            "badge": "RECOMMENDED",
+            "description": "Website setup included at no extra cost. Custom Pro + Weekly Pro + Social Pro, integrated and coordinated.",
+            "features": ["Website setup included at no extra cost", "Landing (Custom Pro) + Content (Weekly Pro) + Social (Social Pro)", "22.6% cheaper than hiring them separately"]
+          }
         }
       }
     }
   },
   "portfolio": {
-    "sectionLabel": "Real Demonstrations · Case Studies",
+    "sectionLabel": "Examples · Concept projects",
     "title": "Your business could look like this.",
     "subtitle": "You don't need to imagine it. You can see it.",
     "cta": "View demo",
+    "ctaPending": "Demo in preparation",
+    "concept": "Concept project",
     "items": [
+      {
+        "domain": "tallerrecambios.es",
+        "resolution": "1440x900",
+        "category": "Bike repair shop · Seville",
+        "badge": "CUSTOM BASIC",
+        "level": "5 sections · €149 setup + €19/mo",
+        "name": "TALLER RECAMBIOS",
+        "description": "The entry point: a 5-section landing with a WhatsApp CTA, hosting, and basic SEO, for €149 setup.",
+        "demoUrl": ""
+      },
       {
         "domain": "casanora.es",
         "resolution": "1440x900",
         "category": "Restaurant · Madrid",
-        "badge": "LANDING · BUSINESS",
+        "badge": "CUSTOM PRO",
+        "level": "8 sections · €249 setup + €29/mo",
         "name": "CASA NORA",
-        "description": "An elegant and direct digital presence for a restaurant that wants to showcase its proposal, menu, and facilitate reservations.",
+        "description": "A full menu working as a services section, with gallery, testimonials, and FAQ, and WhatsApp contact.",
         "demoUrl": "https://cat-code-hdz.github.io/casa-nora/"
-      },
-      {
-        "domain": "estudiolumen.com",
-        "resolution": "1440x900",
-        "category": "Beauty · Valencia",
-        "badge": "LANDING · START",
-        "name": "ESTUDIO LUMEN",
-        "description": "A clean and visual landing for a beauty studio that wants to present its services and convert visits into appointment requests.",
-        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       },
       {
         "domain": "rutanorte.eus",
         "resolution": "1440x900",
         "category": "Experiences · Bilbao",
-        "badge": "LANDING · PRO",
+        "badge": "CUSTOM PREMIUM",
+        "level": "11 sections · €449 setup + €49/mo",
         "name": "RUTA NORTE",
-        "description": "A digital presence focused on services and experiences, designed to quickly explain the offering and generate contacts.",
+        "description": "The top tier: blog with posts, case studies, carefully written SEO copy, and a footer with legal notice.",
         "demoUrl": "https://cat-code-hdz.github.io/ruta-norte/"
+      },
+      {
+        "domain": "estudiolumen.com",
+        "resolution": "1440x900",
+        "category": "Beauty · Valencia",
+        "badge": "FULL",
+        "level": "€199/mo · setup included",
+        "name": "ESTUDIO LUMEN",
+        "description": "Landing, content, and social media in one plan: the demo of the full bundle, with managed publishing.",
+        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       }
+    ]
+  },
+  "about": {
+    "sectionLabel": "About us · Team",
+    "title": "A small team. A 17-step process.",
+    "description": "CAT CODE builds the complete digital presence of small businesses: a professional landing page, weekly content and social media publishing. Everything connected, in a single team, with no lock-in.",
+    "tagline": "We Program . We Create . We Purr",
+    "facts": [
+      { "label": "TEAM", "value": "4 people", "desc": "Backend · Frontend · Social & Content" },
+      { "label": "PROCESS", "value": "17 steps", "desc": "From first contact to delivery and follow-up" },
+      { "label": "SERVICES", "value": "4 connected", "desc": "CUSTOM · WEEKLY · SOCIAL · FULL" },
+      { "label": "COMMITMENT", "value": "No lock-in", "desc": "Transparent pricing, month to month" }
+    ],
+    "valuesTitle": "How we work",
+    "values": [
+      { "name": "Modern", "desc": "Clean design, technical typography, no noise." },
+      { "name": "Premium", "desc": "Careful finishes and attention to detail." },
+      { "name": "Simple", "desc": "Clear proposals: easy is easy." },
+      { "name": "Close", "desc": "Direct relationship, no bureaucracy." },
+      { "name": "Efficient", "desc": "Fast delivery and defined processes." },
+      { "name": "Clear product", "desc": "Transparent prices and tiers." }
     ]
   },
   "whyCatCode": {
@@ -262,18 +370,23 @@
     "criteria": [
       {
         "num": "01",
-        "title": "01 — Clear product.",
-        "description": "You know exactly what you receive, how it works, and the timelines, without agency jargon or hidden costs."
+        "title": "01 — Simplifies.",
+        "description": "We do it all for you: design, content, and publishing. You don't have to build anything or learn new tools."
       },
       {
         "num": "02",
-        "title": "02 — Transparent pricing.",
-        "description": "Fixed rates with no surprises. Predictable and clear billing adapted to your business pace."
+        "title": "02 — Everything connected.",
+        "description": "Website, content, and social media coordinated by one team under the same technical and aesthetic criteria."
       },
       {
         "num": "03",
-        "title": "03 — Everything in one place.",
-        "description": "Web, content, and social media coordinated under the same technical and aesthetic criteria."
+        "title": "03 — For small businesses.",
+        "description": "Plans from €59/mo and delivery in days, not months: pricing and scope built for local businesses."
+      },
+      {
+        "num": "04",
+        "title": "04 — No lock-in.",
+        "description": "Real flexibility: switch tiers or cancel whenever you want, with one cycle's notice."
       }
     ],
     "cta": "You take care of your business. We take care of it looking good online."
@@ -284,73 +397,143 @@
     "reference": "[ FAQ · QUICK ANSWERS ]",
     "items": [
       {
-        "question": "Do I need a website?",
-        "answer": "No. We can build it from scratch with CUSTOM or include it within FULL."
+        "question": "What exactly do you do?",
+        "answer": "A web agency for small businesses: professional landing page, weekly content, and social media publishing. Everything connected, no complications."
       },
       {
-        "question": "Do I have to prepare the content?",
-        "answer": "No. Depending on the contracted product, CAT CODE can create the content needed for your digital presence."
+        "question": "What does each plan include?",
+        "answer": "CUSTOM: a custom landing (Basic/Pro/Premium). WEEKLY: 3, 5, or 7 pieces per week depending on the tier. SOCIAL: managed publishing on Facebook and Instagram. FULL: Custom Pro + Weekly Pro + Social Pro integrated for €199/mo, with the website setup included."
       },
       {
-        "question": "How many posts does WEEKLY include?",
-        "answer": "All WEEKLY plans include 5 posts per week."
+        "question": "Am I locked into a contract?",
+        "answer": "No. No lock-in. Switch tiers or cancel whenever you want: downgrades apply next cycle, upgrades are prorated."
       },
       {
-        "question": "How many posts does SOCIAL include?",
-        "answer": "SOCIAL includes 5 posts per week."
+        "question": "Which social networks do you manage?",
+        "answer": "Facebook and Instagram. For additional networks, ask us: they are not included by default."
       },
       {
-        "question": "Can I hire just one part?",
-        "answer": "Yes. You can hire CUSTOM, WEEKLY, or SOCIAL independently."
+        "question": "Do you reply to my DMs or comments?",
+        "answer": "No. We don't reply to comments or private messages on any plan. Replying in the business's name means checking every post daily: that's community management, with its own time and price."
       },
       {
-        "question": "Can I change plans?",
-        "answer": "Yes. You can change plans according to your business needs."
+        "question": "Do you run ads?",
+        "answer": "Not included in the plans. We can advise you, but we don't manage paid campaigns."
       },
       {
-        "question": "Is the domain included?",
-        "answer": "No. The domain is contracted and renewed under the client's name."
+        "question": "Do you shoot photos or produce video?",
+        "answer": "Not included. The SOCIAL PREMIUM Reel is made by reusing your own content from the same month (10–15 s)."
       },
       {
-        "question": "Which social media do you manage?",
-        "answer": "SOCIAL is designed for Facebook and Instagram."
+        "question": "What happens to my landing if I cancel?",
+        "answer": "The landing and its content are yours: once invoiced and published, the usage rights belong to the client. When you cancel, we stop producing and publishing new content."
       },
       {
-        "question": "Do you publish for us?",
-        "answer": "Yes. Publishing is included in SOCIAL."
+        "question": "What are the delivery times?",
+        "answer": "Landing: 48–72 h (Basic), 5–7 days (Pro), and 7–10 days (Premium) after design approval. Weekly content: 48 h before publishing."
       },
       {
-        "question": "Do you do advertising?",
-        "answer": "No. Advertising campaigns are not included in SOCIAL."
-      },
-      {
-        "question": "Do you respond to messages and comments?",
-        "answer": "It is not part of the standard SOCIAL service."
-      },
-      {
-        "question": "Do you also do stories?",
-        "answer": "They are included according to the contracted plan."
+        "question": "How do we start?",
+        "answer": "Message us on WhatsApp or fill in the contact form: “Tell us what your business needs.”"
       }
     ]
   },
+  "contact": {
+    "sectionLabel": "Contact · Form",
+    "title": "Tell us what your business needs.",
+    "subtitle": "No commitment. We reply within 24 hours.",
+    "submit": "Send",
+    "planPlaceholder": "Select a plan",
+    "planOptions": {
+      "custom": "CUSTOM — Landing",
+      "weekly": "WEEKLY — Content",
+      "social": "SOCIAL — Social media",
+      "full": "FULL — Everything connected",
+      "unsure": "I'm not sure yet"
+    },
+    "fields": {
+      "name": "Name",
+      "business": "Business name",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "plan": "Plan of interest",
+      "message": "Message"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "email": "Enter a valid email address.",
+      "consent": "We need your consent to get back to you."
+    },
+    "consent": "I agree to receive information about my plan.",
+    "privacyNote": "We use your data only to reply to you. We don't share it with third parties.",
+    "message": {
+      "intro": "Hi CAT CODE, I want to improve my business's digital presence."
+    },
+    "channels": {
+      "title": "DIRECT WHATSAPP CHANNEL",
+      "response": "REPLY WITHIN 24H",
+      "whatsapp": "If you'd rather talk directly, message us on WhatsApp: we reply within 24 business hours."
+    },
+    "success": {
+      "title": "Got it!",
+      "body": "We opened WhatsApp with your message. If it didn't open, use the button below. We reply within 24 hours."
+    }
+  },
   "cta": {
-    "pill": "START TODAY",
+    "pill": "GET STARTED TODAY",
     "title": "Your business already exists. Now let's make it visible.",
     "description": "Let's start building your digital presence today without complications.",
     "ctaPrimary": "I want to get started",
     "ctaSecondary": "See examples",
     "whatsapp": {
       "channel": "DIRECT WHATSAPP CHANNEL",
-      "response": "RESPONSE IN < 2H",
+      "response": "REPLY WITHIN 24H",
       "message": "Hi CAT CODE, I want to improve my business's digital presence.",
       "button": "Send WhatsApp"
+    }
+  },
+  "legal": {
+    "sectionLabel": "Legal information",
+    "title": "Legal notice, privacy and cookies.",
+    "aviso": {
+      "title": "Legal notice",
+      "items": [
+        { "label": "Owner", "text": "[[PENDING]] Legal name, tax ID and registered address of the CAT CODE owner." },
+        { "label": "Brand", "text": "CAT CODE — digital presence services: landing pages, content and social publishing." },
+        { "label": "Website", "text": "Informational site hosted on GitHub Pages: cat-code-hdz.github.io/catcode/" },
+        { "label": "Contact", "text": "The form on this site and the direct WhatsApp channel." },
+        { "label": "Purpose", "text": "To describe services, tiers and prices. Every contract is formalised through a written proposal." }
+      ]
+    },
+    "privacidad": {
+      "title": "Privacy policy",
+      "items": [
+        { "label": "Controller", "text": "[[PENDING]] Identity of the CAT CODE owner (see legal notice)." },
+        { "label": "What data we collect", "text": "Only what you choose to write: name, business, email, phone and message." },
+        { "label": "How it is sent", "text": "The form stores nothing on our own server: it opens WhatsApp with your message to send it to us." },
+        { "label": "Purpose", "text": "To answer your enquiry and prepare a proposal. Legal basis: your consent." },
+        { "label": "Retention", "text": "As long as we handle your request and for any periods required by law." },
+        { "label": "Sharing", "text": "We do not share your data with third parties." },
+        { "label": "Visit measurement", "text": "We measure visits with Google Analytics 4 in cookieless mode, with no advertising profiles or segmentation." },
+        { "label": "Your rights", "text": "You can request access, rectification or erasure by contacting us through the channel above." }
+      ]
+    },
+    "cookies": {
+      "title": "Cookies policy",
+      "items": [
+        { "label": "Own cookies", "text": "This site installs no advertising or tracking cookies, and stores no preferences in your browser." },
+        { "label": "Measurement", "text": "We use Google Analytics 4 in cookieless mode: no _ga cookie and no identifier is stored in your browser; we only measure which pages are visited." },
+        { "label": "Third parties", "text": "Measurement requests and fonts go to Google (Google Ireland Ltd.), which receives your IP address. Measurement starts with consent denied (Consent Mode) and is not used for advertising." },
+        { "label": "How to control them", "text": "You can block or delete cookies and scripts from your browser settings." },
+        { "label": "Changes", "text": "If the measurement configuration changes, this policy will be updated before it is modified." }
+      ]
     }
   },
   "footer": {
     "description": "We build your digital presence.",
     "subtitle": "WEB ENGINEERING AND CONTENT SYSTEM FOR SMALL BUSINESSES",
     "copyright": "© 2026 CAT CODE. All rights reserved.",
-    "status": "Systems operating at 100%",
+    "status": "Website live",
     "nav": {
       "whatWeDo": "What we do",
       "howItWorks": "How it works",

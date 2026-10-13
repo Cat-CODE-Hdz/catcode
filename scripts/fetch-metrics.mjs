@@ -54,6 +54,8 @@ async function fetchMetrics() {
   const fcp = lighthouse.audits['first-contentful-paint']?.displayValue || '—';
   const lcp = lighthouse.audits['largest-contentful-paint']?.displayValue || '—';
 
+  console.log(`[metrics] Performance: ${performance} | SEO: ${seo} | FCP: ${fcp} | LCP: ${lcp}`);
+
   const metrics = {
     performance,
     seo,
@@ -62,23 +64,25 @@ async function fetchMetrics() {
     fetchedAt: new Date().toISOString(),
     source: 'pagespeed',
   };
-
-  console.log(`[metrics] Performance: ${performance} | SEO: ${seo} | FCP: ${fcp} | LCP: ${lcp}`);
-
   return metrics;
 }
 
-function getFallbackMetrics() {
+function getExistingMetrics() {
   if (existsSync(METRICS_PATH)) {
-    return JSON.parse(readFileSync(METRICS_PATH, 'utf-8'));
+    try {
+      const parsed = JSON.parse(readFileSync(METRICS_PATH, 'utf-8'));
+      if (parsed && parsed.source === 'pagespeed') return parsed;
+    } catch {
+      // archivo corrupto: se reemplaza por unavailable
+    }
   }
   return {
-    performance: 99,
-    seo: 100,
-    fcp: '0.4s',
-    lcp: '0.8s',
+    performance: null,
+    seo: null,
+    fcp: '—',
+    lcp: '—',
     fetchedAt: new Date().toISOString(),
-    source: 'static',
+    source: 'unavailable',
   };
 }
 
@@ -87,13 +91,13 @@ async function main() {
   try {
     metrics = await fetchMetrics();
   } catch (err) {
-    console.warn(`[metrics] PageSpeed fetch failed, using fallback: ${err.message}`);
-    metrics = getFallbackMetrics();
-    metrics.source = 'fallback';
+    console.warn(`[metrics] PageSpeed fetch failed: ${err.message}`);
+    console.warn('[metrics] Nunca se escriben métricas no medidas; se conserva el último dato real o "unavailable".');
+    metrics = getExistingMetrics();
   }
 
   writeFileSync(METRICS_PATH, JSON.stringify(metrics, null, 2) + '\n');
-  console.log(`[metrics] Saved to ${METRICS_PATH}`);
+  console.log(`[metrics] Saved to ${METRICS_PATH} (source: ${metrics.source})`);
 }
 
 main();

@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next';
+import { whatsappUrl } from '../../lib/whatsapp';
+import { track } from '../../lib/analytics';
 
 export function CTA() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full bg-black text-white py-unit-20 md:py-unit-32 relative overflow-hidden dark-grid-bg" id="contacto" aria-labelledby="cta-title">
+    <section className="w-full bg-black text-white py-unit-20 md:py-unit-32 relative overflow-hidden dark-grid-bg" id="empezar" aria-labelledby="cta-title">
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop relative z-10">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900 border border-[#FFB800]/40 text-[#FFB800] font-mono uppercase tracking-widest mb-unit-8 shadow-sm" style={{ fontSize: '11px' }}>
@@ -19,7 +21,7 @@ export function CTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-unit-4 mb-unit-12">
-            <a className="group inline-flex items-center justify-center h-[54px] px-8 rounded-xl bg-white hover:bg-neutral-200 text-black font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-lg active:scale-95 btn-amber-glow" href="#contacto">
+            <a className="group inline-flex items-center justify-center h-[54px] px-8 rounded-xl bg-white hover:bg-neutral-200 text-black font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-lg active:scale-95 btn-amber-glow" href="#contacto" onClick={() => track('cta_click', { from: 'cta', target: 'contacto' })}>
               {t('cta.ctaPrimary')}
               <span className="ml-2 text-[#FFB800] transition-transform duration-200 group-hover:translate-x-1">→</span>
             </a>
@@ -45,10 +47,10 @@ export function CTA() {
               </div>
               <a
                 className="shrink-0 inline-flex items-center justify-center h-10 px-5 rounded-xl bg-white hover:bg-neutral-200 text-black font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-md active:scale-95 btn-amber-glow"
-                href="https://wa.me/?text=Hola%20CAT%20CODE,%20quiero%20mejorar%20la%20presencia%20digital%20de%20mi%20negocio."
+                href={whatsappUrl(t('cta.whatsapp.message'))}
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="Enviar mensaje por WhatsApp (abre en nueva ventana)"
+                onClick={() => track('whatsapp_click', { from: 'cta' })}
               >
                 {t('cta.whatsapp.button')}
               </a>

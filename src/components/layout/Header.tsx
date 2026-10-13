@@ -25,13 +25,13 @@ export function Header() {
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-black focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
       >
-        Saltar al contenido principal
+        {t('header.skip')}
       </a>
       <header className="fixed top-7 left-0 right-0 z-50 transition-all duration-200" role="banner">
         <div className="max-w-[1280px] mx-auto px-4 md:px-gutter-desktop">
           <div className="h-16 px-5 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-between">
             <div className="flex items-center gap-8">
-              <a className="flex items-center gap-3 group" href="#" aria-label="CAT CODE - Inicio">
+                <a className="flex items-center gap-3 group" href="#" aria-label={t('header.home')}>
                 <div className="w-8 h-8 rounded-lg p-0.5 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:border-[#FFB800] transition-all duration-300 ease-out">
                   <img alt="CAT CODE Logo" className="w-full h-full object-contain" src="/catcode/catcode-icon.png" />
                 </div>

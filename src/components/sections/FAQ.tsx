@@ -5,7 +5,7 @@ export function FAQ() {
   const { t } = useTranslation();
   const { openIndex, toggle } = useFaqAccordion();
 
-  const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
     <section className="w-full bg-surface-container-lowest py-unit-20 md:py-unit-24 border-b border-black/[0.06]" id="faq" aria-labelledby="faq-title">
