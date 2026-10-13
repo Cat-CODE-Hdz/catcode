@@ -1,6 +1,6 @@
 # CatCode Landing Page
 
-Landing page oficial de [CatCode](https://cat-code-hdz.github.io/catcode/) — servicios de desarrollo web para PyMEs en México.
+Landing page oficial de [CatCode](https://cat-code-hdz.github.io/catcode/) — servicios de presencia digital para pequeños negocios en España.
 
 ## Stack
 

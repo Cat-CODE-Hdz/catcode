@@ -5,51 +5,53 @@ export interface FaqItem {
 
 export const faqItems: FaqItem[] = [
   {
-    question: '¿Necesito tener una web?',
-    answer: 'No. Podemos construirla desde cero con CUSTOM o incluirla dentro de FULL.',
+    question: '¿Qué hacemos exactamente?',
+    answer:
+      'Agencia web para pequeños negocios: landing profesional, contenido semanal y publicación en redes. Todo conectado, sin complicaciones.',
   },
   {
-    question: '¿Tengo que preparar el contenido?',
-    answer: 'No. Dependiendo del producto contratado, CAT CODE puede crear el contenido necesario para tu presencia digital.',
+    question: '¿Qué incluye cada plan?',
+    answer:
+      'CUSTOM: landing a medida (Basic/Pro/Premium). WEEKLY: 3, 5 o 7 piezas por semana según nivel. SOCIAL: publicación gestionada en Facebook e Instagram. FULL: Custom Pro + Weekly Pro + Social Pro integrados por 199 €/mes, con el setup de la web incluido.',
   },
   {
-    question: '¿Cuántas publicaciones incluye WEEKLY?',
-    answer: 'Todos los planes WEEKLY incluyen 5 publicaciones por semana.',
+    question: '¿Tengo permanencia?',
+    answer:
+      'No. Sin permanencias. Cambia de nivel o cancela cuando quieras: bajas al siguiente ciclo y las subidas se prorratean.',
   },
   {
-    question: '¿Cuántas publicaciones incluye SOCIAL?',
-    answer: 'SOCIAL incluye 5 publicaciones por semana.',
+    question: '¿Qué redes sociales gestionáis?',
+    answer:
+      'Facebook e Instagram. Para redes adicionales, consulta: no están incluidas por defecto.',
   },
   {
-    question: '¿Puedo contratar solo una parte?',
-    answer: 'Sí. Puedes contratar CUSTOM, WEEKLY o SOCIAL de forma independiente.',
+    question: '¿Respondéis mis mensajes privados o comentarios?',
+    answer:
+      'No. No respondemos a comentarios ni a mensajes privados en ningún plan. Responder en nombre del negocio obliga a estar pendiente a diario de cada publicación: eso es community management, con su tiempo y su precio.',
   },
   {
-    question: '¿Puedo cambiar de plan?',
-    answer: 'Sí. Puedes cambiar de plan según las necesidades de tu negocio.',
+    question: '¿Hacéis publicidad (Ads)?',
+    answer:
+      'No está incluido en los planes. Podemos asesorar, pero no gestionamos campañas de pago.',
   },
   {
-    question: '¿El dominio está incluido?',
-    answer: 'No. El dominio se contrata y renueva a nombre del cliente.',
+    question: '¿Tomáis fotografías o producís vídeo?',
+    answer:
+      'No está incluido. El Reel de SOCIAL PREMIUM se crea reutilizando tu contenido del mismo mes (10-15 s).',
   },
   {
-    question: '¿Qué redes gestionáis?',
-    answer: 'SOCIAL está pensado para Facebook e Instagram.',
+    question: '¿Qué pasa con mi landing si cancelo?',
+    answer:
+      'La landing y el contenido son tuyos: una vez facturado y publicado, el derecho de uso es del cliente. Al cancelar dejamos de producir y publicar contenido nuevo.',
   },
   {
-    question: '¿Publicáis vosotros?',
-    answer: 'Sí. La publicación está incluida en SOCIAL.',
+    question: '¿Cómo son los plazos de entrega?',
+    answer:
+      'Landing: 48-72 h (Basic), 5-7 días (Pro) y 7-10 días (Premium) desde la aprobación del diseño. Contenido semanal: 48 h antes de publicar.',
   },
   {
-    question: '¿Hacéis publicidad?',
-    answer: 'No. Las campañas publicitarias no están incluidas en SOCIAL.',
-  },
-  {
-    question: '¿Respondéis mensajes y comentarios?',
-    answer: 'No forma parte del servicio estándar de SOCIAL.',
-  },
-  {
-    question: '¿También hacéis stories?',
-    answer: 'Están incluidas según el plan contratado.',
+    question: '¿Cómo empezamos?',
+    answer:
+      'Escríbenos por WhatsApp o rellena el formulario de contacto: “Cuéntanos qué necesita tu negocio.”',
   },
 ];

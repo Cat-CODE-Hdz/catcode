@@ -1,6 +1,6 @@
 {
   "topbar": {
-    "capacity": "CAPACIDAD Q2 ACTIVA",
+    "capacity": "PRESENCIA DIGITAL PARA PEQUEÑOS NEGOCIOS",
     "version": "CAT CODE STUDIO — VERSIÓN {{version}}",
     "standard": "ESTÁNDAR WEB PREMIUM SUIZO",
     "locations": "MAD · VLC · BIO"
@@ -14,6 +14,8 @@
       "faq": "FAQ"
     },
     "start": "Empezar",
+    "skip": "Saltar al contenido principal",
+    "home": "CAT CODE - Inicio",
     "clientSession": "Sesión de cliente"
   },
   "hero": {
@@ -39,14 +41,16 @@
     },
     "terminal": {
       "architecture": "ARQUITECTURA DE PRODUCCIÓN",
-      "tech": "NEXT · TAILWIND",
+      "tech": "VITE · REACT",
       "projectName": "Tu Negocio Online",
-      "deploy": "Despliegue integral en CDN global de alta disponibilidad.",
+      "deploy": "Desplegado en GitHub Pages con despliegue automático por GitHub Actions.",
       "performance": "Performance",
       "loading": "Carga",
       "indexing": "Indexación",
+      "measuredNote": "Puntuaciones de PageSpeed: se miden en cada build y aparecen aquí cuando el build las registra.",
+      "regionLabel": "Panel de estado del proyecto",
       "pipeline": "pipeline de presencia activo",
-      "ssl": "✓ SSL instalado · WhatsApp widget vinculado"
+      "ssl": "✓ HTTPS · despliegue automático"
     }
   },
   "problem": {
@@ -63,7 +67,7 @@
         "title": "No tienes una web profesional.",
         "description": "Clientes te buscan en Google o piden tu web y encuentran un enlace roto, una plantilla descuidada o nada. La primera impresión se pierde en 3 segundos.",
         "status": "Oportunidad perdida",
-        "metric": "-72% conversión"
+        "metric": "Sin presencia"
       },
       {
         "num": "02",
@@ -81,7 +85,7 @@
         "title": "Todo depende de ti.",
         "description": "Ya atiendes clientes, proveedores y facturas. Ponerte a diseñar en Canva o pelearte con código no debería estar en tu lista de tareas.",
         "status": "Tiempo no rentable",
-        "metric": "+15h/mes perdidas"
+        "metric": "Horas perdidas"
       }
     ]
   },
@@ -96,7 +100,7 @@
         "name": "CUSTOM",
         "subtitle": "Tu landing.",
         "description": "Una web profesional para que tu negocio tenga un lugar propio online.",
-        "price": "Desde €249",
+        "price": "Desde €149",
         "priceExtra": "+ €19/mes"
       },
       {
@@ -105,7 +109,7 @@
         "name": "WEEKLY",
         "subtitle": "Tu contenido.",
         "description": "Contenido preparado para que tus redes no se queden paradas.",
-        "price": "Desde €79/mes"
+        "price": "Desde €59/mes"
       },
       {
         "num": "03",
@@ -113,7 +117,7 @@
         "name": "SOCIAL",
         "subtitle": "Tus redes.",
         "description": "Nos ocupamos de crear, organizar y publicar para mantener tu negocio activo.",
-        "price": "Desde €99/mes"
+        "price": "Desde €79/mes"
       },
       {
         "num": "04",
@@ -121,32 +125,38 @@
         "name": "FULL",
         "subtitle": "Todo conectado.",
         "description": "Landing, contenido y redes gestionados en una solución.",
-        "price": "€229/mes",
+        "price": "€199/mes",
         "badge": "RECOMENDADO"
       }
     ]
   },
   "howItWorks": {
-    "sectionLabel": "Metodología Clara · 3 Fases",
+    "sectionLabel": "Metodología Clara · 4 Fases",
     "title": "Cómo funciona",
     "steps": [
       {
         "num": "01",
         "phase": "FASE DE ENTRADA",
-        "title": "NOS CUENTAS",
-        "description": "Nos cuentas qué haces, qué vendes y qué necesitas."
+        "title": "CUÉNTANOS",
+        "description": "Nos cuentas qué haces, qué vendes y qué necesitas. Te enviamos propuesta con precio cerrado."
       },
       {
         "num": "02",
         "phase": "CONSTRUCCIÓN",
-        "title": "LO CONSTRUIMOS",
-        "description": "Creamos tu presencia digital con el diseño y contenido adecuado para tu negocio."
+        "title": "CONSTRUIMOS",
+        "description": "Diseñamos tu landing y preparamos el contenido y la publicación de tu plan."
       },
       {
         "num": "03",
-        "phase": "DESPLIEGUE CONTINUO",
-        "title": "LO MANTENEMOS",
-        "description": "Según tu plan, actualizamos, creamos contenido y mantenemos tu presencia activa."
+        "phase": "REVISIÓN",
+        "title": "REVISA",
+        "description": "Tú apruebas antes de publicar: 48-72 h en Basic, 5-7 días en Pro y 7-10 días en Premium."
+      },
+      {
+        "num": "04",
+        "phase": "PUBLICACIÓN",
+        "title": "PUBLICAMOS",
+        "description": "Publicamos y, según tu plan, seguimos creando contenido y manteniendo tu presencia activa."
       }
     ]
   },
@@ -157,22 +167,22 @@
       {
         "title": "WEB",
         "count": "8 ITEMS",
-        "items": ["Landing", "Diseño responsive", "WhatsApp", "Formularios", "SEO básico", "Analytics", "Hosting", "SSL"]
+        "items": ["Landing a medida", "Diseño responsive", "Botón de WhatsApp", "SEO básico", "Analytics", "Hosting", "SSL", "Blog y aviso legal (Premium)"]
       },
       {
         "title": "CONTENIDO",
         "count": "6 ITEMS",
-        "items": ["5 publicaciones/semana", "Copy", "CTA", "Diseño", "Adaptación FB/IG", "Calendario"]
+        "items": ["3, 5 o 7 piezas/semana", "Copy anti-genérico", "Diseño base", "Stories y piezas promocionales", "Adaptación FB/IG", "Calendario"]
       },
       {
         "title": "REDES",
         "count": "6 ITEMS",
-        "items": ["Facebook", "Instagram", "Programación", "Publicación", "Stories según plan", "Organización"]
+        "items": ["Facebook", "Instagram", "Programación", "Publicación", "Stories según plan", "Reel mensual (Premium)"]
       },
       {
         "title": "MANTENIMIENTO",
         "count": "4 ITEMS",
-        "items": ["Cambios según plan", "Actualizaciones", "Soporte básico", "Mantenimiento"]
+        "items": ["Cambios según plan", "Actualizaciones", "Soporte", "Sin permanencia"]
       }
     ]
   },
@@ -180,80 +190,178 @@
     "sectionLabel": "Estructura Comercial · Sin Sorpresas",
     "title": "Planes y precios transparentes",
     "setup": "SETUP + MENSUAL",
+    "setupSuffix": " setup",
+    "monthSuffix": "/mes",
     "categories": {
       "custom": {
         "label": "CUSTOM (Landing)",
         "title": "CUSTOM — Tu landing",
-        "subtitle": "Una presencia digital profesional con infraestructura dedicada y mantenimiento continuo.",
+        "subtitle": "Una presencia digital profesional con hosting, responsive y SEO básico.",
         "note": "Nota: El dominio no está incluido. Se contrata y renueva a nombre del cliente.",
         "plans": {
-          "start": { "name": "PLAN START", "tier": "TIER 01", "cta": "Elegir START" },
-          "business": { "name": "PLAN BUSINESS", "tier": "TIER 02", "cta": "Elegir BUSINESS", "badge": "MÁS ELEGIDO" },
-          "pro": { "name": "PLAN PRO", "tier": "TIER 03", "cta": "Elegir PRO" }
+          "basic": {
+            "name": "CUSTOM BASIC",
+            "tier": "TIER 01",
+            "cta": "Elegir Basic",
+            "description": "Para negocios locales que necesitan estar online rápido y con garantías.",
+            "features": ["5 secciones", "Hero con CTA de WhatsApp, sobre nosotros, servicios, confianza y ubicación", "Hosting, responsive y SEO básico", "1 ronda de cambios · entrega en 48–72 h"]
+          },
+          "pro": {
+            "name": "CUSTOM PRO",
+            "tier": "TIER 02",
+            "cta": "Elegir Pro",
+            "badge": "MÁS ELEGIDO",
+            "description": "La landing completa para mostrar tu trabajo y generar confianza.",
+            "features": ["8 secciones", "Todo lo de Basic + galería, testimonios y FAQ", "Sección ampliada de beneficios", "2 rondas de cambios · soporte prioritario · entrega en 5–7 días"]
+          },
+          "premium": {
+            "name": "CUSTOM PREMIUM",
+            "tier": "TIER 03",
+            "cta": "Elegir Premium",
+            "description": "Máximo alcance: blog, casos de éxito y textos SEO trabajados.",
+            "features": ["11 secciones", "Todo lo de Pro + blog (3 entradas), casos de éxito y aviso legal", "3 rondas de cambios · textos SEO trabajados", "Entrega en 7–10 días"]
+          }
         }
       },
       "weekly": {
         "label": "WEEKLY (Contenido)",
         "title": "WEEKLY — Producción de contenido",
-        "subtitle": "Generación de material editorial y gráfico periódico para tus canales. (Producción, no incluye publicación).",
+        "subtitle": "Material editorial y gráfico para tus canales. Producción: no incluye la publicación.",
         "plans": {
-          "basic": { "name": "BASIC", "cta": "Elegir BASIC" },
-          "pro": { "name": "PRO", "cta": "Elegir PRO", "badge": "MÁS ELEGIDO" },
-          "premium": { "name": "PREMIUM", "cta": "Elegir PREMIUM" }
+          "basic": {
+            "name": "WEEKLY BASIC",
+            "cta": "Elegir Basic",
+            "description": "Contenido listo para que publiques a tu ritmo.",
+            "features": ["3 piezas por semana", "Copy + diseño base", "Calendario semanal de contenidos"]
+          },
+          "pro": {
+            "name": "WEEKLY PRO",
+            "cta": "Elegir Pro",
+            "badge": "MÁS ELEGIDO",
+            "description": "Ritmo constante, con más piezas y más variedad.",
+            "features": ["5 piezas por semana", "2 stories derivadas + 2 piezas promocionales", "Copy anti-genérico"]
+          },
+          "premium": {
+            "name": "WEEKLY PREMIUM",
+            "cta": "Elegir Premium",
+            "description": "Máxima cobertura semanal con prioridad en producción.",
+            "features": ["7 piezas por semana", "Todo lo de Pro + 4 stories y 4 piezas promocionales", "Prioridad en producción"]
+          }
         }
       },
       "social": {
         "label": "SOCIAL (Gestión)",
         "title": "SOCIAL — Gestión completa de redes",
-        "subtitle": "Servicio independiente donde nos encargamos de todo el flujo: redacción, diseño, programación y publicación continua.",
+        "subtitle": "Nos ocupamos de todo el flujo: redacción, diseño, programación y publicación continua en Facebook e Instagram.",
+        "note": "No incluye: campañas de publicidad (Ads), mensajes privados, respuesta a comentarios, fotografía profesional ni community management.",
         "plans": {
-          "basic": { "name": "BASIC", "cta": "Elegir BASIC" },
-          "pro": { "name": "PRO", "cta": "Elegir PRO", "badge": "MÁS ELEGIDO" }
+          "basic": {
+            "name": "SOCIAL BASIC",
+            "cta": "Elegir Basic",
+            "description": "Tu negocio activo en redes sin que tú tengas que publicar.",
+            "features": ["3 publicaciones por semana", "Publicación en Facebook + Instagram", "Gestión del calendario"]
+          },
+          "pro": {
+            "name": "SOCIAL PRO",
+            "cta": "Elegir Pro",
+            "badge": "MÁS ELEGIDO",
+            "description": "Presencia constante con stories y seguimiento mensual.",
+            "features": ["5 publicaciones por semana", "Publicación + stories", "Informe mensual de actividad"]
+          },
+          "premium": {
+            "name": "SOCIAL PREMIUM",
+            "cta": "Elegir Premium",
+            "description": "La máxima cobertura, con pieza de vídeo mensual.",
+            "features": ["7 publicaciones por semana", "Todo lo de Pro + 1 Reel sencillo/mes (15 s)", "Prioridad en producción"]
+          }
         }
       },
       "full": {
         "label": "FULL (Integral)",
-        "title": "FULL — Solución integral integrada",
-        "subtitle": "Posicionada como una solución unificada y conectada, no una simple suma matemática de servicios sueltos.",
+        "title": "FULL — Todo conectado",
+        "subtitle": "Landing, contenido y redes gestionados por un solo equipo: una solución unificada, no la suma de servicios sueltos.",
+        "note": "199 €/mes frente a 257 €/mes por separado: 22,6 % de ahorro. Sin permanencias. Cambia o cancela cuando quieras.",
         "plans": {
-          "full": { "name": "PLAN FULL INTEGRAL", "cta": "Contratar FULL", "badge": "RECOMENDADO" }
+          "full": {
+            "name": "FULL",
+            "cta": "Contratar FULL",
+            "badge": "RECOMENDADO",
+            "description": "Setup de la web incluido sin coste adicional. Custom Pro + Weekly Pro + Social Pro, integrados y coordinados.",
+            "features": ["Setup de la web incluido sin coste adicional", "Landing (Custom Pro) + Contenido (Weekly Pro) + Redes (Social Pro)", "22,6 % de ahorro frente a contratarlos por separado"]
+          }
         }
       }
     }
   },
   "portfolio": {
-    "sectionLabel": "Demostraciones Reales · Casos de Estudio",
+    "sectionLabel": "Ejemplos · Proyectos conceptuales",
     "title": "Tu negocio podría verse así.",
     "subtitle": "No necesitas imaginarlo. Puedes verlo.",
     "cta": "Ver demo",
+    "ctaPending": "Demo en preparación",
+    "concept": "Proyecto conceptual",
     "items": [
+      {
+        "domain": "tallerrecambios.es",
+        "resolution": "1440x900",
+        "category": "Taller de bicicletas · Sevilla",
+        "badge": "CUSTOM BASIC",
+        "level": "5 secciones · 149 € setup + 19 €/mes",
+        "name": "TALLER RECAMBIOS",
+        "description": "El escalón de entrada: una landing de 5 secciones con CTA de WhatsApp, hosting y SEO básico, por 149 € de setup.",
+        "demoUrl": ""
+      },
       {
         "domain": "casanora.es",
         "resolution": "1440x900",
         "category": "Restaurante · Madrid",
-        "badge": "LANDING · BUSINESS",
+        "badge": "CUSTOM PRO",
+        "level": "8 secciones · 249 € setup + 29 €/mes",
         "name": "CASA NORA",
-        "description": "Una presencia digital elegante y directa para un restaurante que quiere mostrar su propuesta, su carta y facilitar las reservas.",
-        "demoPath": "/casa-nora"
-      },
-      {
-        "domain": "estudiolumen.com",
-        "resolution": "1440x900",
-        "category": "Belleza · Valencia",
-        "badge": "LANDING · START",
-        "name": "ESTUDIO LUMEN",
-        "description": "Una landing limpia y visual para un estudio de belleza que quiere presentar sus servicios y convertir visitas en solicitudes de cita.",
-        "demoPath": "/estudio-lumen"
+        "description": "Una carta entera que funciona como sección de servicios, con galería, testimonios y FAQ, y contacto por WhatsApp.",
+        "demoUrl": "https://cat-code-hdz.github.io/casa-nora/"
       },
       {
         "domain": "rutanorte.eus",
         "resolution": "1440x900",
         "category": "Experiencias · Bilbao",
-        "badge": "LANDING · PRO",
+        "badge": "CUSTOM PREMIUM",
+        "level": "11 secciones · 449 € setup + 49 €/mes",
         "name": "RUTA NORTE",
-        "description": "Una presencia digital orientada a servicios y experiencias, diseñada para explicar la oferta rápidamente y generar contactos.",
-        "demoPath": "/ruta-norte"
+        "description": "El nivel alto: blog con entradas, casos de éxito, textos SEO trabajados y footer con aviso legal.",
+        "demoUrl": "https://cat-code-hdz.github.io/ruta-norte/"
+      },
+      {
+        "domain": "estudiolumen.com",
+        "resolution": "1440x900",
+        "category": "Belleza · Valencia",
+        "badge": "FULL",
+        "level": "199 €/mes · setup incluido",
+        "name": "ESTUDIO LUMEN",
+        "description": "Landing, contenido y redes en un solo plan: la demo del paquete completo, con publicación gestionada.",
+        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       }
+    ]
+  },
+  "about": {
+    "sectionLabel": "Sobre nosotros · Equipo",
+    "title": "Un equipo pequeño. Un proceso de 17 pasos.",
+    "description": "CAT CODE construye la presencia digital completa de pequeños negocios: una landing profesional, contenido semanal y publicación en redes. Todo conectado, en un solo equipo, sin permanencias.",
+    "tagline": "We Program . We Create . We Purr",
+    "facts": [
+      { "label": "EQUIPO", "value": "4 personas", "desc": "Backend · Frontend · Social & Content" },
+      { "label": "PROCESO", "value": "17 pasos", "desc": "Del primer contacto a la entrega y el seguimiento" },
+      { "label": "SERVICIOS", "value": "4 conectados", "desc": "CUSTOM · WEEKLY · SOCIAL · FULL" },
+      { "label": "COMPROMISO", "value": "Sin permanencia", "desc": "Tarifas transparentes, mes a mes" }
+    ],
+    "valuesTitle": "Cómo trabajamos",
+    "values": [
+      { "name": "Moderno", "desc": "Diseño limpio, tipografía técnica, sin ruido." },
+      { "name": "Premium", "desc": "Acabados cuidados y atención al detalle." },
+      { "name": "Simple", "desc": "Propuestas claras: lo que parece fácil es fácil." },
+      { "name": "Cercano", "desc": "Trato directo, sin burocracia." },
+      { "name": "Eficiente", "desc": "Entregas rápidas y procesos definidos." },
+      { "name": "Producto claro", "desc": "Precios y niveles transparentes." }
     ]
   },
   "whyCatCode": {
@@ -262,18 +370,23 @@
     "criteria": [
       {
         "num": "01",
-        "title": "01 — Producto claro.",
-        "description": "Sabes exactamente qué recibes, cómo funciona y en qué plazos, sin jerga de agencia ni costes ocultos."
+        "title": "01 — Simplifica.",
+        "description": "Hacemos todo por ti: diseño, contenido y publicación. Tú no tienes que montar nada ni aprender herramientas nuevas."
       },
       {
         "num": "02",
-        "title": "02 — Precio transparente.",
-        "description": "Tarifas cerradas sin sorpresas. Facturación predecible y clara adaptada al ritmo de tu negocio."
+        "title": "02 — Todo conectado.",
+        "description": "Web, contenidos y redes coordinados por un mismo equipo y bajo un mismo criterio técnico y estético."
       },
       {
         "num": "03",
-        "title": "03 — Todo en un solo lugar.",
-        "description": "Web, contenidos y redes coordinados bajo un mismo criterio técnico y estético."
+        "title": "03 — Para negocios pequeños.",
+        "description": "Planes desde 59 €/mes y entregas en días, no en meses: precios y alcance pensados para negocios locales."
+      },
+      {
+        "num": "04",
+        "title": "04 — Sin permanencias.",
+        "description": "Flexibilidad real: cambia de nivel o cancela cuando quieras, con aviso de un ciclo."
       }
     ],
     "cta": "Tú te ocupas de tu negocio. Nosotros de que se vea bien online."
@@ -284,54 +397,87 @@
     "reference": "[ FAQ · RESPUESTAS RÁPIDAS ]",
     "items": [
       {
-        "question": "¿Necesito tener una web?",
-        "answer": "No. Podemos construirla desde cero con CUSTOM o incluirla dentro de FULL."
+        "question": "¿Qué hacemos exactamente?",
+        "answer": "Agencia web para pequeños negocios: landing profesional, contenido semanal y publicación en redes. Todo conectado, sin complicaciones."
       },
       {
-        "question": "¿Tengo que preparar el contenido?",
-        "answer": "No. Dependiendo del producto contratado, CAT CODE puede crear el contenido necesario para tu presencia digital."
+        "question": "¿Qué incluye cada plan?",
+        "answer": "CUSTOM: landing a medida (Basic/Pro/Premium). WEEKLY: 3, 5 o 7 piezas por semana según nivel. SOCIAL: publicación gestionada en Facebook e Instagram. FULL: Custom Pro + Weekly Pro + Social Pro integrados por 199 €/mes, con el setup de la web incluido."
       },
       {
-        "question": "¿Cuántas publicaciones incluye WEEKLY?",
-        "answer": "Todos los planes WEEKLY incluyen 5 publicaciones por semana."
+        "question": "¿Tengo permanencia?",
+        "answer": "No. Sin permanencias. Cambia de nivel o cancela cuando quieras: bajas al siguiente ciclo y las subidas se prorratean."
       },
       {
-        "question": "¿Cuántas publicaciones incluye SOCIAL?",
-        "answer": "SOCIAL incluye 5 publicaciones por semana."
+        "question": "¿Qué redes sociales gestionáis?",
+        "answer": "Facebook e Instagram. Para redes adicionales, consulta: no están incluidas por defecto."
       },
       {
-        "question": "¿Puedo contratar solo una parte?",
-        "answer": "Sí. Puedes contratar CUSTOM, WEEKLY o SOCIAL de forma independiente."
+        "question": "¿Respondéis mis mensajes privados o comentarios?",
+        "answer": "No. No respondemos a comentarios ni a mensajes privados en ningún plan. Responder en nombre del negocio obliga a estar pendiente a diario de cada publicación: eso es community management, con su tiempo y su precio."
       },
       {
-        "question": "¿Puedo cambiar de plan?",
-        "answer": "Sí. Puedes cambiar de plan según las necesidades de tu negocio."
+        "question": "¿Hacéis publicidad (Ads)?",
+        "answer": "No está incluido en los planes. Podemos asesorar, pero no gestionamos campañas de pago."
       },
       {
-        "question": "¿El dominio está incluido?",
-        "answer": "No. El dominio se contrata y renueva a nombre del cliente."
+        "question": "¿Tomáis fotografías o producís vídeo?",
+        "answer": "No está incluido. El Reel de SOCIAL PREMIUM se crea reutilizando tu contenido del mismo mes (10-15 s)."
       },
       {
-        "question": "¿Qué redes gestionáis?",
-        "answer": "SOCIAL está pensado para Facebook e Instagram."
+        "question": "¿Qué pasa con mi landing si cancelo?",
+        "answer": "La landing y el contenido son tuyos: una vez facturado y publicado, el derecho de uso es del cliente. Al cancelar dejamos de producir y publicar contenido nuevo."
       },
       {
-        "question": "¿Publicáis vosotros?",
-        "answer": "Sí. La publicación está incluida en SOCIAL."
+        "question": "¿Cómo son los plazos de entrega?",
+        "answer": "Landing: 48-72 h (Basic), 5-7 días (Pro) y 7-10 días (Premium) desde la aprobación del diseño. Contenido semanal: 48 h antes de publicar."
       },
       {
-        "question": "¿Hacéis publicidad?",
-        "answer": "No. Las campañas publicitarias no están incluidas en SOCIAL."
-      },
-      {
-        "question": "¿Respondéis mensajes y comentarios?",
-        "answer": "No forma parte del servicio estándar de SOCIAL."
-      },
-      {
-        "question": "¿También hacéis stories?",
-        "answer": "Están incluidas según el plan contratado."
+        "question": "¿Cómo empezamos?",
+        "answer": "Escríbenos por WhatsApp o rellena el formulario de contacto: “Cuéntanos qué necesita tu negocio.”"
       }
     ]
+  },
+  "contact": {
+    "sectionLabel": "Contacto · Formulario",
+    "title": "Cuéntanos qué necesita tu negocio.",
+    "subtitle": "Sin compromiso. Te respondemos en menos de 24h.",
+    "submit": "Enviar",
+    "planPlaceholder": "Selecciona un plan",
+    "planOptions": {
+      "custom": "CUSTOM — Landing",
+      "weekly": "WEEKLY — Contenido",
+      "social": "SOCIAL — Redes",
+      "full": "FULL — Todo conectado",
+      "unsure": "No lo sé todavía"
+    },
+    "fields": {
+      "name": "Nombre",
+      "business": "Nombre del negocio",
+      "email": "Email",
+      "phone": "Teléfono / WhatsApp",
+      "plan": "Plan de interés",
+      "message": "Mensaje"
+    },
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "email": "Introduce un email válido.",
+      "consent": "Necesitamos tu aceptación para poder responderte."
+    },
+    "consent": "Acepto recibir información sobre mi plan.",
+    "privacyNote": "Usamos tus datos solo para responderte a ti. No los compartimos con terceros.",
+    "message": {
+      "intro": "Hola CAT CODE, quiero mejorar la presencia digital de mi negocio."
+    },
+    "channels": {
+      "title": "CANAL DIRECTO WHATSAPP",
+      "response": "RESPUESTA EN < 24H",
+      "whatsapp": "Si prefieres hablar directo, escríbenos por WhatsApp: respondemos en menos de 24h laborables."
+    },
+    "success": {
+      "title": "¡Recibido!",
+      "body": "Hemos abierto WhatsApp con tu mensaje. Si no se abrió, usa el botón de abajo. Te respondemos en menos de 24h."
+    }
   },
   "cta": {
     "pill": "EMPIEZA HOY",
@@ -341,16 +487,53 @@
     "ctaSecondary": "Ver ejemplos",
     "whatsapp": {
       "channel": "CANAL DIRECTO WHATSAPP",
-      "response": "RESPUESTA EN < 2H",
+      "response": "RESPUESTA EN < 24H",
       "message": "Hola CAT CODE, quiero mejorar la presencia digital de mi negocio.",
       "button": "Enviar WhatsApp"
+    }
+  },
+  "legal": {
+    "sectionLabel": "Información legal",
+    "title": "Aviso legal, privacidad y cookies.",
+    "aviso": {
+      "title": "Aviso legal",
+      "items": [
+        { "label": "Titular", "text": "[[PENDIENTE]] Razón social, NIF y domicilio del titular de CAT CODE." },
+        { "label": "Marca", "text": "CAT CODE — servicios de presencia digital: landing, contenido y publicación en redes." },
+        { "label": "Web", "text": "Sitio informativo alojado en GitHub Pages: cat-code-hdz.github.io/catcode/" },
+        { "label": "Contacto", "text": "Formulario de esta web y canal directo de WhatsApp." },
+        { "label": "Objeto", "text": "Describir servicios, niveles y precios. Cada contratación se formaliza con una propuesta por escrito." }
+      ]
+    },
+    "privacidad": {
+      "title": "Política de privacidad",
+      "items": [
+        { "label": "Responsable", "text": "[[PENDIENTE]] Identidad del titular de CAT CODE (ver aviso legal)." },
+        { "label": "Qué datos recogemos", "text": "Solo los que decides escribir: nombre, negocio, email, teléfono y mensaje." },
+        { "label": "Cómo se envían", "text": "El formulario no guarda nada en un servidor propio: abre WhatsApp con tu mensaje para enviárnoslo." },
+        { "label": "Finalidad", "text": "Responder a tu consulta y preparar una propuesta. Base jurídica: tu consentimiento." },
+        { "label": "Conservación", "text": "Mientras atendamos tu solicitud y los plazos que exija la ley." },
+        { "label": "Cesiones", "text": "No cedemos tus datos a terceros." },
+        { "label": "Medición de visitas", "text": "Medimos las visitas con Google Analytics 4 en modo sin cookies, sin perfiles publicitarios ni segmentación." },
+        { "label": "Tus derechos", "text": "Puedes pedir acceso, rectificación o supresión escribiendo por el canal de contacto indicado." }
+      ]
+    },
+    "cookies": {
+      "title": "Política de cookies",
+      "items": [
+        { "label": "Cookies propias", "text": "Este sitio no instala cookies publicitarias ni de seguimiento, y no guarda preferencias en tu navegador." },
+        { "label": "Medición", "text": "Usamos Google Analytics 4 en modo sin cookies: no se crea la cookie _ga ni se guarda ningún identificador en tu navegador; solo medimos qué páginas se visitan." },
+        { "label": "Terceros", "text": "Las peticiones de medición y las tipografías van a Google (Google Ireland Ltd.), que recibe tu dirección IP. La medición arranca con el consentimiento denegado (Consent Mode) y no se usa con fines publicitarios." },
+        { "label": "Cómo controlarlas", "text": "Puedes bloquear o eliminar cookies y scripts desde la configuración de tu navegador." },
+        { "label": "Cambios", "text": "Si cambia la configuración de medición, esta política se actualizará antes de modificarla." }
+      ]
     }
   },
   "footer": {
     "description": "Construimos tu presencia digital.",
     "subtitle": "INGENIERÍA WEB Y SISTEMA DE CONTENIDOS PARA PEQUEÑOS NEGOCIOS",
     "copyright": "© 2026 CAT CODE. Todos los derechos reservados.",
-    "status": "Sistemas operando al 100%",
+    "status": "Web en producción",
     "nav": {
       "whatWeDo": "Qué hacemos",
       "howItWorks": "Cómo funciona",
