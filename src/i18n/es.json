@@ -500,7 +500,7 @@
       "items": [
         { "label": "Titular", "text": "[[PENDIENTE]] Razón social, NIF y domicilio del titular de CAT CODE." },
         { "label": "Marca", "text": "CAT CODE — servicios de presencia digital: landing, contenido y publicación en redes." },
-        { "label": "Web", "text": "Sitio informativo alojado en GitHub Pages: cat-code-hdz.github.io/catcode/" },
+        { "label": "Web", "text": "Sitio informativo alojado en GitHub Pages: catcode.es" },
         { "label": "Contacto", "text": "Formulario de esta web y canal directo de WhatsApp." },
         { "label": "Objeto", "text": "Describir servicios, niveles y precios. Cada contratación se formaliza con una propuesta por escrito." }
       ]

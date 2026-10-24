@@ -21,7 +21,7 @@ function loadEnvLocal() {
 
 loadEnvLocal();
 
-const SITE_URL = process.env.SITE_URL || 'https://cat-code-hdz.github.io/catcode/';
+const SITE_URL = process.env.SITE_URL || 'https://catcode.es/';
 const API_KEY = process.env.PAGESPEED_API_KEY || '';
 
 console.log(`[metrics] SITE_URL: ${SITE_URL}`);

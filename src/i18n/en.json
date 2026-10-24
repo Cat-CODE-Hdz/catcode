@@ -500,7 +500,7 @@
       "items": [
         { "label": "Owner", "text": "[[PENDING]] Legal name, tax ID and registered address of the CAT CODE owner." },
         { "label": "Brand", "text": "CAT CODE — digital presence services: landing pages, content and social publishing." },
-        { "label": "Website", "text": "Informational site hosted on GitHub Pages: cat-code-hdz.github.io/catcode/" },
+        { "label": "Website", "text": "Informational site hosted on GitHub Pages: catcode.es" },
         { "label": "Contact", "text": "The form on this site and the direct WhatsApp channel." },
         { "label": "Purpose", "text": "To describe services, tiers and prices. Every contract is formalised through a written proposal." }
       ]

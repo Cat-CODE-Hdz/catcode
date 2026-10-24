@@ -33,7 +33,7 @@ export function Header() {
             <div className="flex items-center gap-8">
                 <a className="flex items-center gap-3 group" href="#" aria-label={t('header.home')}>
                 <div className="w-8 h-8 rounded-lg p-0.5 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:border-[#FFB800] transition-all duration-300 ease-out">
-                  <img alt="CAT CODE Logo" className="w-full h-full object-contain" src="/catcode/catcode-icon.png" />
+                  <img alt="CAT CODE Logo" className="w-full h-full object-contain" src="/catcode-icon.png" />
                 </div>
                 <span className="font-headline-sm text-[19px] tracking-tight font-bold text-primary">CAT CODE</span>
               </a>

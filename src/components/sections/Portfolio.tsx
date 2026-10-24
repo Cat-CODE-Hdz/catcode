@@ -68,7 +68,7 @@ export function Portfolio() {
                       />
                     ) : (
                       <div className="w-full h-full bg-neutral-950 noise-bg flex flex-col items-center justify-center gap-3" aria-hidden="true">
-                        <img alt="" className="w-10 h-10 object-contain opacity-90" src="/catcode/catcode-icon.png" loading="lazy" />
+                        <img alt="" className="w-10 h-10 object-contain opacity-90" src="/catcode-icon.png" loading="lazy" />
                         <span className="font-mono text-[10px] uppercase tracking-widest text-neutral-500">{itemData.name}</span>
                       </div>
                     )}

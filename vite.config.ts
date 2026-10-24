@@ -6,7 +6,7 @@ import { defineConfig } from 'vite'
 const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'))
 
 export default defineConfig({
-  base: '/catcode/',
+  base: '/',
   plugins: [react(), tailwindcss()],
   define: {
     __APP_VERSION__: JSON.stringify(pkg.version),

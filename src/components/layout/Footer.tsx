@@ -22,7 +22,7 @@ export function Footer() {
           <div className="space-y-unit-2">
             <div className="flex items-center gap-3 group">
               <div className="w-9 h-9 rounded-xl bg-white border border-neutral-200 p-0.5 flex items-center justify-center shrink-0 shadow-xs group-hover:border-[#FFB800] transition-all duration-300">
-                <img alt="CAT CODE Signature Logo" className="w-full h-full object-contain transition-all duration-300 group-hover:rotate-6 group-hover:scale-110" src="/catcode/catcode-icon.png" />
+                <img alt="CAT CODE Signature Logo" className="w-full h-full object-contain transition-all duration-300 group-hover:rotate-6 group-hover:scale-110" src="/catcode-icon.png" />
               </div>
               <span className="font-headline-sm text-xl font-bold tracking-tight text-primary flex items-center gap-2">
                 CAT CODE

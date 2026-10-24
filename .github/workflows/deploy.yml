@@ -36,7 +36,7 @@ jobs:
           echo "[debug] PAGESPEED_API_KEY set: ${{ secrets.PAGESPEED_API_KEY != '' }}"
           npm run fetch-metrics
         env:
-          SITE_URL: 'https://cat-code-hdz.github.io/catcode/'
+          SITE_URL: 'https://catcode.es/'
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
 
       - name: Build
