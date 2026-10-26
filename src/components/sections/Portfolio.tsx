@@ -2,7 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { track } from '../../lib/analytics';
 
 const imgData: ({ imgSrc: string; imgAlt: string } | null)[] = [
-  null,
+  {
+    imgSrc: '/catcode/images/taller-recambios-hero.jpg',
+    imgAlt: 'A professional bike repair workshop in Seville with a bicycle on a repair stand, tools organized on a steel workbench, graphite and steel tones with warm accent lighting, clean editorial photography',
+  },
   {
     imgSrc: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADVTNi844US5afwgqxdbGsgro9wRr14K0pCqNC69BVx1WQwB0UHzOh8Ojoxj5M3rBP10JW1Dgq7yz4ZDgypR3bN8DPhz9IRJ3KbG2VufTIZ1n2GS5eYgaaVdRG2qRoztv7tqLA8pze1gKJoSw5R9XIWGBmzmlkMQPawpsK4R2RZdUQOHMTJ5ax2pwFI938hAYR28XdHq_Cd-Q7CPbVn_fumETfvl7tCnIw45zPhvyIyj-KoA0NDdQ1',
     imgAlt: 'A bright contemporary beauty and wellness aesthetic clinic interior in Valencia with neutral off-white concrete textures, organic archway details, soft natural daylight, minimalist glass bottles, calm and balanced editorial style',
