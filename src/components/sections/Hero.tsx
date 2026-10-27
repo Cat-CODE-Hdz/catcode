@@ -7,7 +7,7 @@ export function Hero() {
   const { metrics, isLive } = useMetrics();
 
   return (
-    <section className="relative w-full bg-surface-container-lowest pt-unit-12 pb-unit-20 md:pt-unit-16 md:pb-unit-28 overflow-hidden noise-bg border-b border-black/[0.06]" id="hero" aria-labelledby="hero-title">
+    <section className="relative w-full bg-surface-container-lowest pt-28 md:pt-unit-12 pb-unit-20 md:pb-unit-28 overflow-hidden noise-bg border-b border-black/[0.06]" id="hero" aria-labelledby="hero-title">
       <div className="absolute inset-0 pointer-events-none grid grid-cols-12 max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="border-l border-r border-black/[0.03] col-span-12 h-full" />
       </div>

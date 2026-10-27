@@ -6,8 +6,8 @@ export function TopBar() {
   return (
     <aside
       aria-label="Aviso de disponibilidad"
-      className="w-full bg-black text-white py-1.5 px-gutter-desktop border-b border-white/10 flex items-center justify-between overflow-hidden"
-      style={{ fontSize: '11px' }}
+      className="w-full bg-black text-white py-1.5 px-4 sm:px-gutter-desktop border-b border-white/10 flex items-center justify-between overflow-hidden"
+      style={{ fontSize: '9px' }}
     >
       <div className="flex items-center gap-3">
         <span className="inline-flex items-center gap-1.5">
@@ -18,7 +18,7 @@ export function TopBar() {
         <span className="text-neutral-400 hidden sm:inline font-mono">{t('topbar.version', { version: __APP_VERSION__ })}</span>
       </div>
       <div className="flex items-center gap-4 text-neutral-400 font-mono">
-        <span className="font-semibold text-[#FFB800] uppercase tracking-widest" style={{ fontSize: '10px' }}>
+        <span className="font-semibold text-[#FFB800] uppercase tracking-widest" style={{ fontSize: '9px' }}>
           {t('topbar.locations')}
         </span>
       </div>

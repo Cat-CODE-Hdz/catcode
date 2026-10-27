@@ -28,16 +28,16 @@ export function Header() {
         {t('header.skip')}
       </a>
       <header className="fixed top-7 left-0 right-0 z-50 transition-all duration-200" role="banner">
-        <div className="max-w-[1280px] mx-auto px-4 md:px-gutter-desktop">
-          <div className="h-16 px-5 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-between">
-            <div className="flex items-center gap-8">
-                <a className="flex items-center gap-3 group" href="#" aria-label={t('header.home')}>
-                <div className="w-8 h-8 rounded-lg p-0.5 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:border-[#FFB800] transition-all duration-300 ease-out">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-gutter-desktop">
+          <div className="h-14 sm:h-16 px-4 sm:px-5 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex items-center justify-between">
+            <div className="flex items-center gap-3 sm:gap-4 md:gap-8">
+                <a className="flex items-center gap-2 sm:gap-3 group" href="#" aria-label={t('header.home')}>
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg p-0.5 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:border-[#FFB800] transition-all duration-300 ease-out">
                   <img alt="CAT CODE Logo" className="w-full h-full object-contain" src="/catcode/catcode-icon.png" />
                 </div>
-                <span className="font-headline-sm text-[19px] tracking-tight font-bold text-primary">CAT CODE</span>
+                <span className="font-headline-sm text-[17px] sm:text-[19px] tracking-tight font-bold text-primary">CAT CODE</span>
               </a>
-              <nav className="hidden md:flex items-center gap-unit-6" aria-label="Navegación principal">
+              <nav className="hidden md:flex items-center gap-unit-4 lg:gap-unit-6" aria-label="Navegación principal">
                 {navLinks.map((link) => (
                   <a
                     key={link.path}
@@ -49,17 +49,17 @@ export function Header() {
                 ))}
               </nav>
             </div>
-            <div className="flex items-center gap-unit-3">
+            <div className="flex items-center gap-1.5 sm:gap-unit-2 md:gap-unit-3">
               <button
                 onClick={toggleLanguage}
-                className="h-7 px-2 rounded-lg bg-neutral-100 border border-neutral-200/80 font-mono text-[10px] font-semibold uppercase tracking-wider text-neutral-600 hover:bg-neutral-200 transition-colors active:scale-95"
+                className="h-6 sm:h-7 px-1.5 sm:px-2 rounded-lg bg-neutral-100 border border-neutral-200/80 font-mono text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider text-neutral-600 hover:bg-neutral-200 transition-colors active:scale-95"
                 type="button"
                 aria-label={i18n.language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
               >
                 {i18n.language === 'es' ? 'EN' : 'ES'}
               </button>
               <a
-                className="relative group inline-flex items-center justify-center h-10 px-unit-5 rounded-xl bg-black hover:bg-neutral-900 text-white font-label-md text-label-md tracking-normal transition-all duration-150 shadow-[0_2px_8px_rgba(0,0,0,0.12)] active:scale-95 btn-amber-glow"
+                className="relative group inline-flex items-center justify-center h-9 sm:h-10 px-3 sm:px-unit-4 md:px-unit-5 rounded-xl bg-black hover:bg-neutral-900 text-white font-label-md text-label-md tracking-normal transition-all duration-150 shadow-[0_2px_8px_rgba(0,0,0,0.12)] active:scale-95 btn-amber-glow"
                 href="#contacto"
               >
                 <span className="flex items-center gap-1.5 font-medium">
@@ -67,9 +67,9 @@ export function Header() {
                 </span>
               </a>
               <button
-                className="w-10 h-10 rounded-xl bg-neutral-100 hover:bg-neutral-200 border border-neutral-200 flex flex-col items-center justify-center gap-1 shrink-0 text-neutral-800 transition-colors active:scale-95 md:hidden"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-neutral-100 hover:bg-neutral-200 border border-neutral-200 flex flex-col items-center justify-center gap-1 shrink-0 text-neutral-800 transition-colors active:scale-95 md:hidden"
                 onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label={mobileOpen ? 'Cerrar menú' : 'Abrir menú'}
+                aria-label={mobileOpen ? 'Eliminar menú' : 'Abrir menú'}
                 aria-expanded={mobileOpen}
                 aria-controls="mobile-nav"
                 type="button"
@@ -81,12 +81,12 @@ export function Header() {
             </div>
           </div>
           {mobileOpen && (
-            <nav id="mobile-nav" className="md:hidden mt-2 p-4 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)]" aria-label="Navegación móvil">
-              <div className="flex flex-col gap-unit-4">
+            <nav id="mobile-nav" className="md:hidden mt-2 p-3 sm:p-4 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)]" aria-label="Navegación móvil">
+              <div className="flex flex-col gap-1.5 sm:gap-unit-3">
                 {navLinks.map((link) => (
                   <a
                     key={link.path}
-                    className="font-label-md text-label-md text-on-surface-variant hover:text-black transition-colors duration-150"
+                    className="font-label-md text-label-md text-on-surface-variant hover:text-black transition-colors duration-150 py-2 px-3 rounded-lg hover:bg-black/5"
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                   >
