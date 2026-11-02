@@ -56,7 +56,7 @@ export function Hero() {
                   <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/80 inline-block" aria-hidden="true" />
                 </div>
                 <span className="text-neutral-400 flex items-center gap-1.5">
-                  <img alt="CAT CODE" className="w-4 h-4 rounded-full object-contain" src="/catcode/catcode-icon.png" />
+                  <img alt="CAT CODE" className="w-4 h-4 rounded-full object-contain" src="/catcode-icon.png" />
                   github.com/Cat-CODE-Hdz/catcode
                 </span>
                 <div className="flex items-center gap-2">
@@ -76,7 +76,7 @@ export function Hero() {
                 <div className="bg-neutral-900/90 rounded-xl p-4 border border-neutral-800">
                   <div className="flex items-center justify-between text-xs font-mono text-neutral-400 mb-2">
                     <span className="flex items-center gap-1.5">
-                      <img alt="CAT CODE" className="w-4 h-4 rounded-full bg-neutral-800 object-contain" src="/catcode/catcode-icon.png" />
+                      <img alt="CAT CODE" className="w-4 h-4 rounded-full bg-neutral-800 object-contain" src="/catcode-icon.png" />
                       <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800]" aria-hidden="true" />
                       {t('hero.terminal.architecture')}
                     </span>

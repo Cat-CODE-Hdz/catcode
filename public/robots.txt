@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /catcode/
+Allow: /
 
-Sitemap: https://cat-code-hdz.github.io/catcode/sitemap.xml
+Sitemap: https://catcode.es/sitemap.xml

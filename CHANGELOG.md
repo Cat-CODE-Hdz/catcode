@@ -11,6 +11,14 @@ Todas las notables cambios en este proyecto seguirán el formato [Keep a Changel
 - Variables de entorno `VITE_WHATSAPP_NUMBER` y `VITE_GA_MEASUREMENT_ID` en el workflow de despliegue
 - Docs: handoff web demos `docs/CATCODE_HANDOFF_WEB_DEMOS_v2.0`
 
+### Fixed
+- **Roto en producción con el dominio personalizado:** `base: '/catcode/'` en `vite.config.ts` hacía que el HTML pidiera los assets en `/catcode/assets/*`, pero GitHub Pages sirve el sitio desde la raíz al usar dominio propio → todos los JS/CSS/favicon daban 404 en `https://catcode.es/`. Cambiado a `base: '/'`
+- Rutas hardcodeadas `/catcode/catcode-icon.png` en Header, Footer, Hero y Portfolio
+- URLs canónica, Open Graph, Twitter Card y JSON-LD apuntaban al dominio antiguo `cat-code-hdz.github.io/catcode/` → ahora `https://catcode.es/`
+- `robots.txt` y `sitemap.xml` actualizados a `catcode.es`
+- `SITE_URL` de PageSpeed metrics (workflow y fallback del script) apunta ahora a `catcode.es`
+- Texto del aviso legal (es/en) y README actualizados al nuevo dominio
+
 ### Changed
 - Renovación de planes y precios (CUSTOM/WEEKLY/SOCIAL con tiers Basic/Pro/Premium) y copy ES/EN alineado a la oferta v2
 - Métricas: ya no se muestran valores inventados; se conserva el último dato real de PageSpeed o "unavailable"
