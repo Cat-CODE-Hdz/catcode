@@ -23,7 +23,7 @@
     "title": "Construimos tu presencia digital.",
     "subtitle": "Landing + contenido + publicación. Sin complicaciones.",
     "description": "Creamos lo que tu negocio necesita para verse profesional, generar confianza y conseguir clientes online.",
-    "ctaPrimary": "Quiero mejorar mi presencia",
+    "ctaPrimary": "Quiero mejorar mi presencia digital",
     "ctaSecondary": "Ver ejemplos",
     "features": {
       "delivery": {
@@ -309,7 +309,17 @@
         "level": "5 secciones · 149 € setup + 19 €/mes",
         "name": "TALLER RECAMBIOS",
         "description": "El escalón de entrada: una landing de 5 secciones con CTA de WhatsApp, hosting y SEO básico, por 149 € de setup.",
-        "demoUrl": ""
+        "demoUrl": "https://cat-code-hdz.github.io/taller-recambios/"
+      },
+      {
+        "domain": "estudiolumen.com",
+        "resolution": "1440x900",
+        "category": "Belleza · Valencia",
+        "badge": "FULL",
+        "level": "199 €/mes · setup incluido",
+        "name": "ESTUDIO LUMEN",
+        "description": "Landing, contenido y redes en un solo plan: la demo del paquete completo, con publicación gestionada.",
+        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       },
       {
         "domain": "casanora.es",
@@ -330,18 +340,15 @@
         "name": "RUTA NORTE",
         "description": "El nivel alto: blog con entradas, casos de éxito, textos SEO trabajados y footer con aviso legal.",
         "demoUrl": "https://cat-code-hdz.github.io/ruta-norte/"
-      },
-      {
-        "domain": "estudiolumen.com",
-        "resolution": "1440x900",
-        "category": "Belleza · Valencia",
-        "badge": "FULL",
-        "level": "199 €/mes · setup incluido",
-        "name": "ESTUDIO LUMEN",
-        "description": "Landing, contenido y redes en un solo plan: la demo del paquete completo, con publicación gestionada.",
-        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       }
     ]
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonios · Prueba social",
+    "title": "La opinión de nuestros clientes.",
+    "subtitle": "Solo publicamos testimonios reales, con permiso de quien los firma. Estarán aquí muy pronto.",
+    "slot": "Testimonio verificado — próximamente",
+    "note": "¿Ya eres cliente? Escríbenos por WhatsApp y te propondremos dejar tu testimonio."
   },
   "about": {
     "sectionLabel": "Sobre nosotros · Equipo",
@@ -472,7 +479,8 @@
     "channels": {
       "title": "CANAL DIRECTO WHATSAPP",
       "response": "RESPUESTA EN < 24H",
-      "whatsapp": "Si prefieres hablar directo, escríbenos por WhatsApp: respondemos en menos de 24h laborables."
+      "whatsapp": "Si prefieres hablar directo, escríbenos por WhatsApp: respondemos en menos de 24h laborables.",
+      "emailLabel": "O por email"
     },
     "success": {
       "title": "¡Recibido!",

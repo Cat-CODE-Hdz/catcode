@@ -11,6 +11,7 @@ const WhatIncludes = lazy(() => import('./components/sections/WhatIncludes').the
 const Pricing = lazy(() => import('./components/sections/Pricing').then(m => ({ default: m.Pricing })));
 const Portfolio = lazy(() => import('./components/sections/Portfolio').then(m => ({ default: m.Portfolio })));
 const SobreNosotros = lazy(() => import('./components/sections/SobreNosotros').then(m => ({ default: m.SobreNosotros })));
+const Testimonios = lazy(() => import('./components/sections/Testimonios').then(m => ({ default: m.Testimonios })));
 const WhyCatCode = lazy(() => import('./components/sections/WhyCatCode').then(m => ({ default: m.WhyCatCode })));
 const FAQ = lazy(() => import('./components/sections/FAQ').then(m => ({ default: m.FAQ })));
 const Contacto = lazy(() => import('./components/sections/Contacto').then(m => ({ default: m.Contacto })));
@@ -33,6 +34,7 @@ function App() {
             <Pricing />
             <Portfolio />
             <SobreNosotros />
+            <Testimonios />
             <WhyCatCode />
             <FAQ />
             <Contacto />

@@ -115,6 +115,16 @@ export function Contacto() {
               >
                 {t('cta.whatsapp.button')} <span className="text-[#FFB800] ml-1.5">→</span>
               </a>
+              <div className="mt-unit-5 pt-unit-4 border-t border-neutral-800">
+                <p className="font-mono text-[11px] uppercase tracking-wider text-neutral-400 mb-1.5">{t('contact.channels.emailLabel')}</p>
+                <a
+                  className="font-body-md text-body-md text-white hover:text-[#FFB800] transition-colors underline underline-offset-4 decoration-neutral-600"
+                  href="mailto:info@catcode.es"
+                  onClick={() => track('email_click', { from: 'contacto' })}
+                >
+                  info@catcode.es
+                </a>
+              </div>
             </div>
           </div>
 

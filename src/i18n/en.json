@@ -23,7 +23,7 @@
     "title": "We build your digital presence.",
     "subtitle": "Landing + content + publishing. No complications.",
     "description": "We create what your business needs to look professional, build trust, and get customers online.",
-    "ctaPrimary": "I want to improve my presence",
+    "ctaPrimary": "I want to improve my digital presence",
     "ctaSecondary": "See examples",
     "features": {
       "delivery": {
@@ -309,7 +309,17 @@
         "level": "5 sections · €149 setup + €19/mo",
         "name": "TALLER RECAMBIOS",
         "description": "The entry point: a 5-section landing with a WhatsApp CTA, hosting, and basic SEO, for €149 setup.",
-        "demoUrl": ""
+        "demoUrl": "https://cat-code-hdz.github.io/taller-recambios/"
+      },
+      {
+        "domain": "estudiolumen.com",
+        "resolution": "1440x900",
+        "category": "Beauty · Valencia",
+        "badge": "FULL",
+        "level": "€199/mo · setup included",
+        "name": "ESTUDIO LUMEN",
+        "description": "Landing, content, and social media in one plan: the demo of the full bundle, with managed publishing.",
+        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       },
       {
         "domain": "casanora.es",
@@ -330,18 +340,15 @@
         "name": "RUTA NORTE",
         "description": "The top tier: blog with posts, case studies, carefully written SEO copy, and a footer with legal notice.",
         "demoUrl": "https://cat-code-hdz.github.io/ruta-norte/"
-      },
-      {
-        "domain": "estudiolumen.com",
-        "resolution": "1440x900",
-        "category": "Beauty · Valencia",
-        "badge": "FULL",
-        "level": "€199/mo · setup included",
-        "name": "ESTUDIO LUMEN",
-        "description": "Landing, content, and social media in one plan: the demo of the full bundle, with managed publishing.",
-        "demoUrl": "https://cat-code-hdz.github.io/estudio-lumen/"
       }
     ]
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonials · Social proof",
+    "title": "What our clients say.",
+    "subtitle": "We only publish real testimonials, with the author's permission. They'll be here soon.",
+    "slot": "Verified testimonial — coming soon",
+    "note": "Already a client? Message us on WhatsApp and we'll ask if you'd like to leave a testimonial."
   },
   "about": {
     "sectionLabel": "About us · Team",
@@ -472,7 +479,8 @@
     "channels": {
       "title": "DIRECT WHATSAPP CHANNEL",
       "response": "REPLY WITHIN 24H",
-      "whatsapp": "If you'd rather talk directly, message us on WhatsApp: we reply within 24 business hours."
+      "whatsapp": "If you'd rather talk directly, message us on WhatsApp: we reply within 24 business hours.",
+      "emailLabel": "Or by email"
     },
     "success": {
       "title": "Got it!",
