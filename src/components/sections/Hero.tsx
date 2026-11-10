@@ -106,7 +106,7 @@ export function Hero() {
                 )}
                 <div className="bg-black/60 rounded-xl p-3.5 border border-neutral-800 font-mono leading-relaxed text-neutral-300" style={{ fontSize: '11px' }}>
                   <div className="text-neutral-500">// {t('hero.terminal.pipeline')}</div>
-                  <div className="text-[#FFB800]">&gt; catcode.deploy({'{'} landing: true, social: '3-7_posts/wk' {'}'})<span className="blinking-cursor" /></div>
+                  <div className="text-[#FFB800]">&gt; catcode.deploy({'{'} landing: true, social: '5_posts/wk' {'}'})<span className="blinking-cursor" /></div>
                   <div className="text-neutral-400 mt-1 flex items-center gap-1.5"><span className="text-[#FFB800] font-bold">✓</span> {t('hero.terminal.ssl')}</div>
                 </div>
               </div>

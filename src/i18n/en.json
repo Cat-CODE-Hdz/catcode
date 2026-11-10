@@ -32,7 +32,7 @@
       },
       "noCommitment": {
         "title": "No Commitment",
-        "desc": "Transparent month-to-month pricing"
+        "desc": "Monthly plans; cancel with one cycle's notice"
       },
       "adapted": {
         "title": "100% Adapted",
@@ -109,7 +109,7 @@
         "name": "WEEKLY",
         "subtitle": "Your content.",
         "description": "Content prepared so your social media never stops.",
-        "price": "From €59/mo"
+        "price": "€109/mo"
       },
       {
         "num": "03",
@@ -117,7 +117,7 @@
         "name": "SOCIAL",
         "subtitle": "Your social media.",
         "description": "We handle creating, organizing, and publishing to keep your business active.",
-        "price": "From €79/mo"
+        "price": "€119/mo"
       },
       {
         "num": "04",
@@ -172,12 +172,12 @@
       {
         "title": "CONTENT",
         "count": "6 ITEMS",
-        "items": ["3, 5, or 7 pieces/week", "Anti-generic copy", "Base design", "Stories and promotional pieces", "FB/IG adaptation", "Calendar"]
+        "items": ["5 pieces/week", "Anti-generic copy", "Base design", "Stories and promotional pieces", "FB/IG adaptation", "Calendar"]
       },
       {
         "title": "SOCIAL MEDIA",
-        "count": "6 ITEMS",
-        "items": ["Facebook", "Instagram", "Scheduling", "Publishing", "Stories per plan", "Monthly Reel (Premium)"]
+        "count": "7 ITEMS",
+        "items": ["Facebook", "Instagram", "Scheduling", "Publishing", "Stories", "Monthly activity report", "Profile check-up"]
       },
       {
         "title": "MAINTENANCE",
@@ -192,6 +192,7 @@
     "setup": "SETUP + MONTHLY",
     "setupSuffix": " setup",
     "monthSuffix": "/mo",
+    "oneTimeSuffix": " one-time",
     "categories": {
       "custom": {
         "label": "CUSTOM (Landing)",
@@ -228,24 +229,12 @@
         "title": "WEEKLY — Content production",
         "subtitle": "Editorial and graphic material for your channels. Production only: publishing is not included.",
         "plans": {
-          "basic": {
-            "name": "WEEKLY BASIC",
-            "cta": "Choose Basic",
-            "description": "Content ready so you can publish at your own pace.",
-            "features": ["3 pieces per week", "Copy + base design", "Weekly content calendar"]
-          },
-          "pro": {
-            "name": "WEEKLY PRO",
-            "cta": "Choose Pro",
-            "badge": "MOST CHOSEN",
-            "description": "A steady rhythm, with more pieces and more variety.",
-            "features": ["5 pieces per week", "2 derived stories + 2 promotional pieces", "Anti-generic copy"]
-          },
-          "premium": {
-            "name": "WEEKLY PREMIUM",
-            "cta": "Choose Premium",
-            "description": "Maximum weekly coverage with production priority.",
-            "features": ["7 pieces per week", "Everything in Pro + 4 stories and 4 promotional pieces", "Production priority"]
+          "weekly": {
+            "name": "WEEKLY",
+            "cta": "Choose WEEKLY",
+            "badge": "SINGLE TIER",
+            "description": "A steady rhythm: 5 pieces every week, with stories and promotional pieces.",
+            "features": ["5 pieces per week", "2 derived stories + 2 promotional pieces", "Anti-generic copy", "Weekly calendar"]
           }
         }
       },
@@ -253,26 +242,14 @@
         "label": "SOCIAL (Management)",
         "title": "SOCIAL — Complete social media management",
         "subtitle": "We handle the whole workflow: copy, design, scheduling, and continuous publishing on Facebook and Instagram.",
-        "note": "Not included: advertising campaigns (Ads), private messages, comment replies, professional photography, or community management.",
+        "note": "Not included: advertising campaigns (Ads), private messages, comment replies, professional photography, or community management. The Reel is a €79/piece add-on.",
         "plans": {
-          "basic": {
-            "name": "SOCIAL BASIC",
-            "cta": "Choose Basic",
-            "description": "Your business stays active on social media without you having to post.",
-            "features": ["3 posts per week", "Publishing on Facebook + Instagram", "Calendar management"]
-          },
-          "pro": {
-            "name": "SOCIAL PRO",
-            "cta": "Choose Pro",
-            "badge": "MOST CHOSEN",
-            "description": "A constant presence with stories and a monthly report.",
-            "features": ["5 posts per week", "Publishing + stories", "Monthly activity report"]
-          },
-          "premium": {
-            "name": "SOCIAL PREMIUM",
-            "cta": "Choose Premium",
-            "description": "Maximum coverage, with a monthly video piece.",
-            "features": ["7 posts per week", "Everything in Pro + 1 simple Reel/month (15 s)", "Production priority"]
+          "social": {
+            "name": "SOCIAL",
+            "cta": "Choose SOCIAL",
+            "badge": "SINGLE TIER",
+            "description": "We publish for you on Facebook and Instagram, with a monthly report and profile check-up.",
+            "features": ["5 posts per week", "Publishing + stories", "Monthly activity report", "Profile check-up"]
           }
         }
       },
@@ -280,17 +257,40 @@
         "label": "FULL (All-in-one)",
         "title": "FULL — Everything connected",
         "subtitle": "Landing, content, and social media handled by one team: a unified solution, not the sum of separate services.",
-        "note": "€199/mo vs €257/mo separately: 22.6% savings. No lock-in. Switch or cancel whenever you want.",
+        "note": "€199/mo vs €257/mo separately: 22.6% savings. No lock-in: cancel whenever you want; the included setup is settled proportionally if you cancel before the third month.",
         "plans": {
           "full": {
             "name": "FULL",
             "cta": "Hire FULL",
             "badge": "RECOMMENDED",
-            "description": "Website setup included at no extra cost. Custom Pro + Weekly Pro + Social Pro, integrated and coordinated.",
-            "features": ["Website setup included at no extra cost", "Landing (Custom Pro) + Content (Weekly Pro) + Social (Social Pro)", "22.6% cheaper than hiring them separately"]
+            "description": "Website setup included at no extra cost. CUSTOM Pro + WEEKLY + SOCIAL, integrated and coordinated.",
+            "features": ["Website setup included at no extra cost", "Landing (CUSTOM Pro) + Content (WEEKLY) + Social (SOCIAL)", "22.6% cheaper than hiring them separately"]
+          }
+        }
+      },
+      "arranque": {
+        "label": "STARTER",
+        "title": "STARTER — Begin today",
+        "subtitle": "A one-time entry point to take the first step with no monthly fee.",
+        "plans": {
+          "arranque": {
+            "name": "STARTER",
+            "cta": "Choose STARTER",
+            "badge": "ONE-TIME",
+            "description": "Start with a single €59 payment. No monthly fee and no lock-in.",
+            "features": ["One-time €59 payment", "No monthly fee", "No lock-in"]
           }
         }
       }
+    },
+    "addons": {
+      "title": "ADD-ONS",
+      "items": [
+        { "name": "Simple 15 s Reel", "price": "€79/piece" },
+        { "name": "Blog post", "price": "€79" },
+        { "name": "New section", "price": "€129" },
+        { "name": "Extra language", "price": "€119" }
+      ]
     }
   },
   "portfolio": {
@@ -388,7 +388,7 @@
       {
         "num": "03",
         "title": "03 — For small businesses.",
-        "description": "Plans from €59/mo and delivery in days, not months: pricing and scope built for local businesses."
+        "description": "Prices from €59 (STARTER) and monthly plans from €109; delivery in days, not months: built for local businesses."
       },
       {
         "num": "04",
@@ -409,11 +409,11 @@
       },
       {
         "question": "What does each plan include?",
-        "answer": "CUSTOM: a custom landing (Basic/Pro/Premium). WEEKLY: 3, 5, or 7 pieces per week depending on the tier. SOCIAL: managed publishing on Facebook and Instagram. FULL: Custom Pro + Weekly Pro + Social Pro integrated for €199/mo, with the website setup included."
+        "answer": "CUSTOM: a custom landing (Basic/Pro/Premium). WEEKLY: 5 pieces per week. SOCIAL: managed publishing on Facebook and Instagram, with a monthly report and profile check-up. FULL: CUSTOM Pro + WEEKLY + SOCIAL integrated for €199/mo, with the website setup included. We also offer STARTER for a one-time €59 and a Reel add-on for €79/piece."
       },
       {
         "question": "Am I locked into a contract?",
-        "answer": "No. No lock-in. Switch tiers or cancel whenever you want: downgrades apply next cycle, upgrades are prorated."
+        "answer": "No. No lock-in. Switch tiers or cancel whenever you want: downgrades apply next cycle, upgrades are prorated. On FULL, if you cancel before the third month, the included setup is settled proportionally."
       },
       {
         "question": "Which social networks do you manage?",
@@ -429,7 +429,7 @@
       },
       {
         "question": "Do you shoot photos or produce video?",
-        "answer": "Not included. The SOCIAL PREMIUM Reel is made by reusing your own content from the same month (10–15 s)."
+        "answer": "Not included on any plan. The simple 15 s Reel is a €79/piece add-on and is produced by reusing your own content from the same month."
       },
       {
         "question": "What happens to my landing if I cancel?",
@@ -456,6 +456,7 @@
       "weekly": "WEEKLY — Content",
       "social": "SOCIAL — Social media",
       "full": "FULL — Everything connected",
+      "arranque": "STARTER — One-time",
       "unsure": "I'm not sure yet"
     },
     "fields": {

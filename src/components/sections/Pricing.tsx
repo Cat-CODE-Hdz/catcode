@@ -108,9 +108,15 @@ export function Pricing() {
                   </a>
                 </div>
               ) : (
-                <div className="grid gap-unit-6 grid-cols-1 md:grid-cols-3">
+                <div className={`grid gap-unit-6 grid-cols-1 ${cat.plans.length === 1 ? 'md:grid-cols-1 max-w-xl mx-auto w-full' : 'md:grid-cols-3'}`}>
                   {cat.plans.map((plan, planIndex) => {
                     const planData = tabData.plans[planKeys[planIndex]];
+                    const price = plan.oneTime ?? plan.setup ?? plan.monthly;
+                    const suffix = plan.oneTime
+                      ? t('pricing.oneTimeSuffix')
+                      : plan.setup
+                        ? t('pricing.setupSuffix')
+                        : t('pricing.monthSuffix');
                     return (
                       <div
                         key={plan.id}
@@ -133,16 +139,14 @@ export function Pricing() {
                             {planData.tier && <span className={plan.highlighted ? 'text-[#FFB800] font-bold' : ''}>{planData.tier}</span>}
                           </div>
                           <div className="font-headline-md text-[34px] font-extrabold text-primary tracking-tight">
-                            €{plan.setup ?? plan.monthly}
-                            <span className="font-mono text-xs font-normal text-neutral-500">
-                              {plan.setup ? t('pricing.setupSuffix') : t('pricing.monthSuffix')}
-                            </span>
+                            €{price}
+                            <span className="font-mono text-xs font-normal text-neutral-500">{suffix}</span>
                           </div>
-                          {plan.setup && (
+                          {plan.setup && plan.monthly ? (
                             <div className={`font-mono text-xs mt-1 ${plan.highlighted ? 'text-neutral-800 font-bold' : 'text-neutral-600 font-medium'}`}>
                               + €{plan.monthly}{t('pricing.monthSuffix')}
                             </div>
-                          )}
+                          ) : null}
                           {planData.features?.[0] && (
                             <div className="font-body-md text-body-md text-primary font-semibold mt-2 flex items-center gap-1.5">
                               <span className="w-1.5 h-1.5 bg-[#FFB800]" aria-hidden="true" />
@@ -190,6 +194,20 @@ export function Pricing() {
             </div>
           );
         })}
+
+        <div className="mt-unit-8 p-unit-6 rounded-2xl bg-white border border-neutral-300/80">
+          <div className="font-mono text-xs uppercase tracking-widest text-neutral-500 font-semibold mb-4">
+            {t('pricing.addons.title')}
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {(t('pricing.addons.items', { returnObjects: true }) as any[]).map((item) => (
+              <div key={item.name} className="flex items-baseline justify-between gap-3 p-3 rounded-xl bg-neutral-100/70 border border-neutral-200">
+                <span className="font-body-sm text-body-sm text-primary">{item.name}</span>
+                <span className="font-mono text-xs font-bold text-primary whitespace-nowrap">{item.price}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

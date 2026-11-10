@@ -32,7 +32,7 @@
       },
       "noCommitment": {
         "title": "Sin Permanencia",
-        "desc": "Tarifas transparentes mes a mes"
+        "desc": "Cancela cuando quieras; el setup incluido se liquida proporcionalmente si cancelas antes del tercer mes"
       },
       "adapted": {
         "title": "100% Adaptado",
@@ -109,7 +109,7 @@
         "name": "WEEKLY",
         "subtitle": "Tu contenido.",
         "description": "Contenido preparado para que tus redes no se queden paradas.",
-        "price": "Desde €59/mes"
+        "price": "€109/mes"
       },
       {
         "num": "03",
@@ -117,7 +117,7 @@
         "name": "SOCIAL",
         "subtitle": "Tus redes.",
         "description": "Nos ocupamos de crear, organizar y publicar para mantener tu negocio activo.",
-        "price": "Desde €79/mes"
+        "price": "€119/mes"
       },
       {
         "num": "04",
@@ -172,12 +172,12 @@
       {
         "title": "CONTENIDO",
         "count": "6 ITEMS",
-        "items": ["3, 5 o 7 piezas/semana", "Copy anti-genérico", "Diseño base", "Stories y piezas promocionales", "Adaptación FB/IG", "Calendario"]
+        "items": ["5 piezas/semana", "Copy anti-genérico", "Diseño base", "Stories y piezas promocionales", "Adaptación FB/IG", "Calendario"]
       },
       {
         "title": "REDES",
-        "count": "6 ITEMS",
-        "items": ["Facebook", "Instagram", "Programación", "Publicación", "Stories según plan", "Reel mensual (Premium)"]
+        "count": "7 ITEMS",
+        "items": ["Facebook", "Instagram", "Programación", "Publicación", "Stories", "Informe mensual de actividad", "Puesta a punto del perfil"]
       },
       {
         "title": "MANTENIMIENTO",
@@ -192,6 +192,7 @@
     "setup": "SETUP + MENSUAL",
     "setupSuffix": " setup",
     "monthSuffix": "/mes",
+    "oneTimeSuffix": " pago único",
     "categories": {
       "custom": {
         "label": "CUSTOM (Landing)",
@@ -228,24 +229,12 @@
         "title": "WEEKLY — Producción de contenido",
         "subtitle": "Material editorial y gráfico para tus canales. Producción: no incluye la publicación.",
         "plans": {
-          "basic": {
-            "name": "WEEKLY BASIC",
-            "cta": "Elegir Basic",
-            "description": "Contenido listo para que publiques a tu ritmo.",
-            "features": ["3 piezas por semana", "Copy + diseño base", "Calendario semanal de contenidos"]
-          },
-          "pro": {
-            "name": "WEEKLY PRO",
-            "cta": "Elegir Pro",
-            "badge": "MÁS ELEGIDO",
-            "description": "Ritmo constante, con más piezas y más variedad.",
-            "features": ["5 piezas por semana", "2 stories derivadas + 2 piezas promocionales", "Copy anti-genérico"]
-          },
-          "premium": {
-            "name": "WEEKLY PREMIUM",
-            "cta": "Elegir Premium",
-            "description": "Máxima cobertura semanal con prioridad en producción.",
-            "features": ["7 piezas por semana", "Todo lo de Pro + 4 stories y 4 piezas promocionales", "Prioridad en producción"]
+          "weekly": {
+            "name": "WEEKLY",
+            "cta": "Elegir WEEKLY",
+            "badge": "NIVEL ÚNICO",
+            "description": "Ritmo constante: 5 piezas cada semana, con stories y piezas promocionales.",
+            "features": ["5 piezas por semana", "2 stories derivadas + 2 piezas promocionales", "Copy anti-genérico", "Calendario semanal"]
           }
         }
       },
@@ -253,26 +242,14 @@
         "label": "SOCIAL (Gestión)",
         "title": "SOCIAL — Gestión completa de redes",
         "subtitle": "Nos ocupamos de todo el flujo: redacción, diseño, programación y publicación continua en Facebook e Instagram.",
-        "note": "No incluye: campañas de publicidad (Ads), mensajes privados, respuesta a comentarios, fotografía profesional ni community management.",
+        "note": "No incluye: campañas de publicidad (Ads), mensajes privados, respuesta a comentarios, fotografía profesional ni community management. El Reel es un add-on de 79 €/pieza.",
         "plans": {
-          "basic": {
-            "name": "SOCIAL BASIC",
-            "cta": "Elegir Basic",
-            "description": "Tu negocio activo en redes sin que tú tengas que publicar.",
-            "features": ["3 publicaciones por semana", "Publicación en Facebook + Instagram", "Gestión del calendario"]
-          },
-          "pro": {
-            "name": "SOCIAL PRO",
-            "cta": "Elegir Pro",
-            "badge": "MÁS ELEGIDO",
-            "description": "Presencia constante con stories y seguimiento mensual.",
-            "features": ["5 publicaciones por semana", "Publicación + stories", "Informe mensual de actividad"]
-          },
-          "premium": {
-            "name": "SOCIAL PREMIUM",
-            "cta": "Elegir Premium",
-            "description": "La máxima cobertura, con pieza de vídeo mensual.",
-            "features": ["7 publicaciones por semana", "Todo lo de Pro + 1 Reel sencillo/mes (15 s)", "Prioridad en producción"]
+          "social": {
+            "name": "SOCIAL",
+            "cta": "Elegir SOCIAL",
+            "badge": "NIVEL ÚNICO",
+            "description": "Publicamos por ti en Facebook e Instagram, con informe mensual y puesta a punto del perfil.",
+            "features": ["5 publicaciones por semana", "Publicación + stories", "Informe mensual de actividad", "Puesta a punto del perfil"]
           }
         }
       },
@@ -280,17 +257,40 @@
         "label": "FULL (Integral)",
         "title": "FULL — Todo conectado",
         "subtitle": "Landing, contenido y redes gestionados por un solo equipo: una solución unificada, no la suma de servicios sueltos.",
-        "note": "199 €/mes frente a 257 €/mes por separado: 22,6 % de ahorro. Sin permanencias. Cambia o cancela cuando quieras.",
+        "note": "199 €/mes frente a 257 €/mes por separado: 22,6 % de ahorro. Sin permanencia: cancela cuando quieras; el setup incluido se liquida proporcionalmente si cancelas antes del tercer mes.",
         "plans": {
           "full": {
             "name": "FULL",
             "cta": "Contratar FULL",
             "badge": "RECOMENDADO",
-            "description": "Setup de la web incluido sin coste adicional. Custom Pro + Weekly Pro + Social Pro, integrados y coordinados.",
-            "features": ["Setup de la web incluido sin coste adicional", "Landing (Custom Pro) + Contenido (Weekly Pro) + Redes (Social Pro)", "22,6 % de ahorro frente a contratarlos por separado"]
+            "description": "Setup de la web incluido sin coste adicional. CUSTOM Pro + WEEKLY + SOCIAL, integrados y coordinados.",
+            "features": ["Setup de la web incluido sin coste adicional", "Landing (CUSTOM Pro) + Contenido (WEEKLY) + Redes (SOCIAL)", "22,6 % de ahorro frente a contratarlos por separado"]
+          }
+        }
+      },
+      "arranque": {
+        "label": "ARRANQUE",
+        "title": "ARRANQUE — Empieza hoy",
+        "subtitle": "Punto de entrada de pago único para dar el primer paso sin mensualidad.",
+        "plans": {
+          "arranque": {
+            "name": "ARRANQUE",
+            "cta": "Elegir ARRANQUE",
+            "badge": "PAGO ÚNICO",
+            "description": "Empieza con un único pago de 59 €. Sin cuota mensual ni permanencia.",
+            "features": ["Pago único de 59 €", "Sin cuota mensual", "Sin permanencia"]
           }
         }
       }
+    },
+    "addons": {
+      "title": "ADD-ONS",
+      "items": [
+        { "name": "Reel sencillo 15 s", "price": "79 €/pieza" },
+        { "name": "Entrada de blog", "price": "79 €" },
+        { "name": "Sección nueva", "price": "129 €" },
+        { "name": "Idioma extra", "price": "119 €" }
+      ]
     }
   },
   "portfolio": {
@@ -388,7 +388,7 @@
       {
         "num": "03",
         "title": "03 — Para negocios pequeños.",
-        "description": "Planes desde 59 €/mes y entregas en días, no en meses: precios y alcance pensados para negocios locales."
+        "description": "Precios desde 59 € (ARRANQUE) y mensualidades desde 109 €; entregas en días, no en meses: pensados para negocios locales."
       },
       {
         "num": "04",
@@ -409,11 +409,11 @@
       },
       {
         "question": "¿Qué incluye cada plan?",
-        "answer": "CUSTOM: landing a medida (Basic/Pro/Premium). WEEKLY: 3, 5 o 7 piezas por semana según nivel. SOCIAL: publicación gestionada en Facebook e Instagram. FULL: Custom Pro + Weekly Pro + Social Pro integrados por 199 €/mes, con el setup de la web incluido."
+        "answer": "CUSTOM: landing a medida (Basic/Pro/Premium). WEEKLY: 5 piezas por semana. SOCIAL: publicación gestionada en Facebook e Instagram, con informe mensual y puesta a punto del perfil. FULL: CUSTOM Pro + WEEKLY + SOCIAL integrados por 199 €/mes, con el setup de la web incluido. Además, ARRANQUE por 59 € pago único y add-on de Reel por 79 €/pieza."
       },
       {
         "question": "¿Tengo permanencia?",
-        "answer": "No. Sin permanencias. Cambia de nivel o cancela cuando quieras: bajas al siguiente ciclo y las subidas se prorratean."
+        "answer": "No. Sin permanencias. Cambia de nivel o cancela cuando quieras: bajas al siguiente ciclo y las subidas se prorratean. En FULL, si cancelas antes del tercer mes, el setup incluido se liquida proporcionalmente."
       },
       {
         "question": "¿Qué redes sociales gestionáis?",
@@ -429,7 +429,7 @@
       },
       {
         "question": "¿Tomáis fotografías o producís vídeo?",
-        "answer": "No está incluido. El Reel de SOCIAL PREMIUM se crea reutilizando tu contenido del mismo mes (10-15 s)."
+        "answer": "No está incluido en ningún plan. El Reel sencillo de 15 s es un add-on de 79 €/pieza y se produce reutilizando tu contenido del mismo mes."
       },
       {
         "question": "¿Qué pasa con mi landing si cancelo?",
@@ -456,6 +456,7 @@
       "weekly": "WEEKLY — Contenido",
       "social": "SOCIAL — Redes",
       "full": "FULL — Todo conectado",
+      "arranque": "ARRANQUE — Pago único",
       "unsure": "No lo sé todavía"
     },
     "fields": {
