@@ -1,8 +1,8 @@
 {
-  "performance": null,
-  "seo": null,
-  "fcp": "—",
-  "lcp": "—",
-  "fetchedAt": "2026-10-26T18:56:59.068Z",
-  "source": "unavailable"
+  "performance": 93,
+  "seo": 100,
+  "fcp": "2.3 s",
+  "lcp": "2.3 s",
+  "fetchedAt": "2026-11-10T02:58:40.100Z",
+  "source": "pagespeed"
 }

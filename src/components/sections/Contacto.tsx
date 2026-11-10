@@ -219,6 +219,7 @@ export function Contacto() {
                       <option value="WEEKLY">{t('contact.planOptions.weekly')}</option>
                       <option value="SOCIAL">{t('contact.planOptions.social')}</option>
                       <option value="FULL">{t('contact.planOptions.full')}</option>
+                      <option value="ARRANQUE">{t('contact.planOptions.arranque')}</option>
                       <option value={t('contact.planOptions.unsure')}>{t('contact.planOptions.unsure')}</option>
                     </select>
                     {errors.plan && <p id="contact-plan-error" className="mt-1.5 text-xs text-red-600 font-medium" role="alert">{errors.plan}</p>}

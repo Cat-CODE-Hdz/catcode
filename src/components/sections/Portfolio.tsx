@@ -3,20 +3,20 @@ import { track } from '../../lib/analytics';
 
 const imgData: ({ imgSrc: string; imgAlt: string } | null)[] = [
   {
-    imgSrc: '/catcode/images/taller-recambios-hero.jpg',
-    imgAlt: 'A professional bike repair workshop in Seville with a bicycle on a repair stand, tools organized on a steel workbench, graphite and steel tones with warm accent lighting, clean editorial photography',
+    imgSrc: '/images/taller-recambios-hero.webp',
+    imgAlt: 'Landing de Taller Recambios: taller de bicicletas en Sevilla con una bicicleta en el soporte de reparación y herramientas ordenadas sobre el banco de trabajo',
   },
   {
-    imgSrc: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADVTNi844US5afwgqxdbGsgro9wRr14K0pCqNC69BVx1WQwB0UHzOh8Ojoxj5M3rBP10JW1Dgq7yz4ZDgypR3bN8DPhz9IRJ3KbG2VufTIZ1n2GS5eYgaaVdRG2qRoztv7tqLA8pze1gKJoSw5R9XIWGBmzmlkMQPawpsK4R2RZdUQOHMTJ5ax2pwFI938hAYR28XdHq_Cd-Q7CPbVn_fumETfvl7tCnIw45zPhvyIyj-KoA0NDdQ1',
-    imgAlt: 'A bright contemporary beauty and wellness aesthetic clinic interior in Valencia with neutral off-white concrete textures, organic archway details, soft natural daylight, minimalist glass bottles, calm and balanced editorial style',
+    imgSrc: '/images/estudio-lumen-hero.webp',
+    imgAlt: 'Landing de Estudio Lumen: interior luminoso del centro de belleza y bienestar en Valencia, con arcos orgánicos y luz natural suave',
   },
   {
-    imgSrc: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBZXdTAiPJd9q2LBEXXK6gDn9kZ3_srRuiFbLZLyEtIrpSV9v2m2TgHyM3NVEC_vQYe3oTq5-rEJiYKbJKHPYmPSg-ZzPNmLFjrbDM8PVCH4iNppX0fhpbc_MvyXdTLbRIAuSgMH-Z_GqlGg0cT9BwVGtaqfwvm1F38VbfqEWNBFMgiN1B1lk5Eyrx6ngpNQzDeKUz2rICS9Zbu6EpXSM8sXg9tzqKPIOhP-vXWmekFvdeQVn3xTi82',
-    imgAlt: 'A modern minimalist restaurant interior in Madrid with warm architectural lighting, dark stone tables, elegant linen tableware, subtle typographic accents, clean composition, high-end editorial photography with sharp contrast',
+    imgSrc: '/images/casa-nora-hero.webp',
+    imgAlt: 'Landing de Casa Nora: interior de restaurante minimalista en Madrid con iluminación cálida, mesas de piedra oscura y mantelería de lino',
   },
   {
-    imgSrc: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBD0-1offX7g45Pp9XQ0ereGh6MHQ8rZEXEuT2VATD422xcCbOEkQ5wp2e79yPpMZNKFHu3WdalrgjuExdbd7fqhvjAoSjRhm6jSXV3xhdC0rzNiBeE44D4ZKFYN0UdIvTRk0lKKWRdZl9QEBWVBK9mBWddUr_mW5JiduUWuuqrsl-sfuzmQ0H3ZI-G-2-qkr9eqlAniCEMBCK7O66hbxyzWV-YKHdoPzU_rj6IzFiLNbnsQSm5xM6N',
-    imgAlt: 'Rugged scenic coastal cliffs and foggy green landscape in Basque Country near Bilbao, an outdoor expedition van parked subtly on the horizon, cool natural lighting, stark cinematic editorial atmosphere, refined muted tone palette',
+    imgSrc: '/images/ruta-norte-hero.webp',
+    imgAlt: 'Landing de Ruta Norte: paisaje costero del País Vasco cerca de Bilbao con acantilados, niebla y vegetación verde',
   },
 ];
 
