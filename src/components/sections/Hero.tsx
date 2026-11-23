@@ -1,10 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { useMetrics } from '../../hooks/useMetrics';
 import { track } from '../../lib/analytics';
 
 export function Hero() {
   const { t } = useTranslation();
-  const { metrics, isLive } = useMetrics();
 
   return (
     <section className="relative w-full bg-surface-container-lowest pt-28 md:pt-unit-12 pb-unit-20 md:pb-unit-28 overflow-hidden noise-bg border-b border-black/[0.06]" id="hero" aria-labelledby="hero-title">
@@ -48,66 +46,58 @@ export function Hero() {
           </div>
 
             <div className="lg:col-span-5 w-full">
-            <div className="relative bg-neutral-950 text-white rounded-2xl p-5 border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.25)] overflow-hidden" role="region" aria-label={t('hero.terminal.regionLabel')}>
+            <div className="terminal-scan relative bg-neutral-950 text-white rounded-2xl p-5 border border-neutral-800 shadow-[0_20px_50px_rgba(0,0,0,0.25)] overflow-hidden" role="region" aria-label={t('hero.terminal.regionLabel')}>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-neutral-800/80 font-mono text-neutral-400" style={{ fontSize: '11px' }}>
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/80 inline-block" aria-hidden="true" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/80 inline-block" aria-hidden="true" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/80 inline-block" aria-hidden="true" />
                 </div>
-                <span className="text-neutral-400 flex items-center gap-1.5">
-                  <img alt="CAT CODE" className="w-4 h-4 rounded-full object-contain" src="/catcode-icon.png" />
-                  github.com/Cat-CODE-Hdz/catcode
-                </span>
                 <div className="flex items-center gap-2">
-                  {isLive && (
-                    <span className="text-[#FFB800] flex items-center gap-1" style={{ fontSize: '9px' }}>
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800] inline-block amber-pulse" />
-                      LIVE
-                    </span>
-                  )}
                   <span className="text-[#FFB800] font-bold flex items-center gap-1" style={{ fontSize: '10px' }}>
                     <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800] inline-block amber-pulse" />
-                    200 OK
+                    {t('hero.terminal.status')}
                   </span>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="bg-neutral-900/90 rounded-xl p-4 border border-neutral-800">
-                  <div className="flex items-center justify-between text-xs font-mono text-neutral-400 mb-2">
-                    <span className="flex items-center gap-1.5">
-                      <img alt="CAT CODE" className="w-4 h-4 rounded-full bg-neutral-800 object-contain" src="/catcode-icon.png" />
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800]" aria-hidden="true" />
-                      {t('hero.terminal.architecture')}
-                    </span>
-                    <span className="text-neutral-500">{t('hero.terminal.tech')}</span>
+                  <div className="flex items-center gap-1.5 text-xs font-mono text-neutral-400 mb-2">
+                    <img alt="CAT CODE" className="w-4 h-4 rounded-full bg-neutral-800 object-contain" src="/catcode-icon.png" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FFB800]" aria-hidden="true" />
+                    {t('hero.terminal.presence')}
                   </div>
-                  <div className="font-headline-sm text-[18px] text-white font-semibold tracking-tight">{t('hero.terminal.projectName')}</div>
+                  <div className="font-headline-sm text-[18px] text-white font-semibold tracking-tight">
+                    {t('hero.terminal.projectName')}
+                    <span className="terminal-cursor" aria-hidden="true" />
+                  </div>
                   <p className="text-neutral-400 text-xs mt-1">{t('hero.terminal.deploy')}</p>
-                </div>
-                <div className="grid grid-cols-3 gap-2 font-mono">
-                  <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center hover:border-[#FFB800]/50 hover:bg-neutral-900 transition-all cursor-default group">
-                    <div className="text-[10px] uppercase text-neutral-400 tracking-wider group-hover:text-neutral-300">{t('hero.terminal.performance')}</div>
-                    <div className="text-lg font-bold text-[#FFB800] mt-0.5 metric-glow group-hover:scale-105 transition-transform">{metrics.performance !== null ? `${metrics.performance}/100` : '—'}</div>
-                  </div>
-                  <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center hover:border-[#FFB800]/50 hover:bg-neutral-900 transition-all cursor-default group">
-                    <div className="text-[10px] uppercase text-neutral-400 tracking-wider group-hover:text-neutral-300">{t('hero.terminal.loading')}</div>
-                    <div className="text-lg font-bold text-white mt-0.5 group-hover:text-[#FFB800] transition-colors">{metrics.fcp}</div>
-                  </div>
-                  <div className="bg-neutral-900/70 p-3 rounded-xl border border-neutral-800 text-center hover:border-[#FFB800]/50 hover:bg-neutral-900 transition-all cursor-default group">
-                    <div className="text-[10px] uppercase text-neutral-400 tracking-wider group-hover:text-neutral-300">{t('hero.terminal.indexing')}</div>
-                    <div className="text-lg font-bold text-[#FFB800] mt-0.5 metric-glow group-hover:scale-105 transition-transform">{metrics.seo !== null ? `SEO ${metrics.seo}%` : '—'}</div>
+                  <div className="mt-3">
+                    <div className="flex items-center justify-between font-mono text-[9px] text-neutral-500">
+                      <span>{t('hero.terminal.progressLabel')}</span>
+                      <span className="text-[#FFB800]">{t('hero.terminal.progressValue')}</span>
+                    </div>
+                    <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-neutral-800">
+                      <span className="terminal-progress block h-full rounded-full bg-[#FFB800]" />
+                    </div>
                   </div>
                 </div>
-                {!isLive && (
-                  <p className="font-mono text-neutral-500 -mt-1" style={{ fontSize: '10px' }}>
-                    {t('hero.terminal.measuredNote')}
-                  </p>
-                )}
-                <div className="bg-black/60 rounded-xl p-3.5 border border-neutral-800 font-mono leading-relaxed text-neutral-300" style={{ fontSize: '11px' }}>
-                  <div className="text-neutral-500">// {t('hero.terminal.pipeline')}</div>
-                  <div className="text-[#FFB800]">&gt; catcode.deploy({'{'} landing: true, social: '5_posts/wk' {'}'})<span className="blinking-cursor" /></div>
-                  <div className="text-neutral-400 mt-1 flex items-center gap-1.5"><span className="text-[#FFB800] font-bold">✓</span> {t('hero.terminal.ssl')}</div>
+                <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-xl border border-neutral-800 bg-neutral-900/70 px-3 py-2.5 text-center text-[11px] text-neutral-200">
+                  <span>{t('hero.terminal.delivery')}</span>
+                  <span className="text-neutral-600">·</span>
+                  <span>{t('hero.terminal.response')}</span>
+                  <span className="text-neutral-600">·</span>
+                  <span>{t('hero.terminal.noCommitment')}</span>
+                </div>
+                <div className="bg-black/60 rounded-xl p-3.5 border border-neutral-800 leading-relaxed text-neutral-200" style={{ fontSize: '11.5px' }}>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[#FFB800] font-bold">✓</span>
+                    {t('hero.terminal.pipeline')}
+                  </div>
+                  <div className="text-neutral-400 mt-1 flex items-center gap-1.5">
+                    <span className="text-[#FFB800] font-bold">✓</span>
+                    {t('hero.terminal.commitment')}
+                  </div>
                 </div>
               </div>
             </div>

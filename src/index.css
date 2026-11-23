@@ -215,6 +215,13 @@ div[id='cookies'],
   transform: rotate(180deg);
   color: #000000;
 }
+.faq-answer-body {
+  transform: translateY(-4px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.is-open .faq-answer-body {
+  transform: translateY(0);
+}
 
 .pricing-panel {
   transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -227,11 +234,183 @@ div[id='cookies'],
   to { opacity: 1; transform: translateY(0); }
 }
 
+.terminal-scan::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(255, 184, 0, 0.06), transparent);
+  transform: translateY(-100%);
+  animation: terminalScan 5.5s linear infinite;
+  pointer-events: none;
+}
+@keyframes terminalScan {
+  to { transform: translateY(100%); }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 3px;
+  vertical-align: -0.12em;
+  background: #FFB800;
+  animation: terminalBlink 1.1s steps(2, start) infinite;
+}
+@keyframes terminalBlink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.terminal-progress {
+  width: 0;
+  animation: terminalProgress 2.6s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+@keyframes terminalProgress {
+  to { width: 100%; }
+}
+
+.compare-arrow {
+  animation: compareArrow 2.4s ease-in-out infinite;
+}
+@keyframes compareArrow {
+  0%, 100% { transform: translateY(-2px); }
+  50% { transform: translateY(3px); }
+}
+
+.section-dot {
+  animation: sectionDot 4.5s ease-in-out infinite;
+}
+@keyframes sectionDot {
+  0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(255, 184, 0, 0); }
+  50% { transform: scale(1.35); opacity: 0.7; box-shadow: 0 0 0 4px rgba(255, 184, 0, 0.08); }
+}
+
+.link-sweep {
+  position: relative;
+}
+.link-sweep::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #FFB800;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link-sweep:hover::after {
+  transform: scaleX(1);
+}
+
+.icon-pop {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .icon-pop {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+.img-sheen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.18) 50%, transparent 65%);
+  transform: translateX(-130%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+.group:hover .img-sheen::after {
+  transform: translateX(130%);
+}
+
+.quote-float {
+  animation: quoteFloat 5s ease-in-out infinite;
+}
+@keyframes quoteFloat {
+  0%, 100% { transform: translateY(0); opacity: 0.75; }
+  50% { transform: translateY(-4px); opacity: 1; }
+}
+
+.badge-glow {
+  animation: badgeGlow 3.2s ease-in-out infinite;
+}
+@keyframes badgeGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 184, 0, 0); }
+  50% { box-shadow: 0 8px 24px -6px rgba(255, 184, 0, 0.45); }
+}
+
+.mobile-menu-enter {
+  animation: mobileMenuIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+  transform-origin: top;
+}
+@keyframes mobileMenuIn {
+  from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+@supports (animation-timeline: view()) {
+  #problem-title,
+  #solution-title,
+  #howtitle-title,
+  #includes-title,
+  #pricing-title,
+  #portfolio-title,
+  #about-title,
+  #testimonials-title,
+  #why-title,
+  #faq-title,
+  #contact-title,
+  #cta-title,
+  #legal-title {
+    animation: sectionTitleReveal 1ms linear both;
+    animation-timeline: view();
+    animation-range: entry 8% entry 38%;
+  }
+}
+@keyframes sectionTitleReveal {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  .terminal-scan::after {
+    display: none;
+  }
+  .terminal-cursor {
+    animation: none;
+    opacity: 1;
+  }
+  .terminal-progress {
+    width: 100%;
+    animation: none;
+  }
+  .compare-arrow,
+  .section-dot,
+  .quote-float,
+  .badge-glow,
+  .mobile-menu-enter {
+    animation: none;
+  }
+  #problem-title,
+  #solution-title,
+  #howtitle-title,
+  #includes-title,
+  #pricing-title,
+  #portfolio-title,
+  #about-title,
+  #testimonials-title,
+  #why-title,
+  #faq-title,
+  #contact-title,
+  #cta-title,
+  #legal-title {
+    animation: none !important;
   }
 }

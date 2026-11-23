@@ -33,7 +33,7 @@ export function Header() {
             <div className="flex items-center gap-3 sm:gap-4 md:gap-8">
                 <a className="flex items-center gap-2 sm:gap-3 group" href="#" aria-label={t('header.home')}>
                 <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg p-0.5 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:border-[#FFB800] transition-all duration-300 ease-out">
-                  <img alt="CAT CODE Logo" className="w-full h-full object-contain" src="/catcode-icon.png" />
+                  <img alt="CAT CODE Logo" className="w-full h-full object-contain transition-transform duration-300 group-hover:rotate-6 group-hover:scale-105" src="/catcode-icon.png" />
                 </div>
                 <span className="font-headline-sm text-[17px] sm:text-[19px] tracking-tight font-bold text-primary">CAT CODE</span>
               </a>
@@ -81,7 +81,7 @@ export function Header() {
             </div>
           </div>
           {mobileOpen && (
-            <nav id="mobile-nav" className="md:hidden mt-2 p-3 sm:p-4 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)]" aria-label="Navegación móvil">
+            <nav id="mobile-nav" className="mobile-menu-enter md:hidden mt-2 p-3 sm:p-4 rounded-2xl glass-spec border border-black/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.04)]" aria-label="Navegación móvil">
               <div className="flex flex-col gap-1.5 sm:gap-unit-3">
                 {navLinks.map((link) => (
                   <a

@@ -83,7 +83,7 @@ export function Contacto() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-unit-10">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-2 mb-unit-3">
-              <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+              <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
               <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
                 {t('contact.sectionLabel')}
               </span>
@@ -144,7 +144,7 @@ export function Contacto() {
                 </a>
               </div>
             ) : (
-              <form className="bg-white rounded-2xl border border-neutral-200/90 p-unit-8 shadow-sm" onSubmit={handleSubmit} noValidate>
+              <form className="bg-white rounded-2xl border border-neutral-200/90 p-unit-8 shadow-sm transition-all duration-300 focus-within:border-[#FFB800]/40 focus-within:shadow-[0_12px_40px_-16px_rgba(0,0,0,0.2)]" onSubmit={handleSubmit} noValidate>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-unit-5">
                   <div>
                     <label className={labelClass} htmlFor="contact-name">{t('contact.fields.name')}</label>
@@ -255,10 +255,10 @@ export function Contacto() {
                 </div>
 
                 <button
-                  className="mt-unit-6 inline-flex items-center justify-center w-full sm:w-auto h-[54px] px-unit-8 rounded-xl bg-black hover:bg-neutral-800 text-white font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-[0_10px_25px_-5px_rgba(0,0,0,0.25)] active:scale-[0.98] btn-amber-glow"
+                  className="group mt-unit-6 inline-flex items-center justify-center w-full sm:w-auto h-[54px] px-unit-8 rounded-xl bg-black hover:bg-neutral-800 text-white font-mono text-sm uppercase tracking-wider font-bold transition-all shadow-[0_10px_25px_-5px_rgba(0,0,0,0.25)] active:scale-[0.98] btn-amber-glow"
                   type="submit"
                 >
-                  {t('contact.submit')} <span className="text-[#FFB800] ml-1.5">→</span>
+                  {t('contact.submit')} <span className="text-[#FFB800] ml-1.5 transition-transform duration-200 group-hover:translate-x-0.5">→</span>
                 </button>
                 <p className="mt-unit-4 font-body-sm text-body-sm text-on-surface-variant">{t('contact.privacyNote')}</p>
               </form>

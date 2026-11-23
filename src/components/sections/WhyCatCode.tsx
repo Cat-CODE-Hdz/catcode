@@ -10,7 +10,7 @@ export function WhyCatCode() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
             <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('whyCatCode.sectionLabel')}
             </span>

@@ -30,7 +30,7 @@ export function Portfolio() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
             <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('portfolio.sectionLabel')}
             </span>
@@ -58,7 +58,7 @@ export function Portfolio() {
                     <span>{itemData.domain}</span>
                     <span className="text-neutral-400">{itemData.resolution}</span>
                   </div>
-                  <div className="w-full h-60 bg-neutral-100 overflow-hidden relative">
+                  <div className="w-full h-60 bg-neutral-100 overflow-hidden relative img-sheen">
                     {img ? (
                       <img
                         alt={img.imgAlt}

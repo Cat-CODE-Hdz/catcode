@@ -1,9 +1,7 @@
 {
   "topbar": {
     "capacity": "PRESENCIA DIGITAL PARA PEQUEÑOS NEGOCIOS",
-    "version": "CAT CODE STUDIO — VERSIÓN {{version}}",
-    "standard": "ESTÁNDAR WEB PREMIUM SUIZO",
-    "locations": "MAD · VLC · BIO"
+    "studio": "CAT CODE STUDIO"
   },
   "header": {
     "nav": {
@@ -28,7 +26,7 @@
     "features": {
       "delivery": {
         "title": "Entrega Garantizada",
-        "desc": "Despliegue ágil en 7-10 días"
+        "desc": "Despliegue ágil en 14 días"
       },
       "noCommitment": {
         "title": "Sin Permanencia",
@@ -40,23 +38,23 @@
       }
     },
     "terminal": {
-      "architecture": "ARQUITECTURA DE PRODUCCIÓN",
-      "tech": "VITE · REACT",
+      "presence": "Tu presencia digital",
       "projectName": "Tu Negocio Online",
-      "deploy": "Desplegado en GitHub Pages con despliegue automático por GitHub Actions.",
-      "performance": "Performance",
-      "loading": "Carga",
-      "indexing": "Indexación",
-      "measuredNote": "Puntuaciones de PageSpeed: se miden en cada build y aparecen aquí cuando el build las registra.",
-      "regionLabel": "Panel de estado del proyecto",
-      "pipeline": "pipeline de presencia activo",
-      "ssl": "✓ HTTPS · despliegue automático"
+    "deploy": "Tu web, publicada y lista para tus clientes.",
+    "progressLabel": "Presencia digital",
+    "progressValue": "100%",
+    "status": "Activo",
+      "regionLabel": "Resumen de tu presencia digital",
+      "delivery": "Entrega 14 días",
+      "response": "Respuesta < 24 h",
+      "noCommitment": "Sin permanencia",
+      "pipeline": "Tu web, tu contenido y tus redes, en marcha",
+      "commitment": "Sin permanencia · Trato directo"
     }
   },
   "problem": {
     "sectionLabel": "La Realidad Actual · Diagnóstico",
     "title": "Tu negocio puede ser bueno. Pero si no se ve bien online, cuesta demostrarlo.",
-    "ref": "[ REF: DIAGNOSTICO_MKT_01 ]",
     "cta": "CAT CODE convierte todo eso en un sistema sencillo.",
     "ctaButton": "Descubrir soluciones ↓",
     "problems": [
@@ -193,6 +191,9 @@
     "setupSuffix": " setup",
     "monthSuffix": "/mes",
     "oneTimeSuffix": " pago único",
+    "servicesTab": "SERVICIOS",
+    "servicesTitle": "Elige tu servicio",
+    "servicesSubtitle": "Contenido, gestión de redes, plan integral o arranque de pago único.",
     "categories": {
       "custom": {
         "label": "CUSTOM (Landing)",
@@ -269,7 +270,7 @@
         }
       },
       "arranque": {
-        "label": "ARRANQUE",
+        "label": "ARRANQUE (Pago único)",
         "title": "ARRANQUE — Empieza hoy",
         "subtitle": "Punto de entrada de pago único para dar el primer paso sin mensualidad.",
         "plans": {
@@ -401,8 +402,11 @@
   "faq": {
     "sectionLabel": "Soporte · Resolución de Dudas",
     "title": "Preguntas frecuentes",
-    "reference": "[ FAQ · RESPUESTAS RÁPIDAS ]",
-    "items": [
+  "reference": "[ FAQ · RESPUESTAS RÁPIDAS ]",
+  "ctaTitle": "¿Te queda alguna duda?",
+  "ctaText": "Cuéntanos qué necesitas y te respondemos en menos de 24 h.",
+  "ctaButton": "Hablar con nosotros",
+  "items": [
       {
         "question": "¿Qué hacemos exactamente?",
         "answer": "Agencia web para pequeños negocios: landing profesional, contenido semanal y publicación en redes. Todo conectado, sin complicaciones."
@@ -452,11 +456,11 @@
     "submit": "Enviar",
     "planPlaceholder": "Selecciona un plan",
     "planOptions": {
-      "custom": "CUSTOM — Landing",
-      "weekly": "WEEKLY — Contenido",
-      "social": "SOCIAL — Redes",
-      "full": "FULL — Todo conectado",
-      "arranque": "ARRANQUE — Pago único",
+      "custom": "CUSTOM (Landing)",
+      "weekly": "WEEKLY (Contenido)",
+      "social": "SOCIAL (Gestión)",
+      "full": "FULL (Integral)",
+      "arranque": "ARRANQUE (Pago único)",
       "unsure": "No lo sé todavía"
     },
     "fields": {
@@ -499,6 +503,18 @@
       "response": "RESPUESTA EN < 24H",
       "message": "Hola CAT CODE, quiero mejorar la presencia digital de mi negocio.",
       "button": "Enviar WhatsApp"
+    },
+    "compare": {
+      "title": "ANTES / DESPUÉS",
+      "live": "EN MARCHA",
+      "beforeLabel": "ANTES",
+      "beforeTitle": "Sin presencia online",
+      "beforeText": "Sin web ni contenido que genere confianza.",
+      "afterLabel": "DESPUÉS",
+      "afterTitle": "Visible y listo",
+      "afterText": "Web publicada, contenido y redes conectadas.",
+      "footnote": "Tu web en 14 días",
+      "sticker": "SIN PERMANENCIA"
     }
   },
   "legal": {
@@ -509,7 +525,7 @@
       "items": [
         { "label": "Titular", "text": "[[PENDIENTE]] Razón social, NIF y domicilio del titular de CAT CODE." },
         { "label": "Marca", "text": "CAT CODE — servicios de presencia digital: landing, contenido y publicación en redes." },
-        { "label": "Web", "text": "Sitio informativo alojado en GitHub Pages: catcode.es" },
+        { "label": "Web",         "text": "Sitio informativo: catcode.es" },
         { "label": "Contacto", "text": "Formulario de esta web y canal directo de WhatsApp." },
         { "label": "Objeto", "text": "Describir servicios, niveles y precios. Cada contratación se formaliza con una propuesta por escrito." }
       ]
@@ -541,8 +557,7 @@
   "footer": {
     "description": "Construimos tu presencia digital.",
     "subtitle": "INGENIERÍA WEB Y SISTEMA DE CONTENIDOS PARA PEQUEÑOS NEGOCIOS",
-    "copyright": "© 2026 CAT CODE. Todos los derechos reservados.",
-    "status": "Web en producción",
+  "copyright": "© 2026 CAT CODE. Todos los derechos reservados.",
     "nav": {
       "whatWeDo": "Qué hacemos",
       "howItWorks": "Cómo funciona",

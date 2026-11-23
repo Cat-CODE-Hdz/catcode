@@ -17,7 +17,7 @@ export function Problem() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-unit-12 gap-4">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 mb-unit-3">
-              <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+              <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
               <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
                 {t('problem.sectionLabel')}
               </span>
@@ -26,16 +26,13 @@ export function Problem() {
               {t('problem.title')}
             </h2>
           </div>
-          <div className="font-mono text-xs text-neutral-500 pb-1">
-            {t('problem.ref')}
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-unit-6">
           {problems.map((problem, index) => {
             const problemData = t(`problem.problems.${index}`, { returnObjects: true }) as any;
             return (
-              <div key={problem.num} className="bg-white p-unit-8 rounded-2xl border border-neutral-300/80 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col justify-between hover:border-[#FFB800]/60 card-hover-lift">
+              <div key={problem.num} className="group bg-white p-unit-8 rounded-2xl border border-neutral-300/80 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col justify-between hover:border-[#FFB800]/60 card-hover-lift">
                 <div>
                   <div className="flex items-center justify-between pb-4 mb-5 border-b border-neutral-200 font-mono text-xs text-neutral-500">
                     <span className="font-semibold text-black">{problem.num} — {problemData.category}</span>
@@ -48,7 +45,7 @@ export function Problem() {
                 </div>
                 <div className="pt-unit-8 mt-4 border-t border-neutral-100 flex items-center justify-between text-on-surface-variant font-mono" style={{ fontSize: '11px' }}>
                   <span className="flex items-center gap-1.5 text-neutral-700">
-                    <span className="material-symbols-outlined" style={{ fontSize: '17px' }} aria-hidden="true">{problem.icon}</span>
+                    <span className="material-symbols-outlined icon-pop" style={{ fontSize: '17px' }} aria-hidden="true">{problem.icon}</span>
                     {problemData.status}
                   </span>
                   <span className={`${problem.metricColor} font-semibold`}>{problemData.metric}</span>

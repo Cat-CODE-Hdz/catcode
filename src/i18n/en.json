@@ -1,9 +1,7 @@
 {
   "topbar": {
     "capacity": "DIGITAL PRESENCE FOR SMALL BUSINESSES",
-    "version": "CAT CODE STUDIO — VERSION {{version}}",
-    "standard": "SWISS PREMIUM WEB STANDARD",
-    "locations": "MAD · VLC · BIO"
+    "studio": "CAT CODE STUDIO"
   },
   "header": {
     "nav": {
@@ -28,7 +26,7 @@
     "features": {
       "delivery": {
         "title": "Guaranteed Delivery",
-        "desc": "Agile deployment in 7-10 days"
+        "desc": "Agile deployment in 14 days"
       },
       "noCommitment": {
         "title": "No Commitment",
@@ -40,23 +38,23 @@
       }
     },
     "terminal": {
-      "architecture": "PRODUCTION ARCHITECTURE",
-      "tech": "VITE · REACT",
+      "presence": "Your digital presence",
       "projectName": "Your Business Online",
-      "deploy": "Deployed on GitHub Pages with automatic GitHub Actions deploys.",
-      "performance": "Performance",
-      "loading": "Loading",
-      "indexing": "Indexing",
-      "measuredNote": "PageSpeed scores: measured on every build and shown here once the build records them.",
-      "regionLabel": "Project status panel",
-      "pipeline": "active presence pipeline",
-      "ssl": "✓ HTTPS · automatic deploys"
+      "deploy": "Your website, published and ready for your customers.",
+      "progressLabel": "Digital presence",
+      "progressValue": "100%",
+      "status": "Active",
+      "regionLabel": "Your digital presence at a glance",
+      "delivery": "Delivery in 14 days",
+      "response": "Reply < 24 h",
+      "noCommitment": "No lock-in",
+      "pipeline": "Your website, your content and your social channels, up and running",
+      "commitment": "No lock-in · Direct contact"
     }
   },
   "problem": {
     "sectionLabel": "Current Reality · Diagnosis",
     "title": "Your business may be good. But if it doesn't look good online, it's hard to prove it.",
-    "ref": "[ REF: DIAGNOSTICO_MKT_01 ]",
     "cta": "CAT CODE turns all that into a simple system.",
     "ctaButton": "Discover solutions ↓",
     "problems": [
@@ -193,6 +191,9 @@
     "setupSuffix": " setup",
     "monthSuffix": "/mo",
     "oneTimeSuffix": " one-time",
+    "servicesTab": "SERVICES",
+    "servicesTitle": "Choose your service",
+    "servicesSubtitle": "Content, social management, all-in-one plan or one-time starter.",
     "categories": {
       "custom": {
         "label": "CUSTOM (Landing)",
@@ -269,7 +270,7 @@
         }
       },
       "arranque": {
-        "label": "STARTER",
+        "label": "STARTER (One-time)",
         "title": "STARTER — Begin today",
         "subtitle": "A one-time entry point to take the first step with no monthly fee.",
         "plans": {
@@ -401,8 +402,11 @@
   "faq": {
     "sectionLabel": "Support · FAQ Resolution",
     "title": "Frequently asked questions",
-    "reference": "[ FAQ · QUICK ANSWERS ]",
-    "items": [
+  "reference": "[ FAQ · QUICK ANSWERS ]",
+  "ctaTitle": "Still have a question?",
+  "ctaText": "Tell us what you need and we'll reply within 24 hours.",
+  "ctaButton": "Talk to us",
+  "items": [
       {
         "question": "What exactly do you do?",
         "answer": "A web agency for small businesses: professional landing page, weekly content, and social media publishing. Everything connected, no complications."
@@ -452,11 +456,11 @@
     "submit": "Send",
     "planPlaceholder": "Select a plan",
     "planOptions": {
-      "custom": "CUSTOM — Landing",
-      "weekly": "WEEKLY — Content",
-      "social": "SOCIAL — Social media",
-      "full": "FULL — Everything connected",
-      "arranque": "STARTER — One-time",
+      "custom": "CUSTOM (Landing)",
+      "weekly": "WEEKLY (Content)",
+      "social": "SOCIAL (Management)",
+      "full": "FULL (All-in-one)",
+      "arranque": "STARTER (One-time)",
       "unsure": "I'm not sure yet"
     },
     "fields": {
@@ -499,6 +503,18 @@
       "response": "REPLY WITHIN 24H",
       "message": "Hi CAT CODE, I want to improve my business's digital presence.",
       "button": "Send WhatsApp"
+    },
+    "compare": {
+      "title": "BEFORE / AFTER",
+      "live": "IN PROGRESS",
+      "beforeLabel": "BEFORE",
+      "beforeTitle": "No online presence",
+      "beforeText": "No website or content to build trust.",
+      "afterLabel": "AFTER",
+      "afterTitle": "Visible and ready",
+      "afterText": "Website live, content and social connected.",
+      "footnote": "Your site in 14 days",
+      "sticker": "NO LOCK-IN"
     }
   },
   "legal": {
@@ -509,7 +525,7 @@
       "items": [
         { "label": "Owner", "text": "[[PENDING]] Legal name, tax ID and registered address of the CAT CODE owner." },
         { "label": "Brand", "text": "CAT CODE — digital presence services: landing pages, content and social publishing." },
-        { "label": "Website", "text": "Informational site hosted on GitHub Pages: catcode.es" },
+        { "label": "Website",         "text": "Informational site: catcode.es" },
         { "label": "Contact", "text": "The form on this site and the direct WhatsApp channel." },
         { "label": "Purpose", "text": "To describe services, tiers and prices. Every contract is formalised through a written proposal." }
       ]
@@ -541,8 +557,7 @@
   "footer": {
     "description": "We build your digital presence.",
     "subtitle": "WEB ENGINEERING AND CONTENT SYSTEM FOR SMALL BUSINESSES",
-    "copyright": "© 2026 CAT CODE. All rights reserved.",
-    "status": "Website live",
+  "copyright": "© 2026 CAT CODE. All rights reserved.",
     "nav": {
       "whatWeDo": "What we do",
       "howItWorks": "How it works",
