@@ -292,6 +292,10 @@ export function Pricing() {
             ))}
           </div>
         </div>
+
+        <p className="mt-unit-6 text-center font-mono text-xs text-on-surface-variant">
+          {t('pricing.taxNote')}
+        </p>
       </div>
     </section>
   );

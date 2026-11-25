@@ -251,6 +251,9 @@ export function Contacto() {
                     />
                     <span className="font-body-sm text-body-sm text-on-surface-variant">{t('contact.consent')}</span>
                   </label>
+                  <a href="#privacidad" className="ml-7 mt-1 inline-block font-body-sm text-body-sm text-primary underline underline-offset-2 hover:text-[#FFB800]">
+                    {t('contact.privacyLink')}
+                  </a>
                   {errors.consent && <p id="contact-consent-error" className="mt-1.5 text-xs text-red-600 font-medium" role="alert">{errors.consent}</p>}
                 </div>
 

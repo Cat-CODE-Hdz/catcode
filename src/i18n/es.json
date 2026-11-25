@@ -292,7 +292,8 @@
         { "name": "Sección nueva", "price": "129 €" },
         { "name": "Idioma extra", "price": "119 €" }
       ]
-    }
+    },
+    "taxNote": "Precios en euros. No incluyen IVA."
   },
   "portfolio": {
     "sectionLabel": "Ejemplos · Proyectos conceptuales",
@@ -476,7 +477,8 @@
       "email": "Introduce un email válido.",
       "consent": "Necesitamos tu aceptación para poder responderte."
     },
-    "consent": "Acepto recibir información sobre mi plan.",
+    "consent": "He leído la política de privacidad.",
+    "privacyLink": "Ver política de privacidad",
     "privacyNote": "Usamos tus datos solo para responderte a ti. No los compartimos con terceros.",
     "message": {
       "intro": "Hola CAT CODE, quiero mejorar la presencia digital de mi negocio."
@@ -489,7 +491,7 @@
     },
     "success": {
       "title": "¡Recibido!",
-      "body": "Hemos abierto WhatsApp con tu mensaje. Si no se abrió, usa el botón de abajo. Te respondemos en menos de 24h."
+      "body": "Se ha abierto WhatsApp con tu mensaje. Envíalo y te respondemos en menos de 24 h laborables."
     }
   },
   "cta": {
@@ -523,32 +525,35 @@
     "aviso": {
       "title": "Aviso legal",
       "items": [
-        { "label": "Titular", "text": "[[PENDIENTE]] Razón social, NIF y domicilio del titular de CAT CODE." },
+        { "label": "Titular", "text": "CAT CODE es una marca de VOT CARIBBEAN TRAVEL SL, con CIF B70756176 y domicilio social en Calle Centelles, 17 Bajo, 46006 Valencia (España)." },
         { "label": "Marca", "text": "CAT CODE — servicios de presencia digital: landing, contenido y publicación en redes." },
         { "label": "Web",         "text": "Sitio informativo: catcode.es" },
-        { "label": "Contacto", "text": "Formulario de esta web y canal directo de WhatsApp." },
-        { "label": "Objeto", "text": "Describir servicios, niveles y precios. Cada contratación se formaliza con una propuesta por escrito." }
+        { "label": "Contacto", "text": "info@catcode.es · formulario de esta web y canal directo de WhatsApp." },
+        { "label": "Objeto", "text": "Describir servicios, niveles y precios. Cada contratación se formaliza con una propuesta por escrito." },
+        { "label": "Registro mercantil", "text": "Inscrita en el Registro Mercantil de Valencia, Tomo 11528, Folio 11, Hoja V-216745." },
+        { "label": "Precios e impuestos", "text": "Los precios publicados no incluyen IVA." }
       ]
     },
     "privacidad": {
       "title": "Política de privacidad",
       "items": [
-        { "label": "Responsable", "text": "[[PENDIENTE]] Identidad del titular de CAT CODE (ver aviso legal)." },
+        { "label": "Responsable", "text": "VOT CARIBBEAN TRAVEL SL — CIF B70756176, Calle Centelles, 17 Bajo, 46006 Valencia. Contacto: info@catcode.es." },
         { "label": "Qué datos recogemos", "text": "Solo los que decides escribir: nombre, negocio, email, teléfono y mensaje." },
         { "label": "Cómo se envían", "text": "El formulario no guarda nada en un servidor propio: abre WhatsApp con tu mensaje para enviárnoslo." },
-        { "label": "Finalidad", "text": "Responder a tu consulta y preparar una propuesta. Base jurídica: tu consentimiento." },
-        { "label": "Conservación", "text": "Mientras atendamos tu solicitud y los plazos que exija la ley." },
-        { "label": "Cesiones", "text": "No cedemos tus datos a terceros." },
-        { "label": "Medición de visitas", "text": "Medimos las visitas con Google Analytics 4 en modo sin cookies, sin perfiles publicitarios ni segmentación." },
-        { "label": "Tus derechos", "text": "Puedes pedir acceso, rectificación o supresión escribiendo por el canal de contacto indicado." }
+        { "label": "Finalidad", "text": "Atender la conversación que abres por WhatsApp y preparar una propuesta. No hay tratamiento en servidores de CAT CODE." },
+        { "label": "Base jurídica", "text": "Tu solicitud de información (medidas precontractuales, art. 6.1.b RGPD)." },
+        { "label": "Conservación", "text": "Si no llegamos a contratar: 12 meses desde nuestra última comunicación. Si eres cliente: durante la relación y los plazos legales de facturación (4 años)." },
+        { "label": "Cesiones", "text": "No cedemos tus datos a terceros. El mensaje viaja por WhatsApp (Meta Platforms Ireland Ltd.) cuando decides enviarlo desde el formulario." },
+        { "label": "Medición de visitas", "text": "No usamos Google Analytics ni ninguna otra herramienta de medición. Este sitio no instala cookies ni guarda identificadores en tu navegador." },
+        { "label": "Tus derechos", "text": "Puedes pedir acceso, rectificación, supresión, limitación, oposición o portabilidad escribiendo a info@catcode.es." }
       ]
     },
     "cookies": {
       "title": "Política de cookies",
       "items": [
         { "label": "Cookies propias", "text": "Este sitio no instala cookies publicitarias ni de seguimiento, y no guarda preferencias en tu navegador." },
-        { "label": "Medición", "text": "Usamos Google Analytics 4 en modo sin cookies: no se crea la cookie _ga ni se guarda ningún identificador en tu navegador; solo medimos qué páginas se visitan." },
-        { "label": "Terceros", "text": "Las peticiones de medición y las tipografías van a Google (Google Ireland Ltd.), que recibe tu dirección IP. La medición arranca con el consentimiento denegado (Consent Mode) y no se usa con fines publicitarios." },
+        { "label": "Medición", "text": "No usamos Google Analytics ni ninguna otra herramienta de medición. Este sitio no instala cookies ni guarda identificadores en tu navegador." },
+        { "label": "Terceros", "text": "Las tipografías se cargan desde Google Fonts (Google Ireland Ltd.), que recibe tu dirección IP. Si prefieres evitarlo, bloquea las peticiones a terceros en tu navegador." },
         { "label": "Cómo controlarlas", "text": "Puedes bloquear o eliminar cookies y scripts desde la configuración de tu navegador." },
         { "label": "Cambios", "text": "Si cambia la configuración de medición, esta política se actualizará antes de modificarla." }
       ]
@@ -557,7 +562,7 @@
   "footer": {
     "description": "Construimos tu presencia digital.",
     "subtitle": "INGENIERÍA WEB Y SISTEMA DE CONTENIDOS PARA PEQUEÑOS NEGOCIOS",
-  "copyright": "© 2026 CAT CODE. Todos los derechos reservados.",
+  "copyright": "© 2026 VOT CARIBBEAN TRAVEL SL. CAT CODE es una marca de la sociedad. Todos los derechos reservados.",
     "nav": {
       "whatWeDo": "Qué hacemos",
       "howItWorks": "Cómo funciona",
