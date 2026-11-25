@@ -292,7 +292,8 @@
         { "name": "New section", "price": "€129" },
         { "name": "Extra language", "price": "€119" }
       ]
-    }
+    },
+    "taxNote": "Prices in euros. VAT not included."
   },
   "portfolio": {
     "sectionLabel": "Examples · Concept projects",
@@ -476,7 +477,8 @@
       "email": "Enter a valid email address.",
       "consent": "We need your consent to get back to you."
     },
-    "consent": "I agree to receive information about my plan.",
+    "consent": "I have read the privacy policy.",
+    "privacyLink": "View privacy policy",
     "privacyNote": "We use your data only to reply to you. We don't share it with third parties.",
     "message": {
       "intro": "Hi CAT CODE, I want to improve my business's digital presence."
@@ -489,7 +491,7 @@
     },
     "success": {
       "title": "Got it!",
-      "body": "We opened WhatsApp with your message. If it didn't open, use the button below. We reply within 24 hours."
+      "body": "WhatsApp has opened with your message. Send it and we'll reply within 24 business hours."
     }
   },
   "cta": {
@@ -523,32 +525,35 @@
     "aviso": {
       "title": "Legal notice",
       "items": [
-        { "label": "Owner", "text": "[[PENDING]] Legal name, tax ID and registered address of the CAT CODE owner." },
+        { "label": "Owner", "text": "CAT CODE is a brand of VOT CARIBBEAN TRAVEL SL, VAT number B70756176, registered office at Calle Centelles 17 Bajo, 46006 Valencia, Spain." },
         { "label": "Brand", "text": "CAT CODE — digital presence services: landing pages, content and social publishing." },
         { "label": "Website",         "text": "Informational site: catcode.es" },
-        { "label": "Contact", "text": "The form on this site and the direct WhatsApp channel." },
-        { "label": "Purpose", "text": "To describe services, tiers and prices. Every contract is formalised through a written proposal." }
+        { "label": "Contact", "text": "info@catcode.es · form on this site and direct WhatsApp channel." },
+        { "label": "Purpose", "text": "To describe services, tiers and prices. Every contract is formalised through a written proposal." },
+        { "label": "Commercial registry", "text": "Registered in the Commercial Registry of Valencia, Volume 11528, Folio 11, Leaf V-216745." },
+        { "label": "Prices and taxes", "text": "Published prices exclude VAT." }
       ]
     },
     "privacidad": {
       "title": "Privacy policy",
       "items": [
-        { "label": "Controller", "text": "[[PENDING]] Identity of the CAT CODE owner (see legal notice)." },
+        { "label": "Controller", "text": "VOT CARIBBEAN TRAVEL SL — VAT number B70756176, Calle Centelles 17 Bajo, 46006 Valencia, Spain. Contact: info@catcode.es." },
         { "label": "What data we collect", "text": "Only what you choose to write: name, business, email, phone and message." },
         { "label": "How it is sent", "text": "The form stores nothing on our own server: it opens WhatsApp with your message to send it to us." },
-        { "label": "Purpose", "text": "To answer your enquiry and prepare a proposal. Legal basis: your consent." },
-        { "label": "Retention", "text": "As long as we handle your request and for any periods required by law." },
-        { "label": "Sharing", "text": "We do not share your data with third parties." },
-        { "label": "Visit measurement", "text": "We measure visits with Google Analytics 4 in cookieless mode, with no advertising profiles or segmentation." },
-        { "label": "Your rights", "text": "You can request access, rectification or erasure by contacting us through the channel above." }
+        { "label": "Purpose", "text": "To handle the conversation you open on WhatsApp and prepare a proposal. No processing takes place on CAT CODE servers." },
+        { "label": "Legal basis", "text": "Your request for information (pre-contractual measures, Art. 6(1)(b) GDPR)." },
+        { "label": "Retention", "text": "If we don't end up working together: 12 months from our last exchange. If you're a client: for the duration of the relationship and the legal invoicing retention period (4 years)." },
+        { "label": "Sharing", "text": "We do not share your data with third parties. The message travels through WhatsApp (Meta Platforms Ireland Ltd.) when you choose to send it from the form." },
+        { "label": "Visit measurement", "text": "We do not use Google Analytics or any other measurement tool. This site installs no cookies and stores no identifiers in your browser." },
+        { "label": "Your rights", "text": "You can request access, rectification, erasure, restriction, objection or portability by writing to info@catcode.es." }
       ]
     },
     "cookies": {
       "title": "Cookies policy",
       "items": [
         { "label": "Own cookies", "text": "This site installs no advertising or tracking cookies, and stores no preferences in your browser." },
-        { "label": "Measurement", "text": "We use Google Analytics 4 in cookieless mode: no _ga cookie and no identifier is stored in your browser; we only measure which pages are visited." },
-        { "label": "Third parties", "text": "Measurement requests and fonts go to Google (Google Ireland Ltd.), which receives your IP address. Measurement starts with consent denied (Consent Mode) and is not used for advertising." },
+        { "label": "Measurement", "text": "We do not use Google Analytics or any other measurement tool. This site installs no cookies and stores no identifiers in your browser." },
+        { "label": "Third parties", "text": "Fonts are loaded from Google Fonts (Google Ireland Ltd.), which receives your IP address. If you prefer to avoid it, block third-party requests in your browser." },
         { "label": "How to control them", "text": "You can block or delete cookies and scripts from your browser settings." },
         { "label": "Changes", "text": "If the measurement configuration changes, this policy will be updated before it is modified." }
       ]
@@ -557,7 +562,7 @@
   "footer": {
     "description": "We build your digital presence.",
     "subtitle": "WEB ENGINEERING AND CONTENT SYSTEM FOR SMALL BUSINESSES",
-  "copyright": "© 2026 CAT CODE. All rights reserved.",
+  "copyright": "© 2026 VOT CARIBBEAN TRAVEL SL. CAT CODE is a brand of the company. All rights reserved.",
     "nav": {
       "whatWeDo": "What we do",
       "howItWorks": "How it works",
