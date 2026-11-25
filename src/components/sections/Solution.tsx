@@ -15,7 +15,7 @@ export function Solution() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
             <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('solution.sectionLabel')}
             </span>
@@ -39,7 +39,7 @@ export function Solution() {
                 }`}
               >
                 {solData.badge && (
-                  <div className="absolute -top-3.5 right-6 bg-[#FFB800] text-black font-mono text-[10px] uppercase font-bold px-3 py-1 rounded-full shadow-lg tracking-wider">
+                  <div className="badge-glow absolute -top-3.5 right-6 bg-[#FFB800] text-black font-mono text-[10px] uppercase font-bold px-3 py-1 rounded-full shadow-lg tracking-wider">
                     {solData.badge}
                   </div>
                 )}

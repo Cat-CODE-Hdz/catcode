@@ -12,7 +12,7 @@ export function WhatIncludes() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-16">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
             <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('whatIncludes.sectionLabel')}
             </span>
@@ -26,10 +26,10 @@ export function WhatIncludes() {
           {columns.map((colIndex) => {
             const colData = t(`whatIncludes.columns.${colIndex}`, { returnObjects: true }) as any;
             return (
-              <div key={colData.title} className="bg-[#FAF9F7] p-unit-8 rounded-2xl border border-neutral-200/90 shadow-sm card-hover-lift">
+              <div key={colData.title} className="group bg-[#FAF9F7] p-unit-8 rounded-2xl border border-neutral-200/90 shadow-sm card-hover-lift">
                 <div className="flex items-center justify-between mb-unit-6 pb-4 border-b border-neutral-200/80">
                   <div className="flex items-center gap-unit-2">
-                    <span className="material-symbols-outlined text-primary" style={{ fontSize: '22px' }} aria-hidden="true">{icons[colIndex]}</span>
+                    <span className="material-symbols-outlined icon-pop text-primary" style={{ fontSize: '22px' }} aria-hidden="true">{icons[colIndex]}</span>
                     <h3 className="font-headline-sm text-xl font-bold text-primary tracking-tight">{colData.title}</h3>
                   </div>
                   <span className="font-mono text-[10px] uppercase text-neutral-400">{colData.count}</span>

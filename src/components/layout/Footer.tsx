@@ -38,20 +38,14 @@ export function Footer() {
           </div>
           <nav className="flex flex-wrap items-center gap-x-unit-6 gap-y-unit-3 text-on-surface-variant font-mono text-xs" aria-label="Enlaces del pie de página">
             {footerNavLinks.map((link) => (
-              <a key={link.path} className="hover:text-black transition-colors" href={link.href}>
+              <a key={link.path} className="link-sweep hover:text-black transition-colors" href={link.href}>
                 {link.label}
               </a>
             ))}
           </nav>
         </div>
-        <div className="pt-unit-8 flex flex-col md:flex-row items-center justify-between gap-unit-4 text-on-surface-variant font-mono text-xs">
+        <div className="pt-unit-8 text-on-surface-variant font-mono text-xs">
           <p className="font-body-sm text-body-sm">{t('footer.copyright')}</p>
-          <div className="flex items-center gap-2.5 bg-white px-3.5 py-1.5 rounded-full border border-neutral-200/90 shadow-xs" role="status" aria-live="polite">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#FFB800] amber-pulse" aria-hidden="true" />
-            <span className="font-mono uppercase tracking-wider text-black font-semibold" style={{ fontSize: '11px' }}>
-              {t('footer.status')}
-            </span>
-          </div>
         </div>
       </div>
     </footer>

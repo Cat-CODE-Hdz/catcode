@@ -12,7 +12,7 @@ export function SobreNosotros() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-unit-12 items-start">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-2 mb-unit-3">
-              <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+              <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
               <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
                 {t('about.sectionLabel')}
               </span>
@@ -41,7 +41,7 @@ export function SobreNosotros() {
 
         <div className="mt-unit-16">
           <div className="flex items-center gap-2 mb-unit-6">
-            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
             <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('about.valuesTitle')}
             </span>

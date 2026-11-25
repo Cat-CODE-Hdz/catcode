@@ -9,7 +9,7 @@ export function Testimonios() {
       <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop">
         <div className="max-w-3xl mb-unit-12">
           <div className="flex items-center gap-2 mb-unit-3">
-            <span className="w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
+            <span className="section-dot w-2 h-2 bg-[#FFB800] rounded-none" aria-hidden="true" />
             <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500 font-semibold">
               {t('testimonials.sectionLabel')}
             </span>
@@ -27,7 +27,7 @@ export function Testimonios() {
               className="bg-white rounded-2xl border border-dashed border-neutral-300 p-unit-6 flex flex-col items-center justify-center text-center gap-unit-3 min-h-[180px]"
               aria-hidden="true"
             >
-              <span className="material-symbols-outlined text-neutral-300" style={{ fontSize: '32px' }}>format_quote</span>
+              <span className="material-symbols-outlined quote-float text-neutral-300" style={{ fontSize: '32px' }}>format_quote</span>
               <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-400 font-semibold">
                 {t('testimonials.slot')}
               </span>
